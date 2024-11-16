@@ -17,8 +17,6 @@ library(purrr)
 
 # functions ---------------------------------------------------------------
 
-
-
 # Functions generated with perplexity.ai:
 # https://www.perplexity.ai/search/write-r-code-to-use-stringr-to-RgzUzkXuQgqZ4IAPHJvlpg
 
@@ -52,10 +50,6 @@ set.seed(seed = 0721)
 people <- data_in |>
   select(project_id, degree, type, b_m_student, start_date, year, thesis_title) |>
   mutate(project_id = map_chr(project_id, replace_last_dash))
-
-people |>
-  count(type) |>
-  pull(type)
 
 # Export Data ------------------------------------------------------------------
 usethis::use_data(people, overwrite = TRUE)
