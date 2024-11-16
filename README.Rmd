@@ -119,22 +119,22 @@ library(ghedata)
 
 undergrad_students <- people |> 
   filter(b_m_student == "yes") |>
-  filter(!is.na(project_id)) |> 
-  filter(!is.na(year))
-
+  filter(!is.na(project_id)) 
 ```
 
 So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
 
 ```{r}
 undergrad_students |> 
-  count(year, degree) |> 
-  ggplot(aes(x = factor(year), y = n, label = n, 
-             color = degree, group = degree)) +
-  geom_line() +
-  geom_label() +
-  labs(x = "Degree",
+  count(degree, year) |> 
+  ggplot(aes(x = year, y = n, label = n, fill = degree, color = degree)) +
+  geom_col(position = "dodge") +
+  geom_text(position=position_dodge(width=0.9), 
+            vjust=-0.5,
+            show.legend = FALSE) +
+  labs(x = "",
        y = "Number of students") +
+  scale_fill_colorblind() +
   scale_color_colorblind() +
   theme_minimal() +
   theme(panel.grid = element_blank(),

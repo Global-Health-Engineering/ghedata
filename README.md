@@ -72,7 +72,7 @@ people |>
   gt::as_raw_html()
 ```
 
-<div id="gzbzpepvmo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="nheqvrzpaf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -292,8 +292,7 @@ library(ghedata)
 
 undergrad_students <- people |> 
   filter(b_m_student == "yes") |>
-  filter(!is.na(project_id)) |> 
-  filter(!is.na(year))
+  filter(!is.na(project_id)) 
 ```
 
 So far, GHE has supervised 81 projects of which 19 were done by BSc and
@@ -301,13 +300,15 @@ So far, GHE has supervised 81 projects of which 19 were done by BSc and
 
 ``` r
 undergrad_students |> 
-  count(year, degree) |> 
-  ggplot(aes(x = factor(year), y = n, label = n, 
-             color = degree, group = degree)) +
-  geom_line() +
-  geom_label() +
-  labs(x = "Degree",
+  count(degree, year) |> 
+  ggplot(aes(x = year, y = n, label = n, fill = degree, color = degree)) +
+  geom_col(position = "dodge") +
+  geom_text(position=position_dodge(width=0.9), 
+            vjust=-0.5,
+            show.legend = FALSE) +
+  labs(x = "",
        y = "Number of students") +
+  scale_fill_colorblind() +
   scale_color_colorblind() +
   theme_minimal() +
   theme(panel.grid = element_blank(),
@@ -330,7 +331,8 @@ citation("ghedata")
 #> To cite package 'ghedata' in publications use:
 #> 
 #>   Schöbitz L (2024). _ghedata: What the Package Does (One Line, Title
-#>   Case)_. R package version 0.0.0.9000,
+#>   Case)_. R package version 0.0.0.9000, commit
+#>   c7010eceb5a6d1d0bfbdc41a9682107e26b77c51,
 #>   <https://github.com/global-health-engineering/ghedata>.
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -339,7 +341,7 @@ citation("ghedata")
 #>     title = {ghedata: What the Package Does (One Line, Title Case)},
 #>     author = {Lars Schöbitz},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     note = {R package version 0.0.0.9000, commit c7010eceb5a6d1d0bfbdc41a9682107e26b77c51},
 #>     url = {https://github.com/global-health-engineering/ghedata},
 #>   }
 ```

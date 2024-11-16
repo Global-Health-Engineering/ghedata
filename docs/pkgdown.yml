@@ -1,8 +1,9 @@
 pandoc: '3.5'
 pkgdown: 2.0.9
 pkgdown_sha: ~
-articles: {}
-last_built: 2024-11-16T12:34Z
+articles:
+  examples: examples.html
+last_built: 2024-11-16T14:13Z
 urls:
   reference: https://global-health-engineering.github.io/ghedata/reference
   article: https://global-health-engineering.github.io/ghedata/articles
