@@ -1,4 +1,4 @@
-#' ghedata: Title goes here
+#' people: Title goes here
 #' 
 #' Description of the data goes here...
 #' 
@@ -12,4 +12,4 @@
 #'   \item{year}{ Year of the start date.}
 #'   \item{thesis_title}{ Title of the thesis.}
 #' }
-"ghedata"
+"people"

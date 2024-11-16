@@ -58,9 +58,9 @@ people |>
   pull(type)
 
 # Export Data ------------------------------------------------------------------
-usethis::use_data(ghedata, overwrite = TRUE)
+usethis::use_data(people, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata"))
-readr::write_csv(ghedata,
-                 here::here("inst", "extdata", paste0("ghedata", ".csv")))
-openxlsx::write.xlsx(ghedata,
-                     here::here("inst", "extdata", paste0("ghedata", ".xlsx")))
+readr::write_csv(people,
+                 here::here("inst", "extdata", paste0("people", ".csv")))
+openxlsx::write.xlsx(people,
+                     here::here("inst", "extdata", paste0("people", ".xlsx")))
