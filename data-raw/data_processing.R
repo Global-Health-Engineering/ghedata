@@ -42,6 +42,9 @@ data_in <- read_sheet("https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L
   mutate(across(where(is.character),
                 ~na_if(., "NA")))
 
+data_in |>
+  filter(is.na(year))
+
 # Tidy data --------------------------------------------------------------------
 ## Clean the raw data into a tidy format here
 

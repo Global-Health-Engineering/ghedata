@@ -11,7 +11,7 @@ project_id,degree,type,b_m_student,start_date,year,thesis_title
 2022-msc-sem-proj-456211,msc,sem-proj,yes,2022-06-13,2022,Investigating the optimization potential of brick clamps in Malawi - thermal efficiency analysis and perspectives of brickmakers
 2022-msc-sem-proj-263414,msc,sem-proj,yes,2022-09-16,2022,"Optimization of solid waste collections in Blantyre, Malawi"
 2021-msc-thesis-415216,msc,thesis,yes,2021-09-19,2021,Barriers to successful data management in the Global South: Case Study of Malawi
-2022-msc-sem-proj-564164,msc,sem-proj,yes,NA,NA,Designing a small-scale screw press for blackwater dewatering
+2022-msc-sem-proj-564164,msc,sem-proj,yes,2022-09-01,2022,Designing a small-scale screw press for blackwater dewatering
 2022-msc-sem-proj-435513,msc,sem-proj,yes,2022-05-01,2022,Design and validation of a thermal disinfection unit for wastewater using biogas in humanitarian crisis situations
 2022-msc-sem-proj-463655,msc,sem-proj,yes,2022-08-01,2022,"Examination of non-recycled marine plastic litter in order to identify recycling and beneficiation pathways in Durban, South Africa"
 2022-msc-sem-proj-441543,msc,sem-proj,yes,2022-10-01,2022,Bin it - design of an AHP waste collection model for informal settlements in South Africa
@@ -73,7 +73,7 @@ NA,msc,thesis,yes,2024-02-26,2024,Machine vision for river waste identification 
 2024-bsc-thesis-221261,bsc,thesis,yes,2024-03-18,2024,Design of a Bio-gas powered effluent pasteurizer
 2024-msc-sem-proj-461264,msc,sem-proj,yes,2024-04-09,2024,Design optimisation of a mixing reactor for close to source urine stabilisation
 2024-phd-thesis-665422,phd,thesis,no,2024-07-01,2024,Potential for faecal sludge treatment with mycellium
-1899-msc-thesis-145556,msc,thesis,yes,NA,NA,Modelling and Optimization of an Evaportator-dehumidifier unit
+2024-msc-thesis-145556,msc,thesis,yes,2024-07-01,2024,Modelling and Optimization of an Evaportator-dehumidifier unit
 2024-staff-hiwi-551256,staff,hiwi,no,2024-07-01,2024,NA
 2024-msc-thesis-515363,msc,thesis,yes,2024-09-14,2024,Biogas sensor development: from prototyping to production
 2024-staff-scientific-assistant-534661,staff,scientific-assistant,no,2024-07-22,2024,NA

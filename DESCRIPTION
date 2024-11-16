@@ -15,5 +15,5 @@ LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown
 Date: 2024-11-16
-URL: https://github.com/openwashdata/ghedata
-BugReports: https://github.com/openwashdata/ghedata/issues
+URL: https://github.com/global-health-engineering/ghedata
+BugReports: https://github.com/global-health-engineering/ghedata/issues
