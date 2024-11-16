@@ -1,0 +1,155 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# ghedata
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+The goal of ghedata is to share data resources that document the work of the Global Health Engineering group at ETH Zurich. The data can be used for research, teaching, and learning purposes. The data is available as an R data package, in CSV and XLSX formats.
+
+## Installation
+
+You can install the development version of ghedata from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("global-health-engineering/ghedata")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+library(ggthemes)
+library(ggplot2)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in
+    your browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to one data resource.
+
+```{r}
+library(ghedata)
+```
+
+### people
+
+The dataset `people` contains data about people that have worked for the group. This includes staff, as well as undergraduate student projects.
+
+It has `r nrow(people)` observations and `r ncol(people)` variables.
+
+```{r}
+people |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "people.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example
+
+```{r}
+library(ghedata)
+
+undergrad_students <- people |> 
+  filter(b_m_student == "yes") |>
+  filter(!is.na(project_id)) |> 
+  filter(!is.na(year))
+
+```
+
+So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
+
+```{r}
+undergrad_students |> 
+  count(year, degree) |> 
+  ggplot(aes(x = factor(year), y = n, label = n, 
+             color = degree, group = degree)) +
+  geom_line() +
+  geom_label() +
+  labs(x = "Degree",
+       y = "Number of students") +
+  scale_color_colorblind() +
+  theme_minimal() +
+  theme(panel.grid = element_blank(),
+        axis.text.y = element_blank())
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/global-health-engineering/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("ghedata")
+```
