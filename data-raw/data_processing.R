@@ -49,9 +49,13 @@ data_in <- read_sheet("https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L
 
 set.seed(seed = 0721)
 
-ghedata <- data_in |>
+people <- data_in |>
   select(project_id, degree, type, b_m_student, start_date, year, thesis_title) |>
   mutate(project_id = map_chr(project_id, replace_last_dash))
+
+people |>
+  count(type) |>
+  pull(type)
 
 # Export Data ------------------------------------------------------------------
 usethis::use_data(ghedata, overwrite = TRUE)
