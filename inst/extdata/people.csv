@@ -1,97 +1,130 @@
-project_id,degree,type,b_m_student,start_date,year,thesis_title
-2021-bsc-thesis-141444,bsc,thesis,yes,2021-02-01,2021,Self-cleaning Preliminary Screening Mechanisms to Improve Health and Wastewater Treatment Efficiency in Low-income Countries
-2022-msc-sem-proj-565554,msc,sem-proj,yes,2022-04-04,2022,The state of open research data publishing practices and policies in the fields of global health engineering
-2022-bsc-thesis-466263,bsc,thesis,yes,2022-03-11,2022,"Feasibility of waste maize husk valorization as a plastic plate replacement in Durban, South Africa"
-2022-bsc-thesis-113514,bsc,thesis,yes,2022-03-01,2022,Low-cost compost screening technology to improve trash separation
-2022-bsc-thesis-143566,bsc,thesis,yes,2022-03-25,2022,"The development of a recycled plastic wheel for cardboard collector trollies - improving the working conditions of informal cardboard recyclers in Durban, South Africa"
-2022-msc-thesis-146612,msc,thesis,yes,2022-05-01,2022,Effect of fruit and vegetable waste in anaerobic digestion using faecal sludge as primary feedstock
-2022-msc-sem-proj-616313,msc,sem-proj,yes,2022-02-07,2022,Energy production of Black Soldier Fly larvae: measuring the temperature increase in air induced by Black Soldier Flies throughout their larval stages
-2022-msc-thesis-615422,msc,thesis,yes,2022-04-01,2022,"Suitability of the modified Bardenpho process for faecal sludge treatment in Kumasi, Ghana"
-2022-phd-thesis-454415,phd,thesis,no,2022-02-21,2022,How biogas failed to light up a continent: why the most promising technology never spread across Africa
-2022-msc-sem-proj-456211,msc,sem-proj,yes,2022-06-13,2022,Investigating the optimization potential of brick clamps in Malawi - thermal efficiency analysis and perspectives of brickmakers
-2022-msc-sem-proj-263414,msc,sem-proj,yes,2022-09-16,2022,"Optimization of solid waste collections in Blantyre, Malawi"
-2021-msc-thesis-415216,msc,thesis,yes,2021-09-19,2021,Barriers to successful data management in the Global South: Case Study of Malawi
-2022-msc-sem-proj-564164,msc,sem-proj,yes,2022-09-01,2022,Designing a small-scale screw press for blackwater dewatering
-2022-msc-sem-proj-435513,msc,sem-proj,yes,2022-05-01,2022,Design and validation of a thermal disinfection unit for wastewater using biogas in humanitarian crisis situations
-2022-msc-sem-proj-463655,msc,sem-proj,yes,2022-08-01,2022,"Examination of non-recycled marine plastic litter in order to identify recycling and beneficiation pathways in Durban, South Africa"
-2022-msc-sem-proj-441543,msc,sem-proj,yes,2022-10-01,2022,Bin it - design of an AHP waste collection model for informal settlements in South Africa
-2022-phd-thesis-121533,phd,thesis,no,2022-02-21,2022,Evaluating a case of closed-loop plastic recycling in Malawi
-2022-phd-thesis-314652,phd,thesis,no,2022-01-25,2022,Extent and markers of open waste burning
-2022-msc-thesis-546221,msc,thesis,yes,2022-06-01,2022,Statistical Modeling of SDG 6 Global Estimates
-2022-msc-sem-proj-262551,msc,sem-proj,yes,2022-10-01,2022,"“I have just accepted it”: Hierarchies of Power and Healthcare Waste Management Practices in Blantyre, Malawi"
-2022-msc-thesis-516521,msc,thesis,yes,2022-09-16,2022,Thermal analysis and optimization potential of clamp kilns for fired clay brick production
-2022-msc-thesis-341414,msc,thesis,yes,2022-08-01,2022,"Evaluating the potential Extended Producer Responsibility returns for plastic-packaging riverine waste in Durban, South Africa"
-2022-bsc-thesis-321454,bsc,thesis,yes,2022-09-01,2022,"Improving market wash stations through creative and contextual design in Durban, South Africa"
-2022-msc-thesis-155353,msc,thesis,yes,2022-10-01,2022,"Factors affecting the extent and impact of waste burning in Blantyre, Malawi"
-2022-msc-sem-proj-566634,msc,sem-proj,yes,2022-09-16,2022,Design and validation of a thermal disinfection unit for wastewater using biogas for humanitarian crisis situations
-2022-msc-sem-proj-211566,msc,sem-proj,yes,2022-11-16,2022,Tertiary education research: data collection on top universities of african countries
-2023-staff-intern-365245,staff,intern,no,2023-01-01,2023,A sustainable alternative to traditional building materials: assessing stabilised soil blocks for performance and cost in Malawi
-2023-msc-sem-proj-625163,msc,sem-proj,yes,2023-03-01,2023,"Urine Collection Trolley for Informal Markets in Durban, South Africa"
-2023-msc-thesis-515651,msc,thesis,yes,2023-03-01,2023,Detection of Contamination in Biowaste
-2023-bsc-thesis-555321,bsc,thesis,yes,2023-02-20,2023,Evaluation of the waste management system at the Züri Fäscht
-2023-msc-thesis-111425,msc,thesis,yes,2023-03-16,2023,Tipping aid for loading small trucks on waste collection tours
-2023-msc-thesis-341154,msc,thesis,yes,2023-03-01,2023,"Design of an HDPE bottle collection and pre-cleaning system for recycling in Blantyre, Malawi"
-2023-msc-thesis-256151,msc,thesis,yes,2023-01-04,2023,Remote Monitoring System for the WaterWall
-2023-msc-thesis-566423,msc,thesis,yes,2023-04-22,2023,Optimization of Calcium Hydroxide and Calcium Phosphate flows in the Autarky Nutrient Harvester
-2023-msc-thesis-534445,msc,thesis,yes,2023-05-09,2023,withdrawn
-2023-staff-intern-512651,staff,intern,no,2023-05-15,2023,NA
-2023-staff-scientific-assistant-351554,staff,scientific-assistant,no,2023-05-01,2023,NA
-2023-bsc-thesis-111146,bsc,thesis,yes,2023-09-18,2023,Experimental Optimization of a Peristaltic Pump Design for Pit-Emptying
-2023-msc-thesis-443226,msc,thesis,yes,2023-09-18,2023,"Construction of a Glass Crusher and Evaluation of Waste Valorization Pathways for Cape Maclear, Malawi"
-2023-bsc-thesis-353526,bsc,thesis,yes,2023-09-18,2023,Designing a manual press for blackwater dewatering
-2023-msc-thesis-645462,msc,thesis,yes,2023-09-18,2023,"Development of a Low-Cost Incinerator in Cape Maclear, Malawi"
-2023-bsc-thesis-463134,bsc,thesis,yes,2023-09-18,2023,Microcontroller Based Particulate Matter Monitors Utilising the Alphasense OPC-N3
-2023-msc-thesis-461522,msc,thesis,yes,2023-10-02,2023,The Establishment of an Absorbent Hygiene Product Waste Collection System in Two Informal Settlements in South Africa
-2023-msc-thesis-444115,msc,thesis,yes,2023-02-01,2023,Absorbent Hygiene Products (AHP) Waste Characterization and Collections Rationalization in South Africa
-2023-msc-thesis-553346,msc,thesis,yes,2023-10-02,2023,"Willingness to Pay and Economic Feasibility for Waste Collection in Chembe, Malawi"
-2023-msc-thesis-522612,msc,thesis,yes,2023-10-02,2023,"Waste Characterisation and Quantification in Chembe, Malawi"
-2023-msc-thesis-166133,msc,thesis,yes,2023-09-25,2023,Improving Ergonomics and Communication for the Sewer Workers of Zürich
-2023-msc-thesis-532416,msc,thesis,yes,2023-10-02,2023,"Waste Logistics and Transport Modelling in Cape Maclear, Malawi"
-2023-msc-thesis-466523,msc,thesis,yes,2023-10-10,2023,Impact of a Social Transfer Intervention on Barriers to Exclusive Breastfeeding in Lao PDR
-2023-staff-post-doc-432213,staff,post-doc,no,2023-10-01,2023,NA
-2023-staff-intern-545321,staff,intern,no,2023-10-17,2023,NA
-2024-staff-intern-546612,staff,intern,no,2024-01-15,2024,NA
-2023-msc-project-133241,msc,sem-proj,yes,2023-10-01,2023,Informal Waste Pickers and Non-Motorised Transport: A Narrative Review of Literature
-2023-msc-project-465145,msc,sem-proj,yes,2023-10-01,2023,"Particulate Matter, Health and Spaces of Risk within African Urban Areas: A Narrative Review of Literature"
-2024-bsc-thesis-625412,bsc,thesis,yes,2024-02-26,2024,"Optimization of waste skip placement in Blantyre, Malawi"
-2024-msc-sem-proj-616441,msc,sem-proj,yes,2024-02-19,2024,Adapting open-source turbidity sensor for enhanced dewatering of blackwater
-2024-msc-thesis-652443,msc,thesis,yes,2024-03-15,2024,Advancing Sustainable Water Filtration: Enhancing Efficiency and Exploring New Adaptations
-2024-msc-sem-proj-231451,msc,sem-proj,yes,2024-03-01,2024,Guidelines for Low-Cost Incineration Systems
-2024-msc-thesis-523145,msc,thesis,yes,2024-04-01,2024,Exploratory analysis of the booking system in Kampala
-2024-bsc-thesis-661656,bsc,thesis,yes,2024-02-12,2024,"Off-Grid Trash Screen Design for a Fecal Sludge Treatment Plant in Blantyre, Malawi"
-2024-bsc-thesis-626331,bsc,thesis,yes,2024-02-27,2024,Hand Compactor Design for Informal Cardboard Recycling
-2024-staff-intern-516631,staff,intern,no,2024-03-01,2024,NA
-2024-msc-thesis-665454,msc,thesis,yes,2024-03-11,2024,Sludge pasteurization with solar water heaters
-2024-bsc-thesis-422125,bsc,thesis,yes,2024-03-04,2024,Development of a Monitoring Device for Improved Cookstoves
-2024-bsc-thesis-566626,bsc,thesis,yes,2024-03-04,2024,Developing a Methane Sensor for Biogas reactors in Malawi
-2024-msc-sem-proj-244643,msc,sem-proj,yes,2024-03-04,2024,Volumetric flow meter development for household scale biogas reactors
-2024-msc-sem-proj-126461,msc,sem-proj,yes,2024-03-04,2024,Logging and transmitting remote data from cookstove and biogas sensors in Malawi
-2024-msc-sem-proj-362265,msc,sem-proj,yes,2024-03-04,2024,Testing the accuracy of the smart biogas measurement device
-2024-bsc-thesis-532435,bsc,thesis,yes,2024-03-04,2024,"Innovative Mask Design for Air Pollution Impact Mitigation in Blantyre, Malawi: A Particle Size Distribution Approach"
-2024-msc-thesis-365134,msc,thesis,yes,2024-03-11,2024,"Establishing the HDPE recycling process in Blantyre, Malawi"
+title,degree,type,b_m_student,start_date,year,thesis_title
+2021-bsc-thesis-225343,bsc,thesis,yes,2021-02-01,2021,Self-cleaning Preliminary Screening Mechanisms to Improve Health and Wastewater Treatment Efficiency in Low-income Countries
+2021-msc-thesis-554324,msc,thesis,yes,2021-09-19,2021,Barriers to successful data management in the Global South: Case Study of Malawi
+2022-bsc-thesis-164543,bsc,thesis,yes,2022-03-25,2022,"The development of a recycled plastic wheel for cardboard collector trollies - improving the working conditions of informal cardboard recyclers in Durban, South Africa"
+2022-bsc-thesis-161565,bsc,thesis,yes,2022-09-01,2022,"Improving market wash stations through creative and contextual design in Durban, South Africa"
+2022-bsc-thesis-512155,bsc,thesis,yes,2022-03-11,2022,"Feasibility of waste maize husk valorization as a plastic plate replacement in Durban, South Africa"
+2022-bsc-thesis-266112,bsc,thesis,yes,2022-03-01,2022,Low-cost compost screening technology to improve trash separation
+2022-msc-sem-proj-544646,msc,sem-proj,yes,2022-06-13,2022,Investigating the optimization potential of brick clamps in Malawi - thermal efficiency analysis and perspectives of brickmakers
+2022-msc-sem-proj-356661,msc,sem-proj,yes,2022-02-07,2022,Energy production of Black Soldier Fly larvae: measuring the temperature increase in air induced by Black Soldier Flies throughout their larval stages
+2022-msc-sem-proj-514134,msc,sem-proj,yes,2022-08-01,2022,"Examination of non-recycled marine plastic litter in order to identify recycling and beneficiation pathways in Durban, South Africa"
+2022-msc-sem-proj-166131,msc,sem-proj,yes,2022-09-16,2022,Design and validation of a thermal disinfection unit for wastewater using biogas for humanitarian crisis situations
+2022-msc-sem-proj-314142,msc,sem-proj,yes,2022-05-01,2022,Design and validation of a thermal disinfection unit for wastewater using biogas in humanitarian crisis situations
+2022-msc-sem-proj-212116,msc,sem-proj,yes,2022-04-04,2022,The state of open research data publishing practices and policies in the fields of global health engineering
+2022-msc-sem-proj-143563,msc,sem-proj,yes,2022-09-01,2022,Designing a small-scale screw press for blackwater dewatering
+2022-msc-sem-proj-316311,msc,sem-proj,yes,2022-09-16,2022,"Optimization of solid waste collections in Blantyre, Malawi"
+2022-msc-sem-proj-112416,msc,sem-proj,yes,2022-10-01,2022,"“I have just accepted it”: Hierarchies of Power and Healthcare Waste Management Practices in Blantyre, Malawi"
+2022-msc-sem-proj-522216,msc,sem-proj,yes,2022-11-16,2022,Tertiary education research: data collection on top universities of african countries
+2022-msc-sem-proj-546443,msc,sem-proj,yes,2022-10-01,2022,Bin it - design of an AHP waste collection model for informal settlements in South Africa
+2022-msc-thesis-531332,msc,thesis,yes,2022-09-16,2022,Thermal analysis and optimization potential of clamp kilns for fired clay brick production
+2022-msc-thesis-245413,msc,thesis,yes,2022-08-01,2022,"Evaluating the potential Extended Producer Responsibility returns for plastic-packaging riverine waste in Durban, South Africa"
+2022-msc-thesis-333526,msc,thesis,yes,2022-05-01,2022,Effect of fruit and vegetable waste in anaerobic digestion using faecal sludge as primary feedstock
+2022-msc-thesis-632542,msc,thesis,yes,2022-06-01,2022,Statistical Modeling of SDG 6 Global Estimates
+2022-msc-thesis-632545,msc,thesis,yes,2022-10-01,2022,"Factors affecting the extent and impact of waste burning in Blantyre, Malawi"
+2022-msc-thesis-621526,msc,thesis,yes,2022-04-01,2022,"Suitability of the modified Bardenpho process for faecal sludge treatment in Kumasi, Ghana"
+2022-phd-thesis-633533,phd,thesis,no,2022-02-21,2022,How biogas failed to light up a continent: why the most promising technology never spread across Africa
+2023-bsc-thesis-544115,bsc,thesis,yes,2023-09-18,2023,Experimental Optimization of a Peristaltic Pump Design for Pit-Emptying
+2023-bsc-thesis-461331,bsc,thesis,yes,2023-02-20,2023,Evaluation of the waste management system at the Züri Fäscht
+2023-bsc-thesis-365433,bsc,thesis,yes,2023-09-18,2023,Designing a manual press for blackwater dewatering
+2023-bsc-thesis-665325,bsc,thesis,yes,2023-09-18,2023,Microcontroller Based Particulate Matter Monitors Utilising the Alphasense OPC-N3
+2023-msc-sem-proj-626425,msc,sem-proj,yes,2023-10-01,2023,"Particulate Matter, Health and Spaces of Risk within African Urban Areas: A Narrative Review of Literature"
+2023-msc-sem-proj-252356,msc,sem-proj,yes,2023-10-01,2023,Informal Waste Pickers and Non-Motorised Transport: A Narrative Review of Literature
+2023-msc-sem-proj-524426,msc,sem-proj,yes,2023-03-01,2023,"Urine Collection Trolley for Informal Markets in Durban, South Africa"
+2023-msc-thesis-644313,msc,thesis,yes,2023-01-04,2023,Remote Monitoring System for the WaterWall
+2023-msc-thesis-135665,msc,thesis,yes,2023-10-02,2023,The Establishment of an Absorbent Hygiene Product Waste Collection System in Two Informal Settlements in South Africa
+2023-msc-thesis-136546,msc,thesis,yes,2023-03-16,2023,Tipping aid for loading small trucks on waste collection tours
+2023-msc-thesis-353422,msc,thesis,yes,2023-10-02,2023,"Willingness to Pay and Economic Feasibility for Waste Collection in Chembe, Malawi"
+2023-msc-thesis-255125,msc,thesis,yes,2023-03-01,2023,Detection of Contamination in Biowaste
+2023-msc-thesis-356435,msc,thesis,yes,2023-05-09,2023,withdrawn
+2023-msc-thesis-144435,msc,thesis,yes,2023-10-02,2023,"Waste Characterisation and Quantification in Chembe, Malawi"
+2023-msc-thesis-464465,msc,thesis,yes,2023-02-01,2023,Absorbent Hygiene Products (AHP) Waste Characterization and Collections Rationalization in South Africa
+2023-msc-thesis-235415,msc,thesis,yes,2023-04-22,2023,Optimization of Calcium Hydroxide and Calcium Phosphate flows in the Autarky Nutrient Harvester
+2023-msc-thesis-542534,msc,thesis,yes,2023-10-10,2023,Impact of a Social Transfer Intervention on Barriers to Exclusive Breastfeeding in Lao PDR
+2023-msc-thesis-521516,msc,thesis,yes,2023-09-18,2023,"Construction of a Glass Crusher and Evaluation of Waste Valorization Pathways for Cape Maclear, Malawi"
+2023-msc-thesis-432515,msc,thesis,yes,2023-09-18,2023,"Development of a Low-Cost Incinerator in Cape Maclear, Malawi"
+2023-msc-thesis-541166,msc,thesis,yes,2023-09-25,2023,Improving Ergonomics and Communication for the Sewer Workers of Zürich
+2023-msc-thesis-662223,msc,thesis,yes,2023-10-02,2023,"Waste Logistics and Transport Modelling in Cape Maclear, Malawi"
+2023-msc-thesis-622154,msc,thesis,yes,2023-03-01,2023,"Design of an HDPE bottle collection and pre-cleaning system for recycling in Blantyre, Malawi"
+2023-staff-intern-523344,staff,intern,no,2023-01-01,2023,A sustainable alternative to traditional building materials: assessing stabilised soil blocks for performance and cost in Malawi
+2023-staff-intern-224166,staff,intern,no,2023-05-15,2023,NA
+2023-staff-intern-135565,staff,intern,no,2023-10-17,2023,NA
+2024-bsc-thesis-351216,bsc,thesis,yes,2024-03-04,2024,"Innovative Mask Design for Air Pollution Impact Mitigation in Blantyre, Malawi: A Particle Size Distribution Approach"
+2024-bsc-thesis-335314,bsc,thesis,yes,2024-03-04,2024,Development of a Monitoring Device for Improved Cookstoves
+2024-bsc-thesis-443663,bsc,thesis,yes,2024-03-04,2024,Developing a Methane Sensor for Biogas reactors in Malawi
+2024-bsc-thesis-213322,bsc,thesis,yes,2024-02-26,2024,"Optimization of waste skip placement in Blantyre, Malawi"
+2024-bsc-thesis-314546,bsc,thesis,yes,2024-02-12,2024,"Off-Grid Trash Screen Design for a Fecal Sludge Treatment Plant in Blantyre, Malawi"
+2024-msc-sem-proj-524322,msc,sem-proj,yes,2024-09-23,2024,Examination of the potential for recycling of absorbent hygiene product waste in South Africa
+2024-msc-sem-proj-136454,msc,sem-proj,yes,2024-02-19,2024,Adapting open-source turbidity sensor for enhanced dewatering of blackwater
+2024-msc-sem-proj-124523,msc,sem-proj,yes,2024-03-01,2024,Guidelines for Low-Cost Incineration Systems
+2024-msc-sem-proj-514114,msc,sem-proj,yes,2024-04-09,2024,Design optimisation of a mixing reactor for close to source urine stabilisation
+2024-msc-sem-proj-444646,msc,sem-proj,yes,2024-07-29,2024,"Casing design, manufacturing and testing for in-situ biogas monitoring"
+2024-msc-sem-proj-413111,msc,sem-proj,yes,2024-03-04,2024,Testing the accuracy of the smart biogas measurement device
+2024-msc-sem-proj-412211,msc,sem-proj,yes,2024-03-04,2024,Volumetric flow meter development for household scale biogas reactors
+2024-msc-sem-proj-452233,msc,sem-proj,yes,2024-03-04,2024,Logging and transmitting remote data from cookstove and biogas sensors in Malawi
+2024-msc-thesis-354365,msc,thesis,yes,2024-04-01,2024,Modelling and Optimization of an Evaportator-dehumidifier unit
+2024-staff-hiwi-434426,staff,hiwi,no,2024-07-01,2024,NA
+2024-staff-intern-334424,staff,intern,no,2024-03-01,2024,NA
+2024-staff-intern-462424,staff,intern,no,2024-01-15,2024,NA
+2024-staff-hiwi-323454,staff,hiwi,no,2024-07-15,2024,NA
+2024-staff-scientific-assistant-135461,staff,scientific-assistant,no,2024-07-22,2024,NA
 NA,msc,thesis,yes,2024-02-26,2024,Machine vision for river waste identification in South Africa
-2024-bsc-thesis-221261,bsc,thesis,yes,2024-03-18,2024,Design of a Bio-gas powered effluent pasteurizer
-2024-msc-sem-proj-461264,msc,sem-proj,yes,2024-04-09,2024,Design optimisation of a mixing reactor for close to source urine stabilisation
-2024-phd-thesis-665422,phd,thesis,no,2024-07-01,2024,Potential for faecal sludge treatment with mycellium
-2024-msc-thesis-145556,msc,thesis,yes,2024-07-01,2024,Modelling and Optimization of an Evaportator-dehumidifier unit
-2024-staff-hiwi-551256,staff,hiwi,no,2024-07-01,2024,NA
-2024-msc-thesis-515363,msc,thesis,yes,2024-09-14,2024,Biogas sensor development: from prototyping to production
-2024-staff-scientific-assistant-534661,staff,scientific-assistant,no,2024-07-22,2024,NA
-2024-staff-hiwi-125616,staff,hiwi,no,2024-07-15,2024,NA
-2024-msc-thesis-251646,msc,thesis,yes,2024-09-16,2024,"Air quality monitoring from open waste burning and incinerator burning in Cape Maclear, Malawi"
-2024-msc-sem-proj-624636,msc,sem-proj,yes,2024-07-29,2024,"Casing design, manufacturing and testing for in-situ biogas monitoring"
-2024-bsc-thesis-616113,bsc,thesis,yes,2024-10-01,2024,Design a urine diverter for a container based toilet
-2024-bsc-thesis-125114,bsc,thesis,yes,2024-10-01,2024,Monitoring of improved cookstoves: from prototyping to small batch manufacturing
-2024-msc-thesis-524454,msc,thesis,yes,2024-09-16,2024,Improving the solar sludge pasteurization technology
-2024-msc-thesis-315513,msc,thesis,yes,2024-08-19,2024,Testing and improving an existing medium-size incineration technology
-2024-msc-thesis-362516,msc,thesis,yes,2024-10-01,2024,"Collaborative toilet design, manufacturing, and testing"
-2024-msc-thesis-436246,msc,thesis,yes,2024-10-01,2024,Estimating uncertainty in past biogas offsett projects and methodologies
-2024-msc-sem-proj-321251,msc,sem-proj,yes,2024-09-23,2024,Life Cycle Analysis of biogas digesters
-2024-bsc-thesis-124255,bsc,thesis,yes,2024-09-16,2024,"HDPE and PET property testing with physical, chemical, and biological contamination"
-2024-msc-thesis-225662,msc,thesis,yes,2024-09-22,2024,Model and visualization of recyclable material collection network
-2024-msc-sem-proj-434332,msc,sem-proj,yes,2024-09-23,2024,Absorbent Hygiene Products processing and recycling: literature review
-2024-msc-thesis-311256,msc,thesis,yes,2024-09-23,2024,Drip irrigation feasibility study for Cape Maclear
-2024-msc-sem-proj-131441,msc,sem-proj,yes,2024-09-30,2024,Literature Review on Feasibility of Manufacturing Low-cost Black Carbon Monitors
-2024-msc-sem-proj-525332,msc,sem-proj,yes,2024-10-04,2024,Analysis of PLA-based Membranes Undergoing Mechanical Processing
-2024-msc-thesis-246322,msc,thesis,yes,2024-10-21,2024,Testing and Development of Adaptable Water Filters
-2024-msc-sem-proj-354425,msc,sem-proj,yes,2024-10-22,2024,Impact of hydrogen sulfide on biogas burning and removal evaluation
+2023-staff-scientific-assistant-424241,staff,scientific-assistant,no,2023-05-01,2023,NA
+2024-bsc-thesis-554161,bsc,thesis,yes,2024-03-18,2024,Design of a Bio-gas powered effluent pasteurizer
+2024-bsc-thesis-256233,bsc,thesis,yes,2024-09-16,2024,Exploring Injection Molding for the Development of a Sensor Casings in Biogas Monitoring System
+2024-bsc-thesis-536563,bsc,thesis,yes,2024-02-27,2024,Hand Compactor Design for Informal Cardboard Recycling
+2024-bsc-thesis-463316,bsc,thesis,yes,2024-10-01,2024,Effluent flow meter
+2024-msc-thesis-314516,msc,thesis,yes,2024-03-15,2024,Advancing Sustainable Water Filtration: Enhancing Efficiency and Exploring New Adaptations
+2024-msc-thesis-352213,msc,thesis,yes,2024-03-11,2024,"Establishing the HDPE recycling process in Blantyre, Malawi"
+2024-msc-thesis-115154,msc,thesis,yes,2024-04-01,2024,Exploratory analysis of the booking system in Kampala
+2024-msc-thesis-151215,msc,thesis,yes,2024-03-11,2024,Sludge pasteurization with solar water heaters
+2024-staff-hiwi-412154,staff,hiwi,no,2024-11-01,2024,Biogas in malawi- DSS
+2022-phd-thesis-313531,phd,thesis,no,2022-02-21,2022,Evaluating a case of closed-loop plastic recycling in Malawi
+2022-phd-thesis-356556,phd,thesis,no,2022-01-25,2022,Extent and markers of open waste burning
+2023-staff-post-doc-225634,staff,post-doc,no,2023-10-01,2023,NA
+2024-bsc-thesis-433535,bsc,thesis,yes,2024-10-01,2024,Monitoring of improved cookstoves: from prototyping to small batch manufacturing
+2024-bsc-thesis-166143,bsc,thesis,yes,2024-12-10,2024,Design of a Sanitation System for Female Vendors in Warwick Junction in SA
+2024-msc-sem-proj-241454,msc,sem-proj,yes,2024-09-30,2024,Literature Review on Feasibility of Manufacturing Low-cost Black Carbon Monitors
+2024-msc-sem-proj-255556,msc,sem-proj,yes,2024-09-23,2024,Life Cycle Analysis of biogas digesters
+2024-msc-sem-proj-144432,msc,sem-proj,yes,2024-10-04,2024,Analysis of PLA-based Membranes Undergoing Mechanical Processing
+2024-msc-sem-proj-226321,msc,sem-proj,yes,2024-10-22,2024,Impact of Hydrogen Sulfide on Biogas Burning and Removal Evaluation
+2024-msc-thesis-552446,msc,thesis,yes,2024-09-23,2024,Drip irrigation feasibility study for Cape Maclear
+2024-msc-thesis-134554,msc,thesis,yes,2024-10-01,2024,"Collaborative toilet design, manufacturing, and testing"
+2024-msc-thesis-113436,msc,thesis,yes,2024-09-16,2024,Improving the solar sludge pasteurization technology
+2024-msc-thesis-313553,msc,thesis,yes,2024-09-14,2024,Biogas sensor development: from prototyping to production
+2024-msc-thesis-136663,msc,thesis,yes,2024-08-19,2024,Testing and Improving Plastic Wool Extrusion System
+2024-msc-thesis-256665,msc,thesis,yes,2024-10-01,2024,Estimating uncertainty in past biogas offsett projects and methodologies
+2024-msc-thesis-624125,msc,thesis,yes,2024-10-21,2024,Feasibility Study of Modular Water Filters
+2024-msc-thesis-146441,msc,thesis,yes,2024-09-16,2024,"Air quality monitoring from open waste burning and incinerator burning in Cape Maclear, Malawi"
+2024-msc-thesis-664561,msc,thesis,yes,2024-09-22,2024,Model and visualization of recyclable material collection network
+2024-phd-thesis-613365,phd,thesis,no,2024-07-01,2024,Potential for faecal sludge treatment with mycellium
+2025-bsc-thesis-443623,bsc,thesis,yes,2025-02-24,2025,Flow rate monitor for pediatric intravenous fluid delivery in humanitarian settings
+2025-bsc-thesis-631362,bsc,thesis,yes,2025-02-26,2025,Black Soldier Fly degutting
+2025-bsc-thesis-444254,bsc,thesis,yes,2025-02-17,2025,Repeatible Fecal Sludge Spreading on Petri Dishes
+2025-bsc-thesis-226543,bsc,thesis,yes,2025-02-17,2025,Advancements for Menstrual blood Management in reduced gravITY (AMMITY)
+2025-msc-sem-proj-323446,msc,sem-proj,yes,2025-02-24,2025,Smart biogas sensor testing
+2025-msc-sem-proj-352655,msc,sem-proj,yes,2025-02-17,2025,Review of Low-cost Plastic Separation Technologies
+2025-msc-sem-proj-366622,msc,sem-proj,yes,2025-02-17,2025,CFD for biogas burner
+2025-msc-thesis-345646,msc,thesis,yes,2025-02-17,2025,"So Long, Sharp Glass"
+2025-msc-thesis-655656,msc,thesis,yes,2025-02-17,2025,Development and Testing of New Control Schemes for an Electrical Load Cabinet for Small Health Posts
+2025-msc-thesis-144634,msc,thesis,yes,2025-01-15,2025,Development and Testing of a Bidirectional Charger for Heath Facility Energy Provision
+2025-msc-thesis-552326,msc,thesis,yes,2025-03-24,2025,Sludge pasteurization with solar water heaters - system optimization
+2025-msc-thesis-422224,msc,thesis,yes,2025-02-17,2025,Remote communications infrastructure for an off-grid energy system
+2025-msc-thesis-323241,msc,thesis,yes,2025-02-17,2025,Business Plan Development for Waste Management System in Cape Maclear
+2025-msc-thesis-322515,msc,thesis,yes,2025-02-10,2025,Development of a preference elicitation framework for health providers’ energy preferences and finding optimal critical load sets
+2025-msc-thesis-125553,msc,thesis,yes,2025-02-10,2025,Development of a Low-Cost Multiple-Wavelength Black Carbon Monitor
+2025-msc-thesis-522464,msc,thesis,yes,2025-03-03,2025,Dataset Creation on the Energy Characteristics of Healthcare Appointments
+2025-msc-case-study-361263,msc,case-study,yes,2025-01-10,2025,The role of language and its implications on extending colonialism and hindering cross-cultural cooperation.
+2025-mob-student-622264,mob,student,no,2025-02-24,2025,Guidline to Injection Molding
+2025-msc-thesis-556456,msc,thesis,yes,2025-03-03,2025,Black soldier fly larvae counting: hardware & software development
+2025-msc-thesis-564235,msc,thesis,yes,2025-04-01,2025,Plastic for recycling cleaning
+2025-msc-thesis-463453,msc,thesis,yes,2025-06-01,2025,Power quality and reliability database of Malawi’s healthcare facilities
+2025-msc-thesis-132155,msc,thesis,yes,2025-06-01,2025,Medical device database for Malawi’s healthcare facilities
+2025-bsc-thesis-314445,bsc,thesis,yes,2025-03-03,2025,RFID solution for e-bike charging in Nairobi
+2025-staff-intern-365363,staff,intern,no,2025-03-10,2025,Automated mycelium growth detection
+2025-staff-intern-445314,staff,intern,no,2025-03-01,2025,NA
+2025-msc-sem-proj-421264,msc,sem-proj,yes,2025-04-07,2025,Life Cycle Assessment of the biogas monitoring technologies
+2025-staff-scientific-assistant-335532,staff,scientific-assistant,no,2025-04-01,2025,NA
+2025-msc-thesis-661611,msc,thesis,yes,2025-03-27,2025,"Design, Numerical Optimization and Implementation of a Sludge Pasteurization System"
+2025-msc-case-study-533334,msc,case-study,yes,2025-03-27,2025,Indigenous food production in Puerto Rico
+2025-phd-thesis-261544,phd,thesis,no,2025-04-01,2025,Treatment of Biogas effluent
+2025-msc-thesis-151453,msc,thesis,yes,2025-05-07,2025,Plastic sorting in Blantyre

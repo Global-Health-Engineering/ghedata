@@ -42,14 +42,16 @@ data_in <- read_sheet("https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L
   mutate(across(where(is.character),
                 ~na_if(., "NA")))
 
+data_in
+
 # Tidy data --------------------------------------------------------------------
 ## Clean the raw data into a tidy format here
 
 set.seed(seed = 0721)
 
 people <- data_in |>
-  select(project_id, degree, type, b_m_student, start_date, year, thesis_title) |>
-  mutate(project_id = map_chr(project_id, replace_last_dash))
+  select(title, degree, type, b_m_student, start_date, year, thesis_title) |>
+  mutate(title = map_chr(title, replace_last_dash))
 
 # Export Data ------------------------------------------------------------------
 usethis::use_data(people, overwrite = TRUE)
