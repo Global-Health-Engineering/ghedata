@@ -3,7 +3,7 @@ pkgdown: 2.0.9
 pkgdown_sha: ~
 articles:
   examples: examples.html
-last_built: 2024-11-16T14:13Z
+last_built: 2025-05-13T09:03Z
 urls:
   reference: https://global-health-engineering.github.io/ghedata/reference
   article: https://global-health-engineering.github.io/ghedata/articles

@@ -119,7 +119,7 @@ library(ghedata)
 
 undergrad_students <- people |> 
   filter(b_m_student == "yes") |>
-  filter(!is.na(project_id)) 
+  filter(!is.na(title)) 
 ```
 
 So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
