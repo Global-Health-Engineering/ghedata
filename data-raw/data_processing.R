@@ -60,3 +60,4 @@ readr::write_csv(people,
                  here::here("inst", "extdata", paste0("people", ".csv")))
 openxlsx::write.xlsx(people,
                      here::here("inst", "extdata", paste0("people", ".xlsx")))
+
