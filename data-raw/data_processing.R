@@ -14,6 +14,7 @@ library(dplyr)
 library(lubridate)
 library(stringr)
 library(purrr)
+library(tidyr)
 
 # functions ---------------------------------------------------------------
 
@@ -33,6 +34,9 @@ replace_last_dash <- function(string) {
 # Read data --------------------------------------------------------------------
 
 ## People - metadata table for all staff and students at GHE
+
+# Configure authentication to use the correct email
+gs4_auth(email = "lschoebitz@ethz.ch")
 
 # data_in <- readr::read_csv("data-raw/dataset.csv")
 # codebook <- readxl::read_excel("data-raw/codebook.xlsx") |>
@@ -54,8 +58,14 @@ sheet_pre_course <- "https://docs.google.com/spreadsheets/d/19AbV2P0yybzMbrFiq8_
 
 pre_course_survey <- googlesheets4::read_sheet(ss = sheet_pre_course)
 
-pre_course_survey_clean <- pre_course_survey |>
+# Process survey data and handle multi-answer columns
+computational <- pre_course_survey |>
+  mutate(id = seq(1:n())) |>
+  relocate(id) |>
+  filter(!id %in% c(3, 8, 17)) |>
   select(
+    id,
+    # gh_username = `Please provide your GitHub username. Please get an account if you do not have one: https://github.com/`,
     experience_programming_general = `Which of these best describes your experience with programming in general?`,
     experience_programming_r = `Which of these best describes your experience with programming in R?`,
     experience_programming_python = `Which of these best describes your experience with programming in Python?`,
@@ -72,6 +82,7 @@ pre_course_survey_clean <- pre_course_survey |>
     llm_tools_used = `Which of the following Large Language Model (LLM) tools or platforms have you used for research, ideation, writing, coding, or related tasks? (Select all that apply)`,
   )
 
+
 # Tidy data --------------------------------------------------------------------
 ## Clean the raw data into a tidy format here
 
@@ -82,10 +93,25 @@ people <- data_in |>
   mutate(title = map_chr(title, replace_last_dash))
 
 # Export Data ------------------------------------------------------------------
+# Export people data
 usethis::use_data(people, overwrite = TRUE)
+
 fs::dir_create(here::here("inst", "extdata"))
 readr::write_csv(people,
                  here::here("inst", "extdata", paste0("people", ".csv")))
 openxlsx::write.xlsx(people,
                      here::here("inst", "extdata", paste0("people", ".xlsx")))
+
+# Export computational competencies data
+usethis::use_data(computational, overwrite = TRUE)
+
+# Export as CSV
+readr::write_csv(computational,
+                 here::here("inst", "extdata", "computational.csv"))
+
+# Export as XLSX
+openxlsx::write.xlsx(computational,
+                     here::here("inst", "extdata", "computational.xlsx"))
+
+
 

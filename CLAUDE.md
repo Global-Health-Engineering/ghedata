@@ -99,3 +99,11 @@ View(people)
 - Auto-append newlines to files
 - Strip trailing whitespace
 - Follow tidyverse style guide for R code
+
+## R Code Rules
+
+- Do not display results by using print() or message() functions
+
+## Markdown Rules
+
+- When writing markdown text, always add an empty row between a heading and the first paragraph or the first bullet of a list
