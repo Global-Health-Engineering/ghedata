@@ -2,9 +2,9 @@
 #'
 #' This dataset contains the following columns:
 #'
-#' @format A tibble with 134 rows and 7 variables
+#' @format A tibble with 129 rows and 7 variables
 #' \describe{
-#'   \item{project_id}{ Unique identifier for each person using a combination of other metadata. Folder name on Google Drive.}
+#'   \item{title}{ Unique identifier for each person using a combination of other metadata. Folder name on Google Drive.}
 #'   \item{degree}{ Categorical variable with four levels: bsc, msc, phd, staff.}
 #'   \item{type}{ Categorical variable with six levels: hiwi, intern, post-doc, scientific-assitant, sem-proj, thesis.}
 #'   \item{b_m_student}{ Binary variable to identify if person is BSc or MSc students. Levels: yes, no.}

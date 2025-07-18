@@ -1,6 +1,9 @@
-#' computational: Title goes here
+#' computational: Computational competencies survey responses from Global Health Engineering team members
 #' 
-#' Description of the data goes here...
+#' This dataset contains survey responses about computational competencies collected
+#' from team members in preparation for the openwashdata conference in June 2025.
+#' The survey assessed experience with programming languages, development tools,
+#' and computational workflows.
 #' 
 #' @format A tibble with 16 rows and 15 variables
 #' \describe{
