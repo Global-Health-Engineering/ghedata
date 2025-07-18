@@ -38,23 +38,6 @@ replace_last_dash <- function(string) {
 # codebook <- readxl::read_excel("data-raw/codebook.xlsx") |>
 #  clean_names()
 
-# Authenticate with Google Sheets
-# Use email that has access to the sheets
-# Check if running interactively
-if (interactive()) {
-  # Interactive authentication
-  gs4_auth(email = "lschoebitz@ethz.ch", cache = ".secrets")
-} else {
-  # Non-interactive: try to use cached credentials
-  tryCatch({
-    gs4_auth(email = "lschoebitz@ethz.ch", cache = ".secrets", use_oob = TRUE)
-  }, error = function(e) {
-    message("Google Sheets authentication failed. Please run this script interactively to authenticate.")
-    message("Run in R console: source('data-raw/data_processing.R')")
-    stop("Authentication required")
-  })
-}
-
 data_in <- read_sheet("https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L2YTUd5obTbBnR1qCrIJIwhUvFE/edit?gid=0#gid=0") |>
   janitor::clean_names() |>
   mutate(start_date = lubridate::ymd(start_date),
@@ -70,10 +53,6 @@ data_in <- read_sheet("https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L
 sheet_pre_course <- "https://docs.google.com/spreadsheets/d/19AbV2P0yybzMbrFiq8_3nPiE-Hj_OUZJLHiWqkCydEk/edit?gid=398618297#gid=398618297"
 
 pre_course_survey <- googlesheets4::read_sheet(ss = sheet_pre_course)
-
-# Check column names to debug the issue
-message("Column names in survey:")
-names(pre_course_survey) |> print()
 
 pre_course_survey_clean <- pre_course_survey |>
   select(
