@@ -1,0 +1,6 @@
+{
+    "positron.assistant.enable": true,
+    "positron.assistant.enabledProviders": [
+        "anthropic"
+    ]
+}

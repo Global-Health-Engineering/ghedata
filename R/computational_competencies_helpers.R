@@ -9,6 +9,11 @@
 #' @param new_col_name Optional new name for the separated column (as string)
 #'
 #' @return A data frame with separated values, one per row
+#' @export
+#' @importFrom dplyr select all_of filter mutate across rename
+#' @importFrom tidyr separate_rows
+#' @importFrom stringr str_trim
+#' @importFrom rlang .data :=
 #'
 #' @examples
 #' # Process IDEs used
