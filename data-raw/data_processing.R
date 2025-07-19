@@ -42,12 +42,12 @@ gs4_auth(email = "lschoebitz@ethz.ch")
 # codebook <- readxl::read_excel("data-raw/codebook.xlsx") |>
 #  clean_names()
 
-data_in <- read_sheet("https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L2YTUd5obTbBnR1qCrIJIwhUvFE/edit?gid=0#gid=0") |>
+data_in <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L2YTUd5obTbBnR1qCrIJIwhUvFE/edit?gid=0#gid=0"
+) |>
   janitor::clean_names() |>
-  mutate(start_date = lubridate::ymd(start_date),
-         year = year(start_date)) |>
-  mutate(across(where(is.character),
-                ~na_if(., "NA")))
+  mutate(start_date = lubridate::ymd(start_date), year = year(start_date)) |>
+  mutate(across(where(is.character), ~ na_if(., "NA")))
 
 ## Computational Competencies - group survey from June 2025
 ## This survey was shared with all team members in preparation of the
@@ -97,21 +97,26 @@ people <- data_in |>
 usethis::use_data(people, overwrite = TRUE)
 
 fs::dir_create(here::here("inst", "extdata"))
-readr::write_csv(people,
-                 here::here("inst", "extdata", paste0("people", ".csv")))
-openxlsx::write.xlsx(people,
-                     here::here("inst", "extdata", paste0("people", ".xlsx")))
+readr::write_csv(
+  people,
+  here::here("inst", "extdata", paste0("people", ".csv"))
+)
+openxlsx::write.xlsx(
+  people,
+  here::here("inst", "extdata", paste0("people", ".xlsx"))
+)
 
 # Export computational competencies data
 usethis::use_data(computational, overwrite = TRUE)
 
 # Export as CSV
-readr::write_csv(computational,
-                 here::here("inst", "extdata", "computational.csv"))
+readr::write_csv(
+  computational,
+  here::here("inst", "extdata", "computational.csv")
+)
 
 # Export as XLSX
-openxlsx::write.xlsx(computational,
-                     here::here("inst", "extdata", "computational.xlsx"))
-
-
-
+openxlsx::write.xlsx(
+  computational,
+  here::here("inst", "extdata", "computational.xlsx")
+)
