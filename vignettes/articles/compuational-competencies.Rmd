@@ -11,34 +11,19 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(ghedata)
+library(dplyr)
+library(stringr)
+library(here)
+
+# Source helper functions
+source(here::here("R", "computational_competencies_helpers.R"))
 ```
 
 ```{r}
-
-# Process multi-answer columns into long format
-# First, handle ides_used column
-computational_competencies_ides <- computational |>
-  select(id, ides_used) |>
-  filter(!is.na(ides_used)) |>
-  tidyr::separate_rows(ides_used, sep = ", ") |>
-  mutate(ides_used = str_trim(ides_used)) |>
-  rename(ide = ides_used)
-
-# Then, handle llm_tools_used column
-computational_competencies_llm_tools <- computational |>
-  select(id, llm_tools_used) |>
-  filter(!is.na(llm_tools_used)) |>
-  tidyr::separate_rows(llm_tools_used, sep = ", ") |>
-  mutate(llm_tools_used = str_trim(llm_tools_used)) |>
-  rename(llm_tool = llm_tools_used)
-
-# Handle other_languages column
-computational_competencies_languages <- computational |>
-  select(id, other_languages) |>
-  filter(!is.na(other_languages)) |>
-  tidyr::separate_rows(other_languages, sep = ", ") |>
-  mutate(other_languages = str_trim(other_languages)) |>
-  rename(language = other_languages)
+# Process multi-answer columns into long format using the helper function
+computational_competencies_ides <- separate_delimited_column(computational, "id", "ides_used", "ide")
+computational_competencies_llm_tools <- separate_delimited_column(computational, "id", "llm_tools_used", "llm_tool")
+computational_competencies_languages <- separate_delimited_column(computational, "id", "other_languages", "language")
 
 ```
 
