@@ -1,0 +1,64 @@
+---
+title: "pitch"
+format: html
+---
+
+# Unlocking Hidden Treasures: A Practical Guide to Research Group Metadata
+
+## Why Should We Care About Metadata?
+
+The way we measure research impact is changing. It's time to look beyond traditional citations and start telling a bigger story. By making **unseen data visible**, we can gain a deeper understanding of our research's visibility and ideally impact as well.
+
+* **Impact beyond citations:** Citations are important, but they don't capture the full picture of our research's visibility.
+* **Actionable insights:** Currently, key performance indicators (KPIs) are rare in academia. By collecting and analyzing metadata, we gain an actionable view of a research group's activities. As the saying goes, you can only change what you know.
+* **Connecting with the world:** Understanding who downloads your work or interacts with our content allows us to better connect with the public and other academics.
+
+My idea is to divide this guide into two parts. The first part focuses on best practices for collecting metadata, offering a manual to help researchers avoid common pitfalls. The second part will showcase a few use cases for this data.
+
+---
+
+## Part I: A Guide to Collecting Metadata
+
+### **1. Use an API Whenever Possible**
+
+APIs are your best friend. They provide clean, structured data in a standardized format, which makes everything from collection to analysis much easier.
+
+### **2. Look Beyond the Obvious Sources**
+
+You'd be surprised at how much data is available. While platforms like GitHub, LinkedIn, or your university's repository are great starting points, don't stop there. Consider data from project management tools (like Trello or Asana), your institutional intranet, or even email server logs.
+
+### **3. Leverage Data You're Already Creating**
+
+You might be collecting valuable data without even realizing it. For example, a simple table of student supervisions is a goldmine of information on academic mentoring. Look for data that's being generated naturally as part of your team's daily workflow.
+
+### **4. Centralize and Automate**
+
+To make your metadata project sustainable, you need to centralize your data and automate the collection process as much as you can. Storing all your data in one place ensures it's accessible to everyone and easy to manage in the long run.
+
+### **5. Document Everything**
+
+Create a data dictionary that defines each piece of data, explains its origin, and describes the collection method. This is crucial for ensuring that everyone on the team understands the data.
+
+### **6. Consider Privacy and Ethics**
+
+Always be mindful of data privacy regulations and ethical considerations. When collecting information about people, ensure you have the necessary permissions and that the data is stored securely.
+
+### **7. Share Your Insights**
+
+The academic community is stronger when we collaborate. By sharing your data and insights, you can learn from others and discover new ways to measure research impact.
+
+---
+
+## Part II: How to Use Your Metadata
+
+### **1. Internal Monitoring**
+
+Use metadata as an internal monitoring tool to track your group's activities. For example, you can track the licenses on your group's GitHub repositories to ensure all projects are compliant with your open source strategy.
+
+### **2. Outreach and Engagement Strategy**
+
+Analyze data from LinkedIn and your group's website to understand what content resonates with your audience. This can help you refine your outreach strategy and connect with a wider community.
+
+### **3. Research Visibility**
+
+Track the downloads, citations, and views of your papers in your university's research repository. This gives you a clear picture of your research's visibility and reach.
