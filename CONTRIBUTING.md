@@ -1,0 +1,155 @@
+# Contributing to ghedata
+
+Thank you for your interest in contributing to ghedata! This document provides guidelines for contributing new datasets and improvements to the package.
+
+## Branch Workflow
+
+We use a feature branch workflow with the following structure:
+
+- **`main`**: Production-ready release branch
+- **`dev`**: Stable development branch (default branch for PRs)
+- **`feature/*`**: Individual feature branches for new datasets
+
+### Workflow Overview
+
+1. All new datasets are developed in separate feature branches
+2. Each feature branch represents one unique dataset being cleaned and documented
+3. Pull requests are opened from feature branches to `dev`
+4. Once approved, changes are merged into `dev`
+5. The `dev` branch is periodically merged into `main` for releases
+
+## Team Roles
+
+### Maintainer
+
+- **larnsce**: Reviews and approves pull requests, merges `dev` to `main`
+
+### Contributors
+
+- **seawaR**: Opens pull requests, provides review comments
+- **bonschorno**: Opens pull requests, provides review comments
+
+## Adding a New Dataset
+
+### 1. Create a Feature Branch
+
+```bash
+git checkout dev
+git pull origin dev
+git checkout -b feature/dataset-name
+```
+
+### 2. Add Data Processing Script
+
+Create a new R script in `data-raw/` for your dataset:
+
+```
+data-raw/
+  ├── data_processing.R          # Main file that sources all processing scripts  ├── data_processing_people.R   # Example: People dataset
+  └── data_processing_[dataset].R # Your new dataset processing script
+```
+
+Each processing script should:
+
+- Pull raw data from the source (e.g., Google Sheets)
+- Clean and transform the data
+- Anonymize sensitive information if needed
+- Save processed data to `data/` as .rda files
+- Export to `inst/extdata/` as CSV and XLSX
+
+### 3. Update Main Processing File
+
+Add a `source()` call in `data-raw/data_processing.R`:
+
+```r
+source("data-raw/data_processing_[dataset].R")
+```
+
+### 4. Document the Dataset
+
+Document the dataset in `dictionary.csv` and `R/` using our established workflows.
+
+### 5. Update Documentation
+
+Run the following commands in R:
+
+```r
+# Generate documentation
+devtools::document()
+
+# Check the package
+devtools::check()
+```
+
+### 6. Create article for analysis
+
+In `vignettes/articles/`, create a new R Markdown file for your dataset. Name the aricle the same as the dataset resource. Use this article to prepare the overall exploratory analysis. 
+
+## Pull Request Process
+
+### Opening a PR
+
+1. Push your feature branch to GitHub
+2. Open a pull request from your feature branch to `dev`
+3. Fill out the PR template with:
+   - Description of the new dataset
+   - Data source and processing steps
+   - Any data quality or privacy considerations
+   - Article started
+
+### PR Review Checklist
+
+Before requesting review, ensure:
+
+- [ ] Data processing script is in `data-raw/`
+- [ ] Dataset documentation is in `R/`
+- [ ] Data exports to both `data/` (.rda) and `inst/extdata/` (.csv, .xlsx)
+- [ ] `devtools::document()` has been run
+- [ ] `devtools::check()` passes without errors
+- [ ] Sensitive information has been anonymized
+
+### Review Process
+
+1. Contributors (larnsce, seawaR, bonschorno) provide feedback and suggestions
+2. Author addresses review comments and updates the PR
+3. Maintainer (larnsce) performs final review
+4. Once approved, maintainer merges the PR into `dev`
+
+## Code Style
+
+Follow these conventions:
+
+- Use 2 spaces for indentation (no tabs)
+- Follow the [tidyverse style guide](https://style.tidyverse.org/)
+- Add meaningful comments to complex data transformations
+- Use descriptive variable names
+
+## Data Privacy
+
+When processing datasets:
+
+- Always anonymize personal information (names, emails, etc.)
+- Use hash IDs for unique identifiers
+- Document any data transformations applied
+- Ensure compliance with data sharing agreements
+
+## Getting Help
+
+If you have questions:
+
+- Review existing datasets in `data-raw/` for examples
+- Open an issue for discussion before starting major changes
+- Reach out to the maintainer for guidance
+
+## Release Process
+
+Releases are managed by the maintainer (larnsce):
+
+1. Review all changes in `dev` branch
+2. Update version number in DESCRIPTION
+3. Update NEWS.md with changelog
+4. Merge `dev` into `main`
+5. Create a GitHub release with tag
+6. Rebuild and deploy pkgdown site
+
+Thank you for contributing to ghedata!
