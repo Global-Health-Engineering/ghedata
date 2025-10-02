@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^ghedata\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
