@@ -1,5 +1,5 @@
 ---
-title: "compuational-competencies"
+title: "Computational competencies"
 ---
 
 ```{r, include = FALSE}
