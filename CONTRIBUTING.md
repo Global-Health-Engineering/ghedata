@@ -29,16 +29,6 @@ We use a feature branch workflow with the following structure:
 - **seawaR**: Opens pull requests, provides review comments
 - **bonschorno**: Opens pull requests, provides review comments
 
-## Setup
-
-This project uses `renv` for R package management. After cloning the repository:
-
-```r
-renv::restore()
-```
-
-This will install all required packages as specified in the lockfile.
-
 ## Adding a New Dataset
 
 ### 1. Create a Feature Branch
@@ -94,16 +84,6 @@ devtools::check()
 ### 6. Create article for analysis
 
 In `vignettes/articles/`, create a new R Markdown file for your dataset. Name the aricle the same as the dataset resource. Use this article to prepare the overall exploratory analysis.
-
-### 7. Update renv lockfile
-
-If you added new R packages during development:
-
-```r
-renv::snapshot()
-```
-
-This updates the lockfile and ensures all contributors have the same package versions. Commit the updated `renv.lock` file with your changes. 
 
 ## Pull Request Process
 
