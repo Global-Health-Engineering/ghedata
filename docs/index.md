@@ -1,0 +1,149 @@
+# ghedata
+
+The goal of ghedata is to share data resources that document the work of
+the Global Health Engineering group at ETH Zurich. The data can be used
+for research, teaching, and learning purposes. The data is available as
+an R data package, in CSV and XLSX formats.
+
+## Installation
+
+You can install the development version of ghedata from
+[GitHub](https://github.com/) with:
+
+``` r
+
+# install.packages("devtools")
+devtools::install_github("global-health-engineering/ghedata")
+```
+
+``` r
+
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+library(ggthemes)
+library(ggplot2)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in your
+    browser.
+2.  Right-click anywhere inside the window and select “Save Page As…”.
+3.  Save the file in a folder of your choice.
+
+| dataset | CSV | XLSX |
+|:---|:---|:---|
+| people | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/people.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/people.xlsx) |
+| computational | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.xlsx) |
+
+## Data
+
+The package provides access to one data resource.
+
+``` r
+
+library(ghedata)
+```
+
+### people
+
+The dataset `people` contains data about people that have worked for the
+group. This includes staff, as well as undergraduate student projects.
+
+It has 186 observations and 7 variables.
+
+``` r
+
+people |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+| title | degree | type | b_m_student | start_date | year | thesis_title |
+|:---|:---|:---|:---|---:|---:|:---|
+| 2021-bsc-thesis-141444 | bsc | thesis | yes | 2021-02-01 | 2021 | Self-cleaning Preliminary Screening Mechanisms to Improve Health and Wastewater Treatment Efficiency in Low-income Countries |
+| 2021-msc-thesis-565554 | msc | thesis | yes | 2021-09-19 | 2021 | Barriers to successful data management in the Global South: Case Study of Malawi |
+| 2022-phd-thesis-466263 | phd | thesis | no | 2022-01-25 | 2022 | Extent and markers of open waste burning |
+
+For an overview of the variable names, see the following table.
+
+| variable_name | variable_type | description |
+|:---|:---|:---|
+| project_id | character | Unique identifier for each person using a combination of other metadata. Folder name on Google Drive. |
+| degree | character | Categorical variable with four levels: bsc, msc, phd, staff. |
+| type | character | Categorical variable with six levels: hiwi, intern, post-doc, scientific-assitant, sem-proj, thesis. |
+| b_m_student | character | Binary variable to identify if person is BSc or MSc students. Levels: yes, no. |
+| start_date | Date | Start date of the person. |
+| year | numeric | Year of the start date. |
+| thesis_title | character | Title of the thesis. |
+
+## Example
+
+``` r
+
+library(ghedata)
+
+undergrad_students <- people |> 
+  filter(b_m_student == "yes") |>
+  filter(!is.na(thesis_title)) 
+```
+
+So far, GHE has supervised 154 projects of which 42 were done by BSc and
+112 by MSc students.
+
+``` r
+
+undergrad_students |> 
+  count(degree, year) |> 
+  ggplot(aes(x = year, y = n, label = n, fill = degree, color = degree)) +
+  geom_col(position = "dodge") +
+  geom_text(position=position_dodge(width=0.9), 
+            vjust=-0.5,
+            show.legend = FALSE) +
+  labs(x = "",
+       y = "Number of students") +
+  scale_fill_colorblind() +
+  scale_color_colorblind() +
+  theme_minimal() +
+  theme(panel.grid = element_blank(),
+        axis.text.y = element_blank())
+```
+
+![](reference/figures/README-unnamed-chunk-8-1.png)
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/global-health-engineering/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+``` r
+
+citation("ghedata")
+#> To cite package 'ghedata' in publications use:
+#> 
+#>   Schöbitz L (2024). _ghedata: What the Package Does (One Line, Title
+#>   Case)_. R package version 0.0.0.9000,
+#>   <https://github.com/global-health-engineering/ghedata>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {ghedata: What the Package Does (One Line, Title Case)},
+#>     author = {Lars Schöbitz},
+#>     year = {2024},
+#>     note = {R package version 0.0.0.9000},
+#>     url = {https://github.com/global-health-engineering/ghedata},
+#>   }
+```
