@@ -82,7 +82,7 @@ View(people)
 1. **Data Anonymization**: Names are replaced with unique hash IDs to protect privacy
 2. **Multiple Export Formats**: Data available as R objects, CSV, and Excel files
 3. **Google Sheets Integration**: Raw data pulled directly from shared sheets
-4. **Versioning**: Package version tracks data updates (currently 0.0.5)
+4. **Versioning**: Package version tracks data updates (the current version is in `DESCRIPTION`)
 
 ## Adding New Datasets
 
