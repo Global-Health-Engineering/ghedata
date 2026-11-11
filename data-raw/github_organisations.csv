@@ -1,0 +1,13 @@
+organisation,purpose,commits_counted,repositories_listed
+Global-Health-Engineering,research,TRUE,TRUE
+openwashdata,data publishing,TRUE,TRUE
+openwashdata-dev,development,TRUE,TRUE
+openwashdata-conf,events,TRUE,TRUE
+ghe-learn,training,TRUE,FALSE
+agentsforsci-ghe,training,TRUE,TRUE
+gitforsci-ghe,training,TRUE,TRUE
+ds4owd-001,teaching,FALSE,FALSE
+ds4owd-002,teaching,FALSE,FALSE
+rbtl-fs22,teaching,FALSE,FALSE
+rbtl-fs24,teaching,FALSE,FALSE
+rbtl-fs25,teaching,FALSE,FALSE
