@@ -112,6 +112,34 @@ readr::read_csv("data-raw/dictionary.csv") |>
   kableExtra::scroll_box(height = "200px")
 ```
 
+### GitHub tables
+
+Three tables describe the work of the group on GitHub. They hold counts only and no information about who made a commit.
+
+- `github_organisations` has `r nrow(github_organisations)` rows, one per organisation, with the number of public and private repositories.
+- `github_repositories` has `r nrow(github_repositories)` rows, one per public repository.
+- `github_commits` has `r nrow(github_commits)` rows, one per organisation, visibility and month, with the number of commits on the default branches. Private repositories are counted and never named.
+
+The data was read from GitHub on `r unique(github_organisations$snapshot_date)`.
+
+`github_commit_change()` compares the commits of the last 12 complete months with the 12 months before.
+
+```{r github-change}
+github_commit_change() |> 
+  knitr::kable(digits = 1)
+```
+
+For an overview of the variable names, see the following table.
+
+```{r github-dictionary, echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(stringr::str_starts(file_name, "github_")) |>
+  dplyr::select(file_name:description) |>
+  knitr::kable() |>
+  kableExtra::kable_styling("striped") |>
+  kableExtra::scroll_box(height = "200px")
+```
+
 ## Example
 
 ```{r}

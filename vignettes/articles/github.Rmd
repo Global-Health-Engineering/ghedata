@@ -1,0 +1,127 @@
+---
+title: "GitHub activity"
+editor_options:
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+```{r setup}
+library(ghedata)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+```
+
+This article describes the three GitHub tables of the package and shows how the comparison of commits over two years is computed.
+
+## Organisations
+
+```{r}
+snapshot_date <- unique(github_organisations$snapshot_date)
+
+counted <- github_organisations |>
+  filter(commits_counted)
+```
+
+The data was read from GitHub on `r snapshot_date`. Commits are counted in `r nrow(counted)` organisations with `r sum(counted$repos_public) + sum(counted$repos_private)` repositories, of which `r sum(counted$repos_public)` are public and `r sum(counted$repos_private)` are private. Teaching organisations hold one repository per student. They appear in the table with their number of repositories, and their commits are not counted.
+
+```{r}
+github_organisations |>
+  select(organisation, purpose, commits_counted, repos_public, repos_private) |>
+  knitr::kable()
+```
+
+## Commits per month
+
+The table `github_commits` has one row per organisation, visibility and month. The column `commits` counts commits on the default branch of each repository. Merge commits and commits by bots have their own columns and are not part of `commits`. Private repositories are counted and never named.
+
+```{r}
+#| fig-alt: "Bar chart of commits per month since August 2021 for public and private repositories."
+github_commits |>
+  summarise(commits = sum(commits), .by = c(month, visibility)) |>
+  ggplot(aes(x = month, y = commits, fill = visibility)) +
+  geom_col() +
+  labs(x = "", y = "Commits per month", fill = "Repositories") +
+  scale_fill_colorblind() +
+  theme_minimal() +
+  theme(panel.grid.minor = element_blank())
+```
+
+## The last 12 months against the 12 months before
+
+`github_commit_change()` sums the commits of the last 12 complete months in the data and of the 12 months before, and divides the first number by the second.
+
+All organisations, public and private repositories:
+
+```{r}
+github_commit_change() |>
+  knitr::kable(digits = 1)
+```
+
+Public repositories and private repositories of all organisations:
+
+```{r}
+bind_rows(
+  github_commit_change(visibility = "public"),
+  github_commit_change(visibility = "private")
+) |>
+  knitr::kable(digits = 1)
+```
+
+Private repositories of the Global Health Engineering organisation:
+
+```{r}
+github_commit_change(
+  organisation = "Global-Health-Engineering",
+  visibility = "private"
+) |>
+  knitr::kable(digits = 1)
+```
+
+Per organisation:
+
+```{r}
+unique(github_commits$organisation) |>
+  lapply(github_commit_change) |>
+  bind_rows() |>
+  knitr::kable(digits = 1)
+```
+
+## Commits with a coding agent
+
+The column `commits_assisted` counts commits whose message names a coding agent in a trailer. The trailer is optional, so the number is a lower bound.
+
+```{r}
+#| fig-alt: "Line chart of the share of commits per month that carry a trailer of a coding agent."
+github_commits |>
+  summarise(
+    commits = sum(commits),
+    commits_assisted = sum(commits_assisted),
+    .by = month
+  ) |>
+  filter(commits > 0) |>
+  ggplot(aes(x = month, y = commits_assisted / commits)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::label_percent(), limits = c(0, 1)) +
+  labs(x = "", y = "Share of commits with an agent trailer") +
+  theme_minimal() +
+  theme(panel.grid.minor = element_blank())
+```
+
+## Public repositories
+
+The table `github_repositories` lists the public repositories. Repositories whose name contains the user name of a person and repositories of student work are left out.
+
+```{r}
+github_repositories |>
+  count(organisation, repository_type) |>
+  knitr::kable()
+```

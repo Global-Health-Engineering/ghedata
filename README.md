@@ -50,6 +50,9 @@ file from the table below.
 |:---|:---|:---|
 | people | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/people.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/people.xlsx) |
 | computational | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.xlsx) |
+| github_organisations | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_organisations.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_organisations.xlsx) |
+| github_repositories | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.xlsx) |
+| github_commits | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.xlsx) |
 
 ## Data
 
@@ -73,7 +76,7 @@ people |>
   gt::as_raw_html()
 ```
 
-<div id="nnyesnvogw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="stnhtbmnka" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -116,7 +119,7 @@ For an overview of the variable names, see the following table.
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; ">
 
-<table class="table table-striped" style="color: black; margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 
 <thead>
 
@@ -275,6 +278,739 @@ character
 <td style="text-align:left;">
 
 Title of the thesis.
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+### GitHub tables
+
+Three tables describe the work of the group on GitHub. They hold counts
+only and no information about who made a commit.
+
+- `github_organisations` has 12 rows, one per organisation, with the
+  number of public and private repositories.
+- `github_repositories` has 212 rows, one per public repository.
+- `github_commits` has 486 rows, one per organisation, visibility and
+  month, with the number of commits on the default branches. Private
+  repositories are counted and never named.
+
+The data was read from GitHub on 2026-11-11.
+
+`github_commit_change()` compares the commits of the last 12 complete
+months with the 12 months before.
+
+``` r
+github_commit_change() |> 
+  knitr::kable(digits = 1)
+```
+
+| organisation | visibility | current_start | current_end | previous_start | previous_end | commits_current | commits_previous | factor |
+|:---|:---|:---|:---|:---|:---|---:|---:|---:|
+| all | all | 2025-11-01 | 2026-10-01 | 2024-11-01 | 2025-10-01 | 4887 | 2183 | 2.2 |
+
+For an overview of the variable names, see the following table.
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; ">
+
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
+file_name
+</th>
+
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
+variable_name
+</th>
+
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
+variable_type
+</th>
+
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
+description
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+organisation
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Login of the GitHub organisation. An organisation account, not a person.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+purpose
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+What the organisation is used for. Levels: research, data publishing,
+development, events, training, teaching.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_counted
+</td>
+
+<td style="text-align:left;">
+
+logical
+</td>
+
+<td style="text-align:left;">
+
+TRUE when the commits of the organisation are counted in github_commits.
+FALSE for teaching organisations with one repository per student, which
+appear with repository counts only.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+created_date
+</td>
+
+<td style="text-align:left;">
+
+Date
+</td>
+
+<td style="text-align:left;">
+
+Date the organisation was created on GitHub.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+repos_public
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of public repositories on the snapshot date.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+repos_private
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of private repositories on the snapshot date. A count only,
+private repositories are never named.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+repos_archived
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of archived repositories on the snapshot date. NA for
+organisations whose commits are not counted.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+repos_listed
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of public repositories of the organisation that are rows of
+github_repositories.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_organisations.rda
+</td>
+
+<td style="text-align:left;">
+
+snapshot_date
+</td>
+
+<td style="text-align:left;">
+
+Date
+</td>
+
+<td style="text-align:left;">
+
+Date (UTC) on which the data was read from the GitHub API.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+organisation
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Login of the GitHub organisation that owns the repository.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+repository
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Name of the public repository.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+created_date
+</td>
+
+<td style="text-align:left;">
+
+Date
+</td>
+
+<td style="text-align:left;">
+
+Date the repository was created.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+pushed_date
+</td>
+
+<td style="text-align:left;">
+
+Date
+</td>
+
+<td style="text-align:left;">
+
+Date of the last push to the repository before the snapshot date.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+is_archived
+</td>
+
+<td style="text-align:left;">
+
+logical
+</td>
+
+<td style="text-align:left;">
+
+TRUE when the repository is archived.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+is_fork
+</td>
+
+<td style="text-align:left;">
+
+logical
+</td>
+
+<td style="text-align:left;">
+
+TRUE when the repository is a fork of another repository.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+license
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+SPDX identifier of the licence that GitHub detects. NA when there is
+none or GitHub cannot name it.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+primary_language
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Main language of the repository as detected by GitHub. NA when there is
+none.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+repository_type
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Type derived from the repository name. Levels: template, manuscript,
+proposal, website, other.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repositories.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_total
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits on the default branch up to the last complete month
+before the snapshot date, without merge commits and commits by bots. NA
+for forks.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+organisation
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Login of the GitHub organisation.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+visibility
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Visibility of the repositories on the snapshot date. Levels: public,
+private.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+month
+</td>
+
+<td style="text-align:left;">
+
+Date
+</td>
+
+<td style="text-align:left;">
+
+First day of the month (UTC) in which the commits were authored.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+commits
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits on the default branches, without merge commits and
+commits by bots. Forks are not counted.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_bot
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits authored by bot accounts. Not part of commits.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_merge
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of merge commits (more than one parent) not authored by bots. Not
+part of commits.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_assisted
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits counted in commits whose message carries a trailer of
+a coding agent (Co-Authored-By for Claude or Copilot, Assisted-by, or
+the Claude Code line). A lower bound, since the trailer is optional.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+repos_active
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of repositories with at least one commit counted in commits in
+that month.
 </td>
 
 </tr>
