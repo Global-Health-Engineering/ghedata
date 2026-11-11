@@ -1,213 +1,213 @@
 organisation,repository,created_date,pushed_date,is_archived,is_fork,license,primary_language,repository_type,commits_total
-Global-Health-Engineering,qechairquality,2021-10-19,2023-04-18,FALSE,FALSE,CC-BY-4.0,TeX,other,129
-Global-Health-Engineering,data-public-waste-skips-blantyre,2022-04-19,2023-08-02,FALSE,FALSE,CC-BY-4.0,R,other,59
+Global-Health-Engineering,qechairquality,2021-10-19,2023-04-18,FALSE,FALSE,CC-BY-4.0,TeX,data package,129
+Global-Health-Engineering,data-public-waste-skips-blantyre,2022-04-19,2023-08-02,FALSE,FALSE,CC-BY-4.0,R,data package,59
 Global-Health-Engineering,manuscript-maize-mills,2022-04-19,2023-04-25,TRUE,FALSE,NA,R,manuscript,17
-Global-Health-Engineering,dmp-sor4d,2022-09-27,2023-06-07,TRUE,FALSE,CC-BY-SA-4.0,NA,other,6
-Global-Health-Engineering,eth-data-stewardship,2022-11-14,2023-05-22,TRUE,FALSE,NA,JavaScript,other,49
+Global-Health-Engineering,dmp-sor4d,2022-09-27,2023-06-07,TRUE,FALSE,CC-BY-SA-4.0,NA,group management,6
+Global-Health-Engineering,eth-data-stewardship,2022-11-14,2023-05-22,TRUE,FALSE,NA,JavaScript,research project,49
 Global-Health-Engineering,manuscript-biogas-malawi,2022-11-28,2022-11-30,TRUE,FALSE,NA,R,manuscript,12
-Global-Health-Engineering,durbanplasticwaste,2023-02-21,2023-09-12,FALSE,FALSE,CC-BY-4.0,R,other,104
-Global-Health-Engineering,website,2023-02-27,2026-09-21,FALSE,FALSE,CC-BY-4.0,JavaScript,website,166
+Global-Health-Engineering,durbanplasticwaste,2023-02-21,2023-09-12,FALSE,FALSE,CC-BY-4.0,R,data package,104
+Global-Health-Engineering,website,2023-02-27,2026-09-21,FALSE,FALSE,CC-BY-4.0,JavaScript,website and communication,166
 Global-Health-Engineering,manuscript-qechairquality,2023-04-04,2023-10-05,FALSE,FALSE,NA,TeX,manuscript,74
-Global-Health-Engineering,blantyreseeingwaste,2023-05-02,2023-05-03,TRUE,FALSE,NA,R,other,3
-Global-Health-Engineering,ghe-dms,2023-06-07,2023-06-13,TRUE,FALSE,NA,TeX,other,4
-Global-Health-Engineering,proposal-innovedum-2023,2023-08-31,2023-09-29,TRUE,FALSE,NA,HTML,proposal,18
-Global-Health-Engineering,bcsa,2023-09-04,2024-07-08,FALSE,FALSE,CC-BY-4.0,R,other,60
-Global-Health-Engineering,group-safety,2023-11-14,2026-11-02,FALSE,FALSE,CC-BY-4.0,JavaScript,other,85
-Global-Health-Engineering,prop-eth-ord-explore-template,2023-12-07,2023-12-07,TRUE,FALSE,CC-BY-4.0,TeX,template,10
-Global-Health-Engineering,arduino-opc-portable-and-sationary,2023-12-20,2024-09-16,FALSE,FALSE,CC-BY-4.0,C++,other,218
+Global-Health-Engineering,blantyreseeingwaste,2023-05-02,2023-05-03,TRUE,FALSE,NA,R,data package,3
+Global-Health-Engineering,ghe-dms,2023-06-07,2023-06-13,TRUE,FALSE,NA,TeX,group management,4
+Global-Health-Engineering,proposal-innovedum-2023,2023-08-31,2023-09-29,TRUE,FALSE,NA,HTML,proposal or report,18
+Global-Health-Engineering,bcsa,2023-09-04,2024-07-08,FALSE,FALSE,CC-BY-4.0,R,data package,60
+Global-Health-Engineering,group-safety,2023-11-14,2026-11-02,FALSE,FALSE,CC-BY-4.0,JavaScript,group management,85
+Global-Health-Engineering,prop-eth-ord-explore-template,2023-12-07,2023-12-07,TRUE,FALSE,CC-BY-4.0,TeX,proposal or report,10
+Global-Health-Engineering,arduino-opc-portable-and-sationary,2023-12-20,2024-09-16,FALSE,FALSE,CC-BY-4.0,C++,hardware,218
 Global-Health-Engineering,student-dir-template,2024-02-02,2026-01-06,FALSE,FALSE,CC-BY-4.0,NA,template,15
-Global-Health-Engineering,pre-cleaning-system-design-for-HDPE-bottles,2024-03-05,2024-07-16,FALSE,FALSE,CC-BY-4.0,JavaScript,other,54
-Global-Health-Engineering,prop-eth-ord-contribute-openaq,2024-03-19,2024-07-03,FALSE,FALSE,CC-BY-4.0,TeX,proposal,6
-Global-Health-Engineering,glass-crusher-design,2024-03-26,2024-07-16,FALSE,FALSE,CC-BY-4.0,SCSS,other,31
+Global-Health-Engineering,pre-cleaning-system-design-for-HDPE-bottles,2024-03-05,2024-07-16,FALSE,FALSE,CC-BY-4.0,JavaScript,hardware,54
+Global-Health-Engineering,prop-eth-ord-contribute-openaq,2024-03-19,2024-07-03,FALSE,FALSE,CC-BY-4.0,TeX,proposal or report,6
+Global-Health-Engineering,glass-crusher-design,2024-03-26,2024-07-16,FALSE,FALSE,CC-BY-4.0,SCSS,hardware,31
 Global-Health-Engineering,manuscript-aae-2024,2024-04-03,2024-04-03,FALSE,FALSE,MIT,R,manuscript,8
-Global-Health-Engineering,incinerator-design-cape-maclear,2024-04-08,2024-07-02,FALSE,FALSE,CC-BY-4.0,JavaScript,other,21
-Global-Health-Engineering,waste-soil-composting-cape-maclear,2024-05-22,2024-11-13,FALSE,FALSE,CC-BY-4.0,NA,other,11
-Global-Health-Engineering,GHE-data-logger,2024-06-21,2024-07-05,FALSE,FALSE,CC-BY-4.0,C++,other,9
-Global-Health-Engineering,wtp-waste-cape-maclear,2024-06-28,2025-02-04,FALSE,FALSE,CC-BY-4.0,Stata,other,10
-Global-Health-Engineering,blog-black-carbon,2024-07-10,2024-07-15,FALSE,FALSE,NA,JavaScript,other,7
-Global-Health-Engineering,brown-bag,2024-07-11,2026-11-10,FALSE,FALSE,NA,JavaScript,other,39
-Global-Health-Engineering,mwfertiliserpilot,2024-08-06,2025-03-04,FALSE,FALSE,CC-BY-4.0,R,other,14
-Global-Health-Engineering,biogas-powered-pasteurizer-modeling,2024-09-17,2024-09-18,FALSE,FALSE,CC-BY-4.0,MATLAB,other,6
-Global-Health-Engineering,solar-pasteurizer-v1,2024-10-09,2024-10-29,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,other,9
-Global-Health-Engineering,grasp,2024-10-29,2024-12-30,FALSE,FALSE,CC-BY-4.0,Python,other,13
-Global-Health-Engineering,grant-parser,2024-10-31,2026-03-29,FALSE,FALSE,NA,Python,other,17
-Global-Health-Engineering,ghedata,2024-11-16,2026-10-05,FALSE,FALSE,CC-BY-4.0,R,other,44
-Global-Health-Engineering,cookstove-sensing,2025-01-29,2025-03-14,FALSE,FALSE,CC-BY-4.0,Python,other,10
-Global-Health-Engineering,ghe_transcribe,2025-03-26,2026-10-22,FALSE,FALSE,MIT,Python,other,274
-Global-Health-Engineering,biogasoffset,2025-03-31,2026-10-23,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,other,5
-Global-Health-Engineering,incinerate-with-hx,2025-04-08,2025-04-14,FALSE,FALSE,CC-BY-4.0,SCSS,other,12
-Global-Health-Engineering,injection-molding-with-resin-molds,2025-04-09,2025-06-01,FALSE,FALSE,CC-BY-4.0,NA,other,8
-Global-Health-Engineering,solar-pasteurizer-v2,2025-04-14,2025-04-15,FALSE,FALSE,CC-BY-4.0,NA,other,5
-Global-Health-Engineering,recycling-network-optimization,2025-04-25,2026-05-05,FALSE,FALSE,MIT,Python,other,462
-Global-Health-Engineering,ethord,2025-05-09,2026-02-05,FALSE,FALSE,NA,NA,other,6
-Global-Health-Engineering,gendict,2025-05-12,2025-05-30,TRUE,FALSE,NA,Python,other,14
-Global-Health-Engineering,sitting-UDDT,2025-05-16,2025-06-16,FALSE,FALSE,CC-BY-4.0,NA,other,8
-Global-Health-Engineering,whisperXapp,2025-05-21,2025-05-22,TRUE,FALSE,NA,Python,other,5
-Global-Health-Engineering,blablador,2025-05-27,2025-05-28,TRUE,FALSE,NA,Python,other,4
-Global-Health-Engineering,iv-flow-monitor,2025-06-24,2026-06-10,FALSE,FALSE,CERN-OHL-P-2.0,C,other,252
-Global-Health-Engineering,.github,2025-07-02,2025-07-02,FALSE,FALSE,NA,NA,other,8
-Global-Health-Engineering,blog-beyond-citations,2025-07-07,2025-07-07,FALSE,FALSE,CC-BY-4.0,HTML,other,10
+Global-Health-Engineering,incinerator-design-cape-maclear,2024-04-08,2024-07-02,FALSE,FALSE,CC-BY-4.0,JavaScript,research project,21
+Global-Health-Engineering,waste-soil-composting-cape-maclear,2024-05-22,2024-11-13,FALSE,FALSE,CC-BY-4.0,NA,research project,11
+Global-Health-Engineering,GHE-data-logger,2024-06-21,2024-07-05,FALSE,FALSE,CC-BY-4.0,C++,hardware,9
+Global-Health-Engineering,wtp-waste-cape-maclear,2024-06-28,2025-02-04,FALSE,FALSE,CC-BY-4.0,Stata,research project,10
+Global-Health-Engineering,blog-black-carbon,2024-07-10,2024-07-15,FALSE,FALSE,NA,JavaScript,website and communication,7
+Global-Health-Engineering,brown-bag,2024-07-11,2026-11-10,FALSE,FALSE,NA,JavaScript,teaching and training,39
+Global-Health-Engineering,mwfertiliserpilot,2024-08-06,2025-03-04,FALSE,FALSE,CC-BY-4.0,R,data package,14
+Global-Health-Engineering,biogas-powered-pasteurizer-modeling,2024-09-17,2024-09-18,FALSE,FALSE,CC-BY-4.0,MATLAB,research project,6
+Global-Health-Engineering,solar-pasteurizer-v1,2024-10-09,2024-10-29,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,research project,9
+Global-Health-Engineering,grasp,2024-10-29,2024-12-30,FALSE,FALSE,CC-BY-4.0,Python,research project,13
+Global-Health-Engineering,grant-parser,2024-10-31,2026-03-29,FALSE,FALSE,NA,Python,research project,17
+Global-Health-Engineering,ghedata,2024-11-16,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,44
+Global-Health-Engineering,cookstove-sensing,2025-01-29,2025-03-14,FALSE,FALSE,CC-BY-4.0,Python,research project,10
+Global-Health-Engineering,ghe_transcribe,2025-03-26,2026-10-22,FALSE,FALSE,MIT,Python,software,274
+Global-Health-Engineering,biogasoffset,2025-03-31,2026-10-23,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,research project,5
+Global-Health-Engineering,incinerate-with-hx,2025-04-08,2025-04-14,FALSE,FALSE,CC-BY-4.0,SCSS,research project,12
+Global-Health-Engineering,injection-molding-with-resin-molds,2025-04-09,2025-06-01,FALSE,FALSE,CC-BY-4.0,NA,research project,8
+Global-Health-Engineering,solar-pasteurizer-v2,2025-04-14,2025-04-15,FALSE,FALSE,CC-BY-4.0,NA,research project,5
+Global-Health-Engineering,recycling-network-optimization,2025-04-25,2026-05-05,FALSE,FALSE,MIT,Python,research project,462
+Global-Health-Engineering,ethord,2025-05-09,2026-02-05,FALSE,FALSE,NA,NA,research project,6
+Global-Health-Engineering,gendict,2025-05-12,2025-05-30,TRUE,FALSE,NA,Python,software,14
+Global-Health-Engineering,sitting-UDDT,2025-05-16,2025-06-16,FALSE,FALSE,CC-BY-4.0,NA,research project,8
+Global-Health-Engineering,whisperXapp,2025-05-21,2025-05-22,TRUE,FALSE,NA,Python,research project,5
+Global-Health-Engineering,blablador,2025-05-27,2025-05-28,TRUE,FALSE,NA,Python,software,4
+Global-Health-Engineering,iv-flow-monitor,2025-06-24,2026-06-10,FALSE,FALSE,CERN-OHL-P-2.0,C,hardware,252
+Global-Health-Engineering,.github,2025-07-02,2025-07-02,FALSE,FALSE,NA,NA,organisation profile,8
+Global-Health-Engineering,blog-beyond-citations,2025-07-07,2025-07-07,FALSE,FALSE,CC-BY-4.0,HTML,website and communication,10
 Global-Health-Engineering,man-ghedata,2025-07-22,2026-05-07,FALSE,FALSE,NA,R,manuscript,5
-Global-Health-Engineering,prop-leading-house-africa-2025,2025-07-22,2025-07-22,FALSE,FALSE,NA,NA,proposal,1
-Global-Health-Engineering,rc-metadata-dashboard,2025-08-25,2025-09-04,FALSE,FALSE,NA,Python,other,3
-Global-Health-Engineering,bidirectional-charger,2025-08-26,2025-09-04,FALSE,FALSE,NA,C,other,5
-Global-Health-Engineering,load-control-health-facilities,2025-08-26,2025-08-26,FALSE,FALSE,NA,Jupyter Notebook,other,2
-Global-Health-Engineering,dataset_extraction_tools,2025-09-04,2025-10-21,TRUE,FALSE,MIT,Python,other,33
-Global-Health-Engineering,remote-comm-solar,2025-09-09,2025-10-06,FALSE,FALSE,Apache-2.0,C++,other,31
-Global-Health-Engineering,rfid-controlled-charging,2025-09-10,2025-09-14,FALSE,FALSE,CC-BY-4.0,Python,other,4
-Global-Health-Engineering,bsf-lcm,2025-09-12,2026-11-02,FALSE,FALSE,NA,Python,other,24
-Global-Health-Engineering,solar-pasteurizer-v3,2025-09-18,2025-10-14,FALSE,FALSE,CC-BY-4.0,Python,other,7
-Global-Health-Engineering,plastic-scanner,2025-10-30,2026-01-23,FALSE,FALSE,GPL-3.0,C,other,58
-Global-Health-Engineering,ghedata-code,2025-11-11,2026-05-27,FALSE,FALSE,NA,HTML,other,49
-Global-Health-Engineering,plastic-separation-blantyre,2025-12-03,2026-01-06,FALSE,FALSE,CC-BY-4.0,R,other,19
-Global-Health-Engineering,autoclean,2025-12-10,2026-03-10,FALSE,FALSE,MIT,Python,other,135
+Global-Health-Engineering,prop-leading-house-africa-2025,2025-07-22,2025-07-22,FALSE,FALSE,NA,NA,proposal or report,1
+Global-Health-Engineering,rc-metadata-dashboard,2025-08-25,2025-09-04,FALSE,FALSE,NA,Python,website and communication,3
+Global-Health-Engineering,bidirectional-charger,2025-08-26,2025-09-04,FALSE,FALSE,NA,C,hardware,5
+Global-Health-Engineering,load-control-health-facilities,2025-08-26,2025-08-26,FALSE,FALSE,NA,Jupyter Notebook,research project,2
+Global-Health-Engineering,dataset_extraction_tools,2025-09-04,2025-10-21,TRUE,FALSE,MIT,Python,software,33
+Global-Health-Engineering,remote-comm-solar,2025-09-09,2025-10-06,FALSE,FALSE,Apache-2.0,C++,hardware,31
+Global-Health-Engineering,rfid-controlled-charging,2025-09-10,2025-09-14,FALSE,FALSE,CC-BY-4.0,Python,research project,4
+Global-Health-Engineering,bsf-lcm,2025-09-12,2026-11-02,FALSE,FALSE,NA,Python,hardware,24
+Global-Health-Engineering,solar-pasteurizer-v3,2025-09-18,2025-10-14,FALSE,FALSE,CC-BY-4.0,Python,research project,7
+Global-Health-Engineering,plastic-scanner,2025-10-30,2026-01-23,FALSE,FALSE,GPL-3.0,C,hardware,58
+Global-Health-Engineering,ghedata-code,2025-11-11,2026-05-27,FALSE,FALSE,NA,HTML,research project,49
+Global-Health-Engineering,plastic-separation-blantyre,2025-12-03,2026-01-06,FALSE,FALSE,CC-BY-4.0,R,research project,19
+Global-Health-Engineering,autoclean,2025-12-10,2026-03-10,FALSE,FALSE,MIT,Python,student project,135
 Global-Health-Engineering,man-ethord,2026-01-14,2026-01-19,FALSE,FALSE,NA,HTML,manuscript,8
-Global-Health-Engineering,mzuzu-biogas-research,2026-02-25,2026-05-27,FALSE,FALSE,MIT,C,other,1230
-Global-Health-Engineering,ultrasonic-flowmeter,2026-03-02,2026-03-02,FALSE,FALSE,CC-BY-4.0,C++,other,4
-Global-Health-Engineering,h2s-monitor,2026-04-02,2026-08-12,FALSE,FALSE,NA,C++,other,28
-Global-Health-Engineering,glass-tumbler,2026-04-16,2026-04-24,FALSE,FALSE,CERN-OHL-S-2.0,SCSS,other,26
-Global-Health-Engineering,fungalgrowth,2026-04-30,2026-09-01,FALSE,FALSE,CC-BY-4.0,R,other,22
-Global-Health-Engineering,api-battery-control-mobile-payment,2026-05-05,2026-06-03,FALSE,FALSE,NA,Python,other,10
-Global-Health-Engineering,Bioreactor-UDDT,2026-05-14,2026-05-14,FALSE,FALSE,NA,MATLAB,other,11
-Global-Health-Engineering,metal-can-fencing,2026-05-19,2026-05-31,FALSE,FALSE,NA,NA,other,38
-Global-Health-Engineering,mushroom-substrate-mixer-and-portioner,2026-06-04,2026-07-08,FALSE,FALSE,NA,Python,other,49
-Global-Health-Engineering,aguasan,2026-06-24,2026-09-03,FALSE,FALSE,NA,JavaScript,other,29
-Global-Health-Engineering,fair-training,2026-07-19,2026-09-21,FALSE,FALSE,NA,Python,other,37
-Global-Health-Engineering,3dplam,2026-07-29,2026-09-25,FALSE,FALSE,NA,Python,other,52
-Global-Health-Engineering,talk-enhancer,2026-08-18,2026-10-28,FALSE,FALSE,NA,NA,other,4
-Global-Health-Engineering,ammity-cup,2026-09-10,2026-11-06,FALSE,FALSE,NA,Python,other,47
-Global-Health-Engineering,tipping-bucket,2026-09-16,2026-09-16,FALSE,FALSE,NA,Python,other,2
-Global-Health-Engineering,skills,2026-09-21,2026-10-08,FALSE,FALSE,MIT,NA,other,25
-Global-Health-Engineering,mwt-biogas,2026-09-23,2026-11-03,FALSE,FALSE,NA,Python,other,5
-Global-Health-Engineering,workshop-dcc-2027,2026-10-20,2026-11-10,FALSE,FALSE,NA,NA,other,9
-Global-Health-Engineering,ghedatapublishing,2026-10-27,2026-10-27,TRUE,FALSE,NA,NA,other,2
-openwashdata,jmpdata,2022-04-26,2026-10-03,FALSE,TRUE,CC-BY-4.0,R,other,NA
-openwashdata,.github,2022-11-30,2023-08-04,FALSE,FALSE,NA,NA,other,6
-openwashdata,website,2022-11-30,2026-11-01,FALSE,FALSE,NA,JavaScript,website,534
-openwashdata,fsmglobal,2022-12-13,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,48
-openwashdata,data,2023-03-08,2026-07-18,FALSE,FALSE,NA,NA,other,4
-openwashdata,cbssuitabilityhaiti,2023-04-06,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,75
-openwashdata,newsletter,2023-06-06,2026-10-20,FALSE,FALSE,NA,R,other,187
-openwashdata,climatevulnerabilitykhm,2023-06-20,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,11
-openwashdata,dryingfaecal,2023-06-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,21
-openwashdata,wasteskipsblantyre,2023-07-05,2026-11-01,FALSE,TRUE,CC-BY-4.0,R,other,NA
-openwashdata,biogasoutcomesmalawi,2023-07-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,51
-openwashdata,basisghana,2023-08-09,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,33
-openwashdata,wpdx,2023-08-11,2023-08-11,TRUE,FALSE,NA,NA,other,1
-openwashdata,waterpumpkwale,2023-08-16,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,22
-openwashdata,grdwtrsmpkwale,2023-08-17,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,26
-openwashdata,wasteburningblantyre,2023-09-13,2023-10-26,TRUE,FALSE,CC-BY-4.0,R,other,13
-openwashdata,gdho,2023-09-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,25
-openwashdata,chckapmalawi,2023-10-25,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,29
-openwashdata,cleanteamghana,2023-10-25,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,28
-openwashdata,faecalsludgekampala,2023-11-30,2023-11-30,FALSE,FALSE,NA,R,other,3
-openwashdata,universityrankingafrica,2023-12-04,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,38
-openwashdata,wastecollectionblantyre,2023-12-06,2023-12-06,TRUE,FALSE,NA,R,other,2
-openwashdata,washopenresearch,2023-12-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,112
-openwashdata,rwpfunctionality,2024-03-11,2026-11-01,FALSE,FALSE,CC-BY-4.0,TeX,other,56
-openwashdata,washinvestments,2024-03-11,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,43
-openwashdata,wsabrazil,2024-03-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,45
-openwashdata,whdxdata,2024-04-16,2024-04-16,TRUE,FALSE,CC-BY-4.0,R,other,10
-openwashdata,washr,2024-04-22,2026-11-10,FALSE,FALSE,GPL-3.0,R,other,146
-openwashdata,ugabore,2024-04-30,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,20
-openwashdata,portawaterperu,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,26
-openwashdata,waschoolpiracema,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,22
-openwashdata,watercostaccra,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,35
-openwashdata,boreholefuncmwi,2024-06-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,22
-openwashdata,breathablepitlat,2024-06-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,17
-openwashdata,saniabidjan,2024-07-03,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,20
-openwashdata,fslogisticskampala,2024-07-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,45
-openwashdata,fair-publishing,2024-09-16,2026-11-11,FALSE,FALSE,NA,R,other,34
-openwashdata,dashboard,2024-10-01,2025-02-24,FALSE,FALSE,NA,JavaScript,other,62
-openwashdata,choleramalawi,2024-10-04,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,22
-openwashdata,worldhdi,2024-10-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,13
-openwashdata,unhcrwash,2024-11-13,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,17
-openwashdata,planetaryhdi,2024-12-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,19
-openwashdata,ploswater,2025-01-08,2025-01-08,TRUE,FALSE,CC-BY-4.0,R,other,8
-openwashdata,glossarywho,2025-01-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,other,15
-openwashdata,ds4owdanalytics,2025-01-31,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,5
-openwashdata,undpcomposite,2025-02-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,14
-openwashdata,boreholeforensicspumpingtest,2025-03-05,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,32
-openwashdata,whatawaste,2025-03-10,2025-03-11,TRUE,FALSE,CC-BY-4.0,R,other,10
-openwashdata,drillingdata,2025-04-08,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,22
-openwashdata,glaas,2025-04-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,58
-openwashdata,washmalawi,2025-04-29,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,31
-openwashdata,fairenough,2025-05-15,2026-09-09,TRUE,FALSE,NA,R,other,308
-openwashdata,artesianwells,2025-06-02,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,36
-openwashdata,ds4owd-001-analysis,2025-06-20,2026-10-28,FALSE,FALSE,NA,JavaScript,other,22
-openwashdata,thyolocbcc,2025-06-24,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,14
-openwashdata,dowalatrinesurvey,2025-06-25,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,14
-openwashdata,waterconsumersurvey,2025-06-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,16
-openwashdata,floodresponsemw,2025-06-27,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,22
-openwashdata,nchalohhwatersurvey,2025-06-27,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,18
-openwashdata,floodchlorinationsurvey,2025-06-30,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,22
-openwashdata,postfloodintervention,2025-07-01,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,35
-openwashdata,pkgreview,2025-07-03,2026-11-04,FALSE,FALSE,NA,R,other,93
-openwashdata,hydrogeologicalghana,2025-07-24,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,15
-openwashdata,boreholelabdata,2025-08-06,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,23
-openwashdata,dowaodfsurvey,2025-08-07,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,16
-openwashdata,handpumpstatusdata,2025-08-12,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,16
-openwashdata,wastedata,2025-09-01,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,12
-openwashdata,waterdata,2025-09-05,2025-09-05,FALSE,FALSE,NA,NA,other,0
-openwashdata,glass.updated,2026-02-04,2026-02-05,TRUE,FALSE,CC-BY-4.0,R,other,7
-openwashdata,mwefloodresponse,2026-02-20,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,18
-openwashdata,mwgroundwaterdata,2026-02-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,16
-openwashdata,dsfc-slides,2026-03-17,2026-07-28,FALSE,FALSE,NA,HTML,other,23
-openwashdata,waterpointstatus,2026-04-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,13
-openwashdata,rainwaterhsurvey,2026-04-16,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,13
-openwashdata,fecalcanuga,2026-06-18,2026-11-01,FALSE,TRUE,CC-BY-4.0,HTML,other,NA
-openwashdata,owdata,2026-07-08,2026-11-09,FALSE,FALSE,CC-BY-4.0,R,other,15
-openwashdata,solidwastekampala,2026-07-22,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,43
-openwashdata,gwinfraassess,2026-08-07,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,other,15
-openwashdata,kalaiwash,2026-08-24,2026-11-03,FALSE,FALSE,CC-BY-4.0,R,other,18
-openwashdata,waterqualityuganda,2026-08-24,2026-11-09,FALSE,FALSE,CC-BY-4.0,R,other,22
-openwashdata,brand,2026-08-25,2026-09-09,FALSE,FALSE,CC-BY-4.0,Typst,other,12
-openwashdata,quarto-owd,2026-09-03,2026-09-03,FALSE,FALSE,MIT,R,other,15
-openwashdata,openwashdata.r-universe.dev,2026-09-09,2026-09-09,FALSE,FALSE,NA,NA,other,1
-openwashdata,wash-health-impact-tool,2026-10-26,2026-10-26,FALSE,FALSE,NA,TeX,other,35
-openwashdata,burigangaamr,2026-10-30,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,other,16
-openwashdata,guluswm,2026-10-30,2026-11-04,FALSE,FALSE,CC-BY-4.0,R,other,9
-openwashdata-dev,openwashdata,2022-04-12,2024-05-02,TRUE,FALSE,CC-BY-4.0,R,other,20
-openwashdata-dev,learner-personas,2022-04-14,2022-04-14,FALSE,FALSE,NA,TeX,other,3
-openwashdata-dev,proposal-eth-ord-scheme,2022-04-14,2022-12-01,FALSE,FALSE,NA,TeX,proposal,10
-openwashdata-dev,proposal-eth-ord-scheme-contribute,2022-11-22,2023-01-30,FALSE,FALSE,NA,HTML,proposal,14
-openwashdata-dev,book,2023-01-31,2024-10-24,TRUE,FALSE,NA,R,other,6
-openwashdata-dev,.github,2023-09-25,2023-09-29,FALSE,FALSE,NA,NA,other,3
-openwashdata-dev,prop-eth-ord-contribute-washweb,2023-11-30,2024-04-15,FALSE,FALSE,NA,TeX,proposal,2
-openwashdata-dev,prop-eth-ord-explore-02-openwashdata,2024-01-22,2025-12-11,FALSE,FALSE,CC-BY-4.0,TeX,proposal,11
-openwashdata-dev,workflow,2024-03-28,2024-06-18,TRUE,FALSE,NA,NA,other,2
-openwashdata-dev,owdpublish,2026-09-28,2026-09-28,FALSE,FALSE,NA,R,other,3
-openwashdata-conf,.github,2025-07-10,2025-07-10,FALSE,FALSE,NA,NA,other,3
-openwashdata-conf,2025,2025-07-10,2025-07-17,FALSE,FALSE,NA,JavaScript,other,55
-openwashdata-conf,claude-code-cheatsheet,2025-07-10,2025-07-10,FALSE,FALSE,NA,NA,other,0
-openwashdata-conf,charge-my-car,2025-07-16,2025-07-16,FALSE,FALSE,NA,Python,other,4
-openwashdata-conf,dataviz,2025-07-16,2025-07-16,FALSE,FALSE,NA,NA,other,2
-openwashdata-conf,ds4owd-002-analytics,2025-07-16,2025-07-16,FALSE,FALSE,NA,R,other,10
-openwashdata-conf,ilostat-wage,2025-07-16,2025-07-16,FALSE,FALSE,NA,Python,other,6
-openwashdata-conf,imma_claude_proj1,2025-07-16,2025-07-16,FALSE,FALSE,NA,PowerShell,other,7
-openwashdata-conf,test-jules,2025-07-16,2025-07-16,FALSE,FALSE,NA,NA,other,0
-openwashdata-conf,wpfunction,2025-07-16,2025-07-16,FALSE,FALSE,NA,JavaScript,other,6
-agentsforsci-ghe,.github,2026-09-08,2026-09-22,FALSE,FALSE,NA,NA,other,3
-agentsforsci-ghe,website,2026-09-08,2026-10-01,FALSE,FALSE,NA,Python,website,57
-agentsforsci-ghe,beaver-ss,2026-09-09,2026-09-09,FALSE,FALSE,AGPL-3.0,NA,other,4
-agentsforsci-ghe,biogas-malawi,2026-09-09,2026-09-28,FALSE,FALSE,NA,NA,other,2
-agentsforsci-ghe,tdabc-mzuzu,2026-09-11,2026-09-29,FALSE,FALSE,NA,R,other,16
-agentsforsci-ghe,fstp-eval-india,2026-09-22,2026-09-29,FALSE,FALSE,CC-BY-4.0,HTML,other,13
-agentsforsci-ghe,water-quality-col,2026-09-22,2026-09-29,FALSE,FALSE,NA,HTML,other,15
-agentsforsci-ghe,caves-currents,2026-09-24,2026-10-02,FALSE,FALSE,NA,HTML,other,35
-gitforsci-ghe,.github,2026-07-01,2026-07-30,FALSE,FALSE,NA,NA,other,7
-gitforsci-ghe,website,2026-07-01,2026-07-30,FALSE,FALSE,NA,SCSS,website,70
-gitforsci-ghe,setup,2026-07-07,2026-07-30,FALSE,FALSE,NA,R,other,9
-gitforsci-ghe,washinvestments,2026-07-07,2026-07-30,FALSE,FALSE,NA,TeX,other,10
-gitforsci-ghe,team-avatars,2026-07-14,2026-07-30,FALSE,FALSE,NA,Python,other,3
-gitforsci-ghe,washinvestments-blue,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,other,3
-gitforsci-ghe,washinvestments-green,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,other,1
-gitforsci-ghe,washinvestments-orange,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,other,5
-gitforsci-ghe,washinvestments-purple,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,other,5
-gitforsci-ghe,washinvestments-red,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,other,2
-gitforsci-ghe,washinvestments-sea,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,other,2
-gitforsci-ghe,washinvestments-silver,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,other,3
-gitforsci-ghe,washinvestments-sky,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,other,1
-gitforsci-ghe,washinvestments-teal,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,other,1
-gitforsci-ghe,washinvestments-yellow,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,other,4
-gitforsci-ghe,website1,2026-07-15,2026-07-15,FALSE,FALSE,NA,NA,website,0
+Global-Health-Engineering,mzuzu-biogas-research,2026-02-25,2026-05-27,FALSE,FALSE,MIT,C,hardware,1230
+Global-Health-Engineering,ultrasonic-flowmeter,2026-03-02,2026-03-02,FALSE,FALSE,CC-BY-4.0,C++,hardware,4
+Global-Health-Engineering,h2s-monitor,2026-04-02,2026-08-12,FALSE,FALSE,NA,C++,hardware,28
+Global-Health-Engineering,glass-tumbler,2026-04-16,2026-04-24,FALSE,FALSE,CERN-OHL-S-2.0,SCSS,research project,26
+Global-Health-Engineering,fungalgrowth,2026-04-30,2026-09-01,FALSE,FALSE,CC-BY-4.0,R,data package,22
+Global-Health-Engineering,api-battery-control-mobile-payment,2026-05-05,2026-06-03,FALSE,FALSE,NA,Python,research project,10
+Global-Health-Engineering,Bioreactor-UDDT,2026-05-14,2026-05-14,FALSE,FALSE,NA,MATLAB,research project,11
+Global-Health-Engineering,metal-can-fencing,2026-05-19,2026-05-31,FALSE,FALSE,NA,NA,research project,38
+Global-Health-Engineering,mushroom-substrate-mixer-and-portioner,2026-06-04,2026-07-08,FALSE,FALSE,NA,Python,student project,49
+Global-Health-Engineering,aguasan,2026-06-24,2026-09-03,FALSE,FALSE,NA,JavaScript,research project,29
+Global-Health-Engineering,fair-training,2026-07-19,2026-09-21,FALSE,FALSE,NA,Python,teaching and training,37
+Global-Health-Engineering,3dplam,2026-07-29,2026-09-25,FALSE,FALSE,NA,Python,hardware,52
+Global-Health-Engineering,talk-enhancer,2026-08-18,2026-10-28,FALSE,FALSE,NA,NA,teaching and training,4
+Global-Health-Engineering,ammity-cup,2026-09-10,2026-11-06,FALSE,FALSE,NA,Python,hardware,47
+Global-Health-Engineering,tipping-bucket,2026-09-16,2026-09-16,FALSE,FALSE,NA,Python,research project,2
+Global-Health-Engineering,skills,2026-09-21,2026-10-08,FALSE,FALSE,MIT,NA,software,25
+Global-Health-Engineering,mwt-biogas,2026-09-23,2026-11-11,FALSE,FALSE,NA,Python,research project,5
+Global-Health-Engineering,workshop-dcc-2027,2026-10-20,2026-11-10,FALSE,FALSE,NA,NA,teaching and training,9
+Global-Health-Engineering,ghedatapublishing,2026-10-27,2026-10-27,TRUE,FALSE,NA,NA,research project,2
+openwashdata,jmpdata,2022-04-26,2026-10-03,FALSE,TRUE,CC-BY-4.0,R,data package,NA
+openwashdata,.github,2022-11-30,2023-08-04,FALSE,FALSE,NA,NA,organisation profile,6
+openwashdata,website,2022-11-30,2026-11-11,FALSE,FALSE,NA,JavaScript,website and communication,535
+openwashdata,fsmglobal,2022-12-13,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,48
+openwashdata,data,2023-03-08,2026-07-18,FALSE,FALSE,NA,NA,research project,4
+openwashdata,cbssuitabilityhaiti,2023-04-06,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,75
+openwashdata,newsletter,2023-06-06,2026-10-20,FALSE,FALSE,NA,R,website and communication,187
+openwashdata,climatevulnerabilitykhm,2023-06-20,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,11
+openwashdata,dryingfaecal,2023-06-28,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,21
+openwashdata,wasteskipsblantyre,2023-07-05,2026-11-01,FALSE,TRUE,CC-BY-4.0,R,data package,NA
+openwashdata,biogasoutcomesmalawi,2023-07-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,51
+openwashdata,basisghana,2023-08-09,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,33
+openwashdata,wpdx,2023-08-11,2023-08-11,TRUE,FALSE,NA,NA,software,1
+openwashdata,waterpumpkwale,2023-08-16,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,22
+openwashdata,grdwtrsmpkwale,2023-08-17,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,26
+openwashdata,wasteburningblantyre,2023-09-13,2023-10-26,TRUE,FALSE,CC-BY-4.0,R,data package,13
+openwashdata,gdho,2023-09-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,25
+openwashdata,chckapmalawi,2023-10-25,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,29
+openwashdata,cleanteamghana,2023-10-25,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,28
+openwashdata,faecalsludgekampala,2023-11-30,2023-11-30,FALSE,FALSE,NA,R,data package,3
+openwashdata,universityrankingafrica,2023-12-04,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,38
+openwashdata,wastecollectionblantyre,2023-12-06,2023-12-06,TRUE,FALSE,NA,R,data package,2
+openwashdata,washopenresearch,2023-12-21,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,112
+openwashdata,rwpfunctionality,2024-03-11,2026-11-01,FALSE,FALSE,CC-BY-4.0,TeX,data package,56
+openwashdata,washinvestments,2024-03-11,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,43
+openwashdata,wsabrazil,2024-03-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,45
+openwashdata,whdxdata,2024-04-16,2024-04-16,TRUE,FALSE,CC-BY-4.0,R,data package,10
+openwashdata,washr,2024-04-22,2026-11-11,FALSE,FALSE,GPL-3.0,R,software,146
+openwashdata,ugabore,2024-04-30,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,20
+openwashdata,portawaterperu,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,26
+openwashdata,waschoolpiracema,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,22
+openwashdata,watercostaccra,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,35
+openwashdata,boreholefuncmwi,2024-06-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,22
+openwashdata,breathablepitlat,2024-06-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,17
+openwashdata,saniabidjan,2024-07-03,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,20
+openwashdata,fslogisticskampala,2024-07-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,45
+openwashdata,fair-publishing,2024-09-16,2026-11-11,FALSE,FALSE,NA,R,research project,34
+openwashdata,dashboard,2024-10-01,2025-02-24,FALSE,FALSE,NA,JavaScript,website and communication,62
+openwashdata,choleramalawi,2024-10-04,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,22
+openwashdata,worldhdi,2024-10-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,13
+openwashdata,unhcrwash,2024-11-13,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,17
+openwashdata,planetaryhdi,2024-12-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,19
+openwashdata,ploswater,2025-01-08,2025-01-08,TRUE,FALSE,CC-BY-4.0,R,data package,8
+openwashdata,glossarywho,2025-01-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,data package,15
+openwashdata,ds4owdanalytics,2025-01-31,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,5
+openwashdata,undpcomposite,2025-02-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,14
+openwashdata,boreholeforensicspumpingtest,2025-03-05,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,32
+openwashdata,whatawaste,2025-03-10,2025-03-11,TRUE,FALSE,CC-BY-4.0,R,data package,10
+openwashdata,drillingdata,2025-04-08,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,22
+openwashdata,glaas,2025-04-28,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,58
+openwashdata,washmalawi,2025-04-29,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,31
+openwashdata,fairenough,2025-05-15,2026-09-09,TRUE,FALSE,NA,R,software,308
+openwashdata,artesianwells,2025-06-02,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,36
+openwashdata,ds4owd-001-analysis,2025-06-20,2026-10-28,FALSE,FALSE,NA,JavaScript,research project,22
+openwashdata,thyolocbcc,2025-06-24,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,14
+openwashdata,dowalatrinesurvey,2025-06-25,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,14
+openwashdata,waterconsumersurvey,2025-06-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,16
+openwashdata,floodresponsemw,2025-06-27,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,22
+openwashdata,nchalohhwatersurvey,2025-06-27,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,18
+openwashdata,floodchlorinationsurvey,2025-06-30,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,22
+openwashdata,postfloodintervention,2025-07-01,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,35
+openwashdata,pkgreview,2025-07-03,2026-11-04,FALSE,FALSE,NA,R,software,93
+openwashdata,hydrogeologicalghana,2025-07-24,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,15
+openwashdata,boreholelabdata,2025-08-06,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,23
+openwashdata,dowaodfsurvey,2025-08-07,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,16
+openwashdata,handpumpstatusdata,2025-08-12,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,16
+openwashdata,wastedata,2025-09-01,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,12
+openwashdata,waterdata,2025-09-05,2025-09-05,FALSE,FALSE,NA,NA,research project,0
+openwashdata,glass.updated,2026-02-04,2026-02-05,TRUE,FALSE,CC-BY-4.0,R,data package,7
+openwashdata,mwefloodresponse,2026-02-20,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,18
+openwashdata,mwgroundwaterdata,2026-02-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,16
+openwashdata,dsfc-slides,2026-03-17,2026-07-28,FALSE,FALSE,NA,HTML,teaching and training,23
+openwashdata,waterpointstatus,2026-04-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,13
+openwashdata,rainwaterhsurvey,2026-04-16,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,13
+openwashdata,fecalcanuga,2026-06-18,2026-11-01,FALSE,TRUE,CC-BY-4.0,HTML,data package,NA
+openwashdata,owdata,2026-07-08,2026-11-09,FALSE,FALSE,CC-BY-4.0,R,data package,15
+openwashdata,solidwastekampala,2026-07-22,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,43
+openwashdata,gwinfraassess,2026-08-07,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,15
+openwashdata,kalaiwash,2026-08-24,2026-11-03,FALSE,FALSE,CC-BY-4.0,R,data package,18
+openwashdata,waterqualityuganda,2026-08-24,2026-11-09,FALSE,FALSE,CC-BY-4.0,R,data package,22
+openwashdata,brand,2026-08-25,2026-09-09,FALSE,FALSE,CC-BY-4.0,Typst,website and communication,12
+openwashdata,quarto-owd,2026-09-03,2026-09-03,FALSE,FALSE,MIT,R,template,15
+openwashdata,openwashdata.r-universe.dev,2026-09-09,2026-09-09,FALSE,FALSE,NA,NA,website and communication,1
+openwashdata,wash-health-impact-tool,2026-10-26,2026-10-26,FALSE,FALSE,NA,TeX,software,35
+openwashdata,burigangaamr,2026-10-30,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,16
+openwashdata,guluswm,2026-10-30,2026-11-04,FALSE,FALSE,CC-BY-4.0,R,data package,9
+openwashdata-dev,openwashdata,2022-04-12,2024-05-02,TRUE,FALSE,CC-BY-4.0,R,software,20
+openwashdata-dev,learner-personas,2022-04-14,2022-04-14,FALSE,FALSE,NA,TeX,teaching and training,3
+openwashdata-dev,proposal-eth-ord-scheme,2022-04-14,2022-12-01,FALSE,FALSE,NA,TeX,proposal or report,10
+openwashdata-dev,proposal-eth-ord-scheme-contribute,2022-11-22,2023-01-30,FALSE,FALSE,NA,HTML,proposal or report,14
+openwashdata-dev,book,2023-01-31,2024-10-24,TRUE,FALSE,NA,R,teaching and training,6
+openwashdata-dev,.github,2023-09-25,2023-09-29,FALSE,FALSE,NA,NA,organisation profile,3
+openwashdata-dev,prop-eth-ord-contribute-washweb,2023-11-30,2024-04-15,FALSE,FALSE,NA,TeX,proposal or report,2
+openwashdata-dev,prop-eth-ord-explore-02-openwashdata,2024-01-22,2025-12-11,FALSE,FALSE,CC-BY-4.0,TeX,proposal or report,11
+openwashdata-dev,workflow,2024-03-28,2024-06-18,TRUE,FALSE,NA,NA,research project,2
+openwashdata-dev,owdpublish,2026-09-28,2026-09-28,FALSE,FALSE,NA,R,software,3
+openwashdata-conf,.github,2025-07-10,2025-07-10,FALSE,FALSE,NA,NA,organisation profile,3
+openwashdata-conf,2025,2025-07-10,2025-07-17,FALSE,FALSE,NA,JavaScript,teaching and training,55
+openwashdata-conf,claude-code-cheatsheet,2025-07-10,2025-07-10,FALSE,FALSE,NA,NA,teaching and training,0
+openwashdata-conf,charge-my-car,2025-07-16,2025-07-16,FALSE,FALSE,NA,Python,teaching and training,4
+openwashdata-conf,dataviz,2025-07-16,2025-07-16,FALSE,FALSE,NA,NA,teaching and training,2
+openwashdata-conf,ds4owd-002-analytics,2025-07-16,2025-07-16,FALSE,FALSE,NA,R,teaching and training,10
+openwashdata-conf,ilostat-wage,2025-07-16,2025-07-16,FALSE,FALSE,NA,Python,teaching and training,6
+openwashdata-conf,imma_claude_proj1,2025-07-16,2025-07-16,FALSE,FALSE,NA,PowerShell,teaching and training,7
+openwashdata-conf,test-jules,2025-07-16,2025-07-16,FALSE,FALSE,NA,NA,teaching and training,0
+openwashdata-conf,wpfunction,2025-07-16,2025-07-16,FALSE,FALSE,NA,JavaScript,teaching and training,6
+agentsforsci-ghe,.github,2026-09-08,2026-09-22,FALSE,FALSE,NA,NA,organisation profile,3
+agentsforsci-ghe,website,2026-09-08,2026-10-01,FALSE,FALSE,NA,Python,teaching and training,57
+agentsforsci-ghe,beaver-ss,2026-09-09,2026-09-09,FALSE,FALSE,AGPL-3.0,NA,teaching and training,4
+agentsforsci-ghe,biogas-malawi,2026-09-09,2026-09-28,FALSE,FALSE,NA,NA,teaching and training,2
+agentsforsci-ghe,tdabc-mzuzu,2026-09-11,2026-09-29,FALSE,FALSE,NA,R,teaching and training,16
+agentsforsci-ghe,fstp-eval-india,2026-09-22,2026-09-29,FALSE,FALSE,CC-BY-4.0,HTML,data package,13
+agentsforsci-ghe,water-quality-col,2026-09-22,2026-09-29,FALSE,FALSE,NA,HTML,teaching and training,15
+agentsforsci-ghe,caves-currents,2026-09-24,2026-10-02,FALSE,FALSE,NA,HTML,teaching and training,35
+gitforsci-ghe,.github,2026-07-01,2026-07-30,FALSE,FALSE,NA,NA,organisation profile,7
+gitforsci-ghe,website,2026-07-01,2026-07-30,FALSE,FALSE,NA,SCSS,teaching and training,70
+gitforsci-ghe,setup,2026-07-07,2026-07-30,FALSE,FALSE,NA,R,teaching and training,9
+gitforsci-ghe,washinvestments,2026-07-07,2026-07-30,FALSE,FALSE,NA,TeX,teaching and training,10
+gitforsci-ghe,team-avatars,2026-07-14,2026-07-30,FALSE,FALSE,NA,Python,teaching and training,3
+gitforsci-ghe,washinvestments-blue,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,teaching and training,3
+gitforsci-ghe,washinvestments-green,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,teaching and training,1
+gitforsci-ghe,washinvestments-orange,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,teaching and training,5
+gitforsci-ghe,washinvestments-purple,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,teaching and training,5
+gitforsci-ghe,washinvestments-red,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,teaching and training,2
+gitforsci-ghe,washinvestments-sea,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,teaching and training,2
+gitforsci-ghe,washinvestments-silver,2026-07-15,2026-07-15,FALSE,FALSE,NA,HTML,teaching and training,3
+gitforsci-ghe,washinvestments-sky,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,teaching and training,1
+gitforsci-ghe,washinvestments-teal,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,teaching and training,1
+gitforsci-ghe,washinvestments-yellow,2026-07-15,2026-07-15,FALSE,FALSE,NA,TeX,teaching and training,4
+gitforsci-ghe,website1,2026-07-15,2026-07-15,FALSE,FALSE,NA,NA,teaching and training,0

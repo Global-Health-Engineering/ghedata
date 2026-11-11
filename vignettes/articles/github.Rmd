@@ -20,7 +20,7 @@ library(ggplot2)
 library(ggthemes)
 ```
 
-This article describes the three GitHub tables of the package and shows how the comparison of commits over two years is computed.
+This article describes the four GitHub tables of the package and shows how the comparison of commits over two years is computed.
 
 ## Organisations
 
@@ -114,6 +114,53 @@ github_commits |>
   labs(x = "", y = "Share of commits with an agent trailer") +
   theme_minimal() +
   theme(panel.grid.minor = element_blank())
+```
+
+## Repositories by type
+
+The table `github_repository_types` counts all repositories by type, the private ones and student work included, and names none. The type comes from rules on the name, the top level files, the topics, the main language and the purpose of the organisation. The rules are rough: a thesis project that is named after its topic counts as a research project or as hardware.
+
+Most repositories belong to learners in courses and workshops, with one repository per learner and exercise.
+
+```{r}
+github_repository_types |>
+  mutate(group = if_else(
+    repository_type == "learner repository",
+    "learner repositories",
+    "all other repositories"
+  )) |>
+  count(group, wt = repos, name = "repos") |>
+  knitr::kable()
+```
+
+The other repositories by type:
+
+```{r}
+#| fig-alt: "Bar chart of the number of repositories per type, split into public and private repositories."
+types <- github_repository_types |>
+  filter(repository_type != "learner repository") |>
+  count(repository_type, visibility, wt = repos, name = "repos")
+
+ggplot(types, aes(x = repos, y = reorder(repository_type, repos, sum), fill = visibility)) +
+  geom_col() +
+  scale_fill_colorblind() +
+  labs(x = "Number of repositories", y = NULL, fill = NULL) +
+  theme_minimal()
+```
+
+The same repositories by year of creation:
+
+```{r}
+#| fig-alt: "Bar chart of the number of repositories created per year, coloured by type."
+github_repository_types |>
+  filter(repository_type != "learner repository") |>
+  mutate(repository_type = forcats::fct_lump_n(repository_type, 6, w = repos)) |>
+  count(created_year, repository_type, wt = repos, name = "repos") |>
+  ggplot(aes(x = created_year, y = repos, fill = repository_type)) +
+  geom_col() +
+  scale_fill_colorblind() +
+  labs(x = "Year of creation", y = "Number of repositories", fill = NULL) +
+  theme_minimal()
 ```
 
 ## Public repositories

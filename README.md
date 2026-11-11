@@ -52,6 +52,7 @@ file from the table below.
 | computational | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.xlsx) |
 | github_organisations | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_organisations.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_organisations.xlsx) |
 | github_repositories | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.xlsx) |
+| github_repository_types | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repository_types.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repository_types.xlsx) |
 | github_commits | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.xlsx) |
 
 ## Data
@@ -76,7 +77,7 @@ people |>
   gt::as_raw_html()
 ```
 
-<div id="stnhtbmnka" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="qcdvzwivak" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -290,17 +291,49 @@ Title of the thesis.
 
 ### GitHub tables
 
-Three tables describe the work of the group on GitHub. They hold counts
+Four tables describe the work of the group on GitHub. They hold counts
 only and no information about who made a commit.
 
 - `github_organisations` has 12 rows, one per organisation, with the
   number of public and private repositories.
 - `github_repositories` has 212 rows, one per public repository.
+- `github_repository_types` has 133 rows with the number of repositories
+  per organisation, visibility, type and year of creation. It counts all
+  3,141 repositories, private ones and student work included, and names
+  none.
 - `github_commits` has 486 rows, one per organisation, visibility and
   month, with the number of commits on the default branches. Private
   repositories are counted and never named.
 
 The data was read from GitHub on 2026-11-11.
+
+The number of repositories by type, without the 2,796 repositories of
+learners in courses and workshops:
+
+``` r
+github_repository_types |>
+  dplyr::filter(repository_type != "learner repository") |>
+  dplyr::count(repository_type, visibility, wt = repos) |>
+  tidyr::pivot_wider(names_from = visibility, values_from = n, values_fill = 0) |>
+  dplyr::mutate(total = public + private) |>
+  dplyr::arrange(dplyr::desc(total)) |>
+  knitr::kable()
+```
+
+| repository_type           | private | public | total |
+|:--------------------------|--------:|-------:|------:|
+| data package              |      19 |     78 |    97 |
+| teaching and training     |      25 |     60 |    85 |
+| research project          |      32 |     35 |    67 |
+| proposal or report        |      12 |      8 |    20 |
+| software                  |       3 |     12 |    15 |
+| hardware                  |       0 |     14 |    14 |
+| manuscript                |       5 |      6 |    11 |
+| student project           |       6 |      4 |    10 |
+| website and communication |       1 |      9 |    10 |
+| group management          |       4 |      3 |     7 |
+| organisation profile      |       0 |      7 |     7 |
+| template                  |       0 |      2 |     2 |
 
 `github_commit_change()` compares the commits of the last 12 complete
 months with the 12 months before.
@@ -312,7 +345,7 @@ github_commit_change() |>
 
 | organisation | visibility | current_start | current_end | previous_start | previous_end | commits_current | commits_previous | factor |
 |:---|:---|:---|:---|:---|:---|---:|---:|---:|
-| all | all | 2025-11-01 | 2026-10-01 | 2024-11-01 | 2025-10-01 | 4887 | 2183 | 2.2 |
+| all | all | 2025-11-01 | 2026-10-01 | 2024-11-01 | 2025-10-01 | 4890 | 2183 | 2.2 |
 
 For an overview of the variable names, see the following table.
 
@@ -785,8 +818,11 @@ character
 
 <td style="text-align:left;">
 
-Type derived from the repository name. Levels: template, manuscript,
-proposal, website, other.
+Type of the repository, see github_repository_types for the rules.
+Levels in this table: data package, student project, hardware,
+manuscript, organisation profile, proposal or report, research project,
+software, teaching and training, template, website and communication,
+group management.
 </td>
 
 </tr>
@@ -813,6 +849,132 @@ integer
 Number of commits on the default branch up to the last complete month
 before the snapshot date, without merge commits and commits by bots. NA
 for forks.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repository_types.rda
+</td>
+
+<td style="text-align:left;">
+
+organisation
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Login of the GitHub organisation.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repository_types.rda
+</td>
+
+<td style="text-align:left;">
+
+visibility
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Visibility of the repositories on the snapshot date. Levels: public,
+private.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repository_types.rda
+</td>
+
+<td style="text-align:left;">
+
+repository_type
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Type of the repositories, from rules on the name, the top level files,
+the topics, the main language and the purpose of the organisation.
+Levels: learner repository, organisation profile, data package, student
+project, manuscript, proposal or report, teaching and training, website
+and communication, template, group management, software, hardware,
+research project.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repository_types.rda
+</td>
+
+<td style="text-align:left;">
+
+created_year
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Year the repositories were created.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_repository_types.rda
+</td>
+
+<td style="text-align:left;">
+
+repos
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of repositories. A count only, no repository is named.
 </td>
 
 </tr>

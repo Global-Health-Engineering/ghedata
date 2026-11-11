@@ -27,6 +27,10 @@ test_that("the GitHub tables have the documented columns", {
     )
   )
   expect_named(
+    github_repository_types,
+    c("organisation", "visibility", "repository_type", "created_year", "repos")
+  )
+  expect_named(
     github_commits,
     c(
       "organisation", "visibility", "month", "commits", "commits_bot",
@@ -39,6 +43,7 @@ test_that("names and types match the dictionary", {
   tables <- list(
     github_organisations.rda = github_organisations,
     github_repositories.rda = github_repositories,
+    github_repository_types.rda = github_repository_types,
     github_commits.rda = github_commits
   )
   for (file_name in names(tables)) {
@@ -50,7 +55,8 @@ test_that("names and types match the dictionary", {
 
 test_that("no table has a column for a person", {
   all_names <- c(
-    names(github_organisations), names(github_repositories), names(github_commits)
+    names(github_organisations), names(github_repositories),
+    names(github_repository_types), names(github_commits)
   )
   expect_false(any(grepl("login|author|email|user|name$|message|sha|hash", all_names)))
 })
@@ -166,4 +172,42 @@ test_that("github_commit_change adds up over the scopes of the package data", {
     integer(1)
   )
   expect_equal(sum(per_organisation), total$commits_current)
+})
+
+test_that("the repository types add up to the repositories of the organisations", {
+  types <- stats::aggregate(
+    repos ~ organisation + visibility,
+    data = github_repository_types,
+    FUN = sum
+  )
+  for (i in seq_len(nrow(github_organisations))) {
+    org <- github_organisations$organisation[i]
+    counted <- function(v) {
+      sum(types$repos[types$organisation == org & types$visibility == v])
+    }
+    expect_equal(counted("public"), github_organisations$repos_public[i])
+    expect_equal(counted("private"), github_organisations$repos_private[i])
+  }
+})
+
+test_that("the repository types have known levels and positive counts", {
+  levels <- c(
+    "learner repository", "organisation profile", "student project",
+    "manuscript", "proposal or report", "data package",
+    "teaching and training", "website and communication", "template",
+    "group management", "software", "hardware", "research project"
+  )
+  expect_true(all(github_repository_types$repository_type %in% levels))
+  expect_true(all(github_repository_types$repos > 0))
+  expect_false(anyDuplicated(
+    github_repository_types[c("organisation", "visibility", "repository_type", "created_year")]
+  ) > 0)
+})
+
+test_that("no repository named after a degree and no learner repository is listed", {
+  expect_false(any(grepl(
+    "bsc|msc|sem-proj|semester[- ]project|thesis",
+    tolower(github_repositories$repository)
+  )))
+  expect_false(any(github_repositories$repository_type == "learner repository"))
 })

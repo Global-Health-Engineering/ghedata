@@ -114,13 +114,26 @@ readr::read_csv("data-raw/dictionary.csv") |>
 
 ### GitHub tables
 
-Three tables describe the work of the group on GitHub. They hold counts only and no information about who made a commit.
+Four tables describe the work of the group on GitHub. They hold counts only and no information about who made a commit.
 
 - `github_organisations` has `r nrow(github_organisations)` rows, one per organisation, with the number of public and private repositories.
 - `github_repositories` has `r nrow(github_repositories)` rows, one per public repository.
+- `github_repository_types` has `r nrow(github_repository_types)` rows with the number of repositories per organisation, visibility, type and year of creation. It counts all `r format(sum(github_repository_types$repos), big.mark = ",")` repositories, private ones and student work included, and names none.
 - `github_commits` has `r nrow(github_commits)` rows, one per organisation, visibility and month, with the number of commits on the default branches. Private repositories are counted and never named.
 
 The data was read from GitHub on `r unique(github_organisations$snapshot_date)`.
+
+The number of repositories by type, without the `r format(sum(github_repository_types$repos[github_repository_types$repository_type == "learner repository"]), big.mark = ",")` repositories of learners in courses and workshops:
+
+```{r github-types}
+github_repository_types |>
+  dplyr::filter(repository_type != "learner repository") |>
+  dplyr::count(repository_type, visibility, wt = repos) |>
+  tidyr::pivot_wider(names_from = visibility, values_from = n, values_fill = 0) |>
+  dplyr::mutate(total = public + private) |>
+  dplyr::arrange(dplyr::desc(total)) |>
+  knitr::kable()
+```
 
 `github_commit_change()` compares the commits of the last 12 complete months with the 12 months before.
 

@@ -3,7 +3,7 @@
 #' One row per public repository in the organisations whose repositories are
 #' listed. Private repositories are not in this table. Public repositories
 #' whose name contains the user name of a person are left out as well, and so
-#' are repositories of student work and all repositories of organisations that
+#' are repositories that carry a degree in their name (student work) and all repositories of organisations that
 #' name exercises after the people who work on them. The column `repos_listed` of [github_organisations] says
 #' how many repositories of an organisation are in this table.
 #'
@@ -20,7 +20,7 @@
 #'   \item{is_fork}{ TRUE when the repository is a fork of another repository.}
 #'   \item{license}{ SPDX identifier of the licence that GitHub detects. NA when there is none or GitHub cannot name it.}
 #'   \item{primary_language}{ Main language of the repository as detected by GitHub. NA when there is none.}
-#'   \item{repository_type}{ Type derived from the repository name. Levels: template, manuscript, proposal, website, other.}
+#'   \item{repository_type}{ Type of the repository, see [github_repository_types] for the rules. Levels in this table: data package, student project, hardware, manuscript, organisation profile, proposal or report, research project, software, teaching and training, template, website and communication, group management.}
 #'   \item{commits_total}{ Number of commits on the default branch up to the last complete month before the snapshot date, without merge commits and commits by bots. NA for forks.}
 #' }
 #' @source GitHub REST API, read with `data-raw/data_processing_github.R`.

@@ -179,7 +179,7 @@ openwashdata,private,2026-06-01,0,0,0,0,0
 openwashdata,private,2026-07-01,1,0,0,0,1
 openwashdata,private,2026-08-01,0,0,0,0,0
 openwashdata,private,2026-09-01,16,0,0,13,2
-openwashdata,private,2026-10-01,33,0,5,30,6
+openwashdata,private,2026-10-01,35,0,5,32,6
 openwashdata,public,2022-04-01,0,0,0,0,0
 openwashdata,public,2022-05-01,0,0,0,0,0
 openwashdata,public,2022-06-01,0,0,0,0,0
@@ -234,7 +234,7 @@ openwashdata,public,2026-06-01,19,0,6,6,4
 openwashdata,public,2026-07-01,132,0,33,80,9
 openwashdata,public,2026-08-01,51,0,10,22,9
 openwashdata,public,2026-09-01,374,0,182,366,52
-openwashdata,public,2026-10-01,312,1,76,294,66
+openwashdata,public,2026-10-01,313,1,76,295,66
 openwashdata-dev,private,2023-09-01,0,0,0,0,0
 openwashdata-dev,private,2023-10-01,0,0,0,0,0
 openwashdata-dev,private,2023-11-01,0,0,0,0,0

@@ -1,6 +1,7 @@
 # Description ------------------------------------------------------------------
 # R script to build the three GitHub tables of ghedata from the GitHub REST API:
-# github_organisations, github_repositories and github_commits.
+# github_organisations, github_repositories, github_repository_types and
+# github_commits.
 #
 # Run from the package root: Rscript data-raw/data_processing_github.R
 # Needs the GitHub CLI (gh), signed in with an account that is a member of the
@@ -17,6 +18,10 @@
 # - Public repositories whose name contains the login of an organisation member
 #   or of a contributor are left out of github_repositories, and so are
 #   repositories of student work, which are named after the student.
+# - The description of a repository can name a person. It is reduced to one
+#   flag (student work or not) inside the jq filter and never reaches R.
+# - github_repository_types counts all repositories by type, private ones and
+#   student work included, and holds no repository name.
 
 # Load packages ----------------------------------------------------------------
 library(usethis)
@@ -64,7 +69,13 @@ gh_is_empty <- function(organisation, repository) {
 
 jq_org <- '[.created_at[0:10], .public_repos, (.total_private_repos // "")] | @tsv'
 
-jq_repos <- '.[] | [.name, .private, .fork, .archived, .created_at[0:10], (.pushed_at // "")[0:10], (.license.spdx_id // ""), (.language // ""), .size] | @tsv'
+# The last two fields are flags: the name or the description points to student
+# work, and the topics point to hardware.
+jq_repos <- '.[] | [.name, .private, .fork, .archived, .created_at[0:10], (.pushed_at // "")[0:10], (.license.spdx_id // ""), (.language // ""), .size, (if ((.name + " " + (.description // "")) | test("bsc|msc|sem-proj|semester[- ]project|thesis"; "i")) then 1 else 0 end), (if ((.topics // []) | join(" ") | test("hardware|prototype"; "i")) then 1 else 0 end)] | @tsv'
+
+# Three flags from the file names at the top level of a repository: an R
+# package (DESCRIPTION), a data folder (data or data-raw), a Python package.
+jq_root <- '[.[].name] | [(index("DESCRIPTION") != null), ((index("data") != null) or (index("data-raw") != null)), ((index("pyproject.toml") != null) or (index("setup.py") != null))] | map(if . then 1 else 0 end) | @tsv'
 
 # One line per commit: month of the author date, bot flag, number of parents,
 # agent trailer flag. Nothing else leaves the API response.
@@ -104,13 +115,77 @@ get_repos <- function(organisation) {
     I(paste0(res$lines, collapse = "\n")),
     col_names = c(
       "repository", "is_private", "is_fork", "is_archived", "created_date",
-      "pushed_date", "license", "primary_language", "size"
+      "pushed_date", "license", "primary_language", "size", "student",
+      "hardware_topic"
     ),
-    col_types = "clllDDcci",
+    col_types = "clllDDcciii",
     na = "",
     quote = ""
   ) |>
-    mutate(organisation = organisation, .before = 1)
+    mutate(
+      organisation = organisation,
+      is_student = student == 1,
+      has_hardware_topic = hardware_topic == 1,
+      .before = 1
+    ) |>
+    select(-student, -hardware_topic)
+}
+
+# Flags from the top level of a repository. An empty repository has no
+# contents and gets FALSE three times.
+get_root <- function(organisation, repository) {
+  res <- gh_lines(
+    paste0("repos/", organisation, "/", repository, "/contents"),
+    jq_root,
+    paginate = FALSE
+  )
+  flags <- c(0L, 0L, 0L)
+  if (res$ok && length(res$lines) == 1) {
+    flags <- as.integer(str_split_1(res$lines, "\t"))
+  }
+  tibble(
+    has_description = flags[1] == 1,
+    has_data = flags[2] == 1,
+    has_python_package = flags[3] == 1
+  )
+}
+
+# Type of a repository, from its name, the flags of get_repos() and
+# get_root(), and the purpose of its organisation. The first rule that
+# matches decides. The rules are rough on purpose: they can be read in one
+# go, and data-raw/github_repository_types.csv corrects single public
+# repositories by hand.
+classify_repository <- function(data) {
+  name <- str_to_lower(data$repository)
+  mutate(
+    data,
+    repository_type = case_when(
+      purpose == "teaching" ~ "learner repository",
+      name == ".github" ~ "organisation profile",
+      purpose == "training" & has_member_login ~ "learner repository",
+      has_description & has_data ~ "data package",
+      is_student ~ "student project",
+      str_detect(name, "^man-|manuscript") ~ "manuscript",
+      str_detect(name, "^prop-|proposal|^report-") ~ "proposal or report",
+      purpose %in% c("training", "events") ~ "teaching and training",
+      str_detect(
+        name,
+        "workshop|training|slides|course|learner|cheatsheet|^talk-|poster|brown-bag|book$"
+      ) ~ "teaching and training",
+      str_detect(
+        name,
+        "website|blog|github\\.io|r-universe|newsletter|dashboard|brand"
+      ) ~ "website and communication",
+      str_detect(name, "template") ~ "template",
+      str_detect(
+        name,
+        "strategy|annual-review|yearly|meeting-notes|safety|-dms$|^dmp-"
+      ) ~ "group management",
+      has_description | has_python_package ~ "software",
+      has_hardware_topic | primary_language %in% c("C", "C++") ~ "hardware",
+      TRUE ~ "research project"
+    )
+  )
 }
 
 get_commits <- function(organisation, repository) {
@@ -190,6 +265,56 @@ if (nrow(repo_check) > 0) {
   )
 }
 
+# Repositories of the teaching organisations, for the counts by type only.
+teaching <- scope |> filter(!commits_counted)
+
+repos_teaching <- map(teaching$organisation, get_repos) |> list_rbind()
+
+# Logins of the organisation members, to recognise repositories named after a
+# person. Held in memory only.
+member_logins <- map(
+  core$organisation,
+  \(x) get_logins(paste0("orgs/", x, "/members?per_page=100"))
+) |>
+  unlist() |>
+  unique()
+
+# Type of every repository. The hand kept file overrules the rules for single
+# public repositories.
+type_overrides <- read_csv(
+  here::here("data-raw", "github_repository_types.csv"),
+  col_types = "ccc"
+) |>
+  rename(repository_type_by_hand = repository_type)
+
+repos_typed <- bind_rows(
+  repos_raw |>
+    mutate(
+      root = map2(organisation, repository, get_root, .progress = TRUE)
+    ) |>
+    unnest(root),
+  repos_teaching |>
+    mutate(
+      has_description = FALSE,
+      has_data = FALSE,
+      has_python_package = FALSE
+    )
+) |>
+  left_join(scope |> select(organisation, purpose), by = "organisation") |>
+  mutate(
+    has_member_login = map_lgl(repository, \(r) name_has_login(r, member_logins))
+  ) |>
+  classify_repository() |>
+  left_join(type_overrides, by = c("organisation", "repository")) |>
+  mutate(
+    repository_type = if_else(
+      !is_private & !is.na(repository_type_by_hand),
+      repository_type_by_hand,
+      repository_type
+    )
+  ) |>
+  select(-repository_type_by_hand)
+
 # Commits on the default branch of every repository that is not a fork. A fork
 # carries the history of the repository it was forked from.
 commits_raw <- repos_raw |>
@@ -245,18 +370,11 @@ github_commits <- commits_raw |>
 
 listed_orgs <- scope |> filter(repositories_listed) |> pull(organisation)
 
-member_logins <- map(
-  core$organisation,
-  \(x) get_logins(paste0("orgs/", x, "/members?per_page=100"))
-) |>
-  unlist() |>
-  unique()
-
 commits_total <- commits_raw |>
   filter(class == "counted") |>
   count(organisation, repository, name = "commits_total")
 
-repos_public <- repos_raw |>
+repos_public <- repos_typed |>
   filter(!is_private, organisation %in% listed_orgs) |>
   mutate(
     contributor_logins = map2(
@@ -279,24 +397,37 @@ github_repositories <- repos_public |>
       TRUE ~ commits_total
     ),
     license = na_if(license, "NOASSERTION"),
-    repository_type = case_when(
-      str_detect(repository, regex("msc|bsc|sem-proj|semester-project", ignore_case = TRUE)) ~ "student work",
-      str_detect(repository, regex("template", ignore_case = TRUE)) ~ "template",
-      str_detect(repository, regex("^man-|manuscript", ignore_case = TRUE)) ~ "manuscript",
-      str_detect(repository, regex("^prop-|proposal", ignore_case = TRUE)) ~ "proposal",
-      str_detect(repository, regex("website|github\\.io", ignore_case = TRUE)) ~ "website",
-      TRUE ~ "other"
-    ),
     organisation = factor(organisation, levels = core$organisation)
   ) |>
-  # Repositories of student work are named after the student and are left out.
-  filter(repository_type != "student work") |>
+  # Repositories of student work that carry the degree in their name are named
+  # after the student and are left out, and so are repositories of learners.
+  filter(
+    !str_detect(
+      str_to_lower(repository),
+      "bsc|msc|sem-proj|semester[- ]project|thesis"
+    ),
+    repository_type != "learner repository"
+  ) |>
   arrange(organisation, created_date, repository) |>
   mutate(organisation = as.character(organisation)) |>
   select(
     organisation, repository, created_date, pushed_date, is_archived, is_fork,
     license, primary_language, repository_type, commits_total
   )
+
+## github_repository_types: number of repositories per organisation,
+## visibility, type and year of creation. All repositories are counted, the
+## private ones and student work included, and none is named.
+
+github_repository_types <- repos_typed |>
+  mutate(
+    visibility = if_else(is_private, "private", "public"),
+    created_year = as.integer(year(created_date)),
+    organisation = factor(organisation, levels = scope$organisation)
+  ) |>
+  count(organisation, visibility, repository_type, created_year, name = "repos") |>
+  arrange(organisation, visibility, repository_type, created_year) |>
+  mutate(organisation = as.character(organisation))
 
 ## github_organisations: one row per organisation
 
@@ -335,6 +466,7 @@ github_organisations <- scope |>
 
 usethis::use_data(github_organisations, overwrite = TRUE)
 usethis::use_data(github_repositories, overwrite = TRUE)
+usethis::use_data(github_repository_types, overwrite = TRUE)
 usethis::use_data(github_commits, overwrite = TRUE)
 
 export_extdata <- function(data, name) {
@@ -344,4 +476,5 @@ export_extdata <- function(data, name) {
 
 export_extdata(github_organisations, "github_organisations")
 export_extdata(github_repositories, "github_repositories")
+export_extdata(github_repository_types, "github_repository_types")
 export_extdata(github_commits, "github_commits")
