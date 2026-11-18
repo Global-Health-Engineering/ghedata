@@ -10,7 +10,7 @@ people
 
 ## Format
 
-A tibble with 129 rows and 7 variables
+A tibble with 205 rows and 7 variables
 
 - title:
 

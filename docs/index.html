@@ -5,14 +5,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>What the Package Does (One Line, Title Case) • ghedata</title>
+<title>Data on the Work of the Global Health Engineering Group at ETH Zurich • ghedata</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/Atkinson_Hyperlegible_Next-0.4.10/font.css" rel="stylesheet">
+<link href="deps/Source_Code_Pro-0.4.10/font.css" rel="stylesheet">
+<link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="What the Package Does (One Line, Title Case)">
-<meta name="description" content="What the package does (one paragraph).">
-<meta property="og:description" content="What the package does (one paragraph).">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Data on the Work of the Global Health Engineering Group at ETH Zurich">
+<meta name="description" content="Data that documents the work of the Global Health Engineering group at ETH Zurich since 2021: theses, projects and staff, computational competencies of the group, repositories and commits on GitHub, funding proposals, and records on Zenodo with their views and downloads. The tables hold counts and descriptions and no name of a person.">
+<meta property="og:description" content="Data that documents the work of the Global Health Engineering group at ETH Zurich since 2021: theses, projects and staff, computational competencies of the group, repositories and commits on GitHub, funding proposals, and records on Zenodo with their views and downloads. The tables hold counts and descriptions and no name of a person.">
 <script defer data-domain="global-health-engineering.github.io/ghedata" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
@@ -38,6 +40,7 @@
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="articles/computational-competencies.html">Computational competencies</a></li>
     <li><a class="dropdown-item" href="articles/examples.html">Example analysis</a></li>
+    <li><a class="dropdown-item" href="articles/github.html">GitHub activity</a></li>
   </ul>
 </li>
       </ul>
@@ -45,7 +48,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/global-health-engineering/ghedata/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/Global-Health-Engineering/ghedata/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -106,26 +109,71 @@
 <td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.csv" class="external-link">Download CSV</a></td>
 <td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/computational.xlsx" class="external-link">Download XLSX</a></td>
 </tr>
+<tr>
+<td align="left">github_organisations</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_organisations.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_organisations.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">github_repositories</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">github_repository_types</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repository_types.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repository_types.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">github_commits</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">github_commits_by_type</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_type.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_type.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">proposals</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/proposals.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/proposals.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">github_commits_by_person</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_person.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_person.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">github_commits_by_members</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_members.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_members.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr>
+<td align="left">zenodo_records</td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/zenodo_records.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/zenodo_records.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="section level2">
 <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h2>
-<p>The package provides access to one data resource.</p>
+<p>The package provides access to 11 tables, described below by topic.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/global-health-engineering/ghedata" class="external-link">ghedata</a></span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/Global-Health-Engineering/ghedata" class="external-link">ghedata</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="people">people<a class="anchor" aria-label="anchor" href="#people"></a>
 </h3>
 <p>The dataset <code>people</code> contains data about people that have worked for the group. This includes staff, as well as undergraduate student projects.</p>
-<p>It has 186 observations and 7 variables.</p>
+<p>It has 205 observations and 7 variables.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">people</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/gt.html" class="external-link">gt</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/as_raw_html.html" class="external-link">as_raw_html</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div id="nnyesnvogw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hdmguqsnrd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 
 
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
@@ -155,7 +203,30 @@ thesis_title
 <tbody class="gt_table_body" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3;">
 <tr style="border-style: none;">
 <td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-2021-bsc-thesis-141444
+2021-staff-chair-141444
+</td>
+<td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
+staff
+</td>
+<td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
+chair
+</td>
+<td headers="b_m_student" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
+no
+</td>
+<td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">
+2021-02-01
+</td>
+<td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">
+2021
+</td>
+<td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
+NA
+</td>
+</tr>
+<tr style="border-style: none;">
+<td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
+2021-bsc-thesis-565554
 </td>
 <td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
 bsc
@@ -178,48 +249,25 @@ Self-cleaning Preliminary Screening Mechanisms to Improve Health and Wastewater 
 </tr>
 <tr style="border-style: none;">
 <td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-2021-msc-thesis-565554
+2021-staff-support-466263
 </td>
 <td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-msc
+staff
 </td>
 <td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-thesis
-</td>
-<td headers="b_m_student" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-yes
-</td>
-<td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">
-2021-09-19
-</td>
-<td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">
-2021
-</td>
-<td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-Barriers to successful data management in the Global South: Case Study of Malawi
-</td>
-</tr>
-<tr style="border-style: none;">
-<td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-2022-phd-thesis-466263
-</td>
-<td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-phd
-</td>
-<td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-thesis
+support
 </td>
 <td headers="b_m_student" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
 no
 </td>
 <td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">
-2022-01-25
+2021-07-01
 </td>
 <td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">
-2022
+2021
 </td>
 <td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">
-Extent and markers of open waste burning
+NA
 </td>
 </tr>
 </tbody>
@@ -227,7 +275,7 @@ Extent and markers of open waste burning
 </div>
 <p>For an overview of the variable names, see the following table.</p>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; ">
-<table class="table table table-striped" style="color: black; margin-left: auto; margin-right: auto;">
+<table class="table table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead><tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 variable_name
@@ -321,18 +369,1179 @@ Title of the thesis.
 </table>
 </div>
 </div>
+<div class="section level3">
+<h3 id="github-tables">GitHub tables<a class="anchor" aria-label="anchor" href="#github-tables"></a>
+</h3>
+<p>Seven tables describe the work of the group on GitHub. They hold counts only and no name, login or email address of the person who made a commit.</p>
+<ul>
+<li>
+<code>github_organisations</code> has 12 rows, one per organisation, with the number of public and private repositories.</li>
+<li>
+<code>github_repositories</code> has 212 rows, one per public repository.</li>
+<li>
+<code>github_repository_types</code> has 133 rows with the number of repositories per organisation, visibility, type and year of creation. It counts all 3,141 repositories, private ones and student work included, and names none.</li>
+<li>
+<code>github_commits</code> has 486 rows, one per organisation, visibility and month, with the number of commits on the default branches. Commits by people, by bots, automated pushes and merge commits each have their own column. Private repositories are counted and never named.</li>
+<li>
+<code>github_commits_by_type</code> has 484 rows with the same commits per organisation, visibility, repository type and month.</li>
+<li>
+<code>github_commits_by_person</code> has 35 rows, one per group member, with the number of commits over the last twelve full months. A person is a rank, never a name. In a small group a rank can still point to a person for someone who knows the group.</li>
+<li>
+<code>github_commits_by_members</code> has 63 rows, one per month, with the number of commits by all group members together.</li>
+</ul>
+<p>The data was read from GitHub on 2026-11-11.</p>
+<p>The number of repositories by type, without the 2,796 repositories of learners in courses and workshops:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">github_repository_types</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">repository_type</span> <span class="op">!=</span> <span class="st">"learner repository"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">repository_type</span>, <span class="va">visibility</span>, wt <span class="op">=</span> <span class="va">repos</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html" class="external-link">pivot_wider</a></span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">visibility</span>, values_from <span class="op">=</span> <span class="va">n</span>, values_fill <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>total <span class="op">=</span> <span class="va">public</span> <span class="op">+</span> <span class="va">private</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html" class="external-link">desc</a></span><span class="op">(</span><span class="va">total</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<thead><tr>
+<th align="left">repository_type</th>
+<th align="right">private</th>
+<th align="right">public</th>
+<th align="right">total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">data package</td>
+<td align="right">19</td>
+<td align="right">78</td>
+<td align="right">97</td>
+</tr>
+<tr>
+<td align="left">teaching and training</td>
+<td align="right">25</td>
+<td align="right">60</td>
+<td align="right">85</td>
+</tr>
+<tr>
+<td align="left">research project</td>
+<td align="right">32</td>
+<td align="right">35</td>
+<td align="right">67</td>
+</tr>
+<tr>
+<td align="left">proposal or report</td>
+<td align="right">12</td>
+<td align="right">8</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td align="left">software</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">15</td>
+</tr>
+<tr>
+<td align="left">hardware</td>
+<td align="right">0</td>
+<td align="right">14</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td align="left">manuscript</td>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td align="left">student project</td>
+<td align="right">6</td>
+<td align="right">4</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">website and communication</td>
+<td align="right">1</td>
+<td align="right">9</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="left">group management</td>
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="left">organisation profile</td>
+<td align="right">0</td>
+<td align="right">7</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="left">template</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+<p>The commits made by people, by repository type and year. The year 2026 runs up to October.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">github_commits_by_type</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>year <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/format.html" class="external-link">format</a></span><span class="op">(</span><span class="va">month</span>, <span class="st">"%Y"</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">repository_type</span>, <span class="va">year</span>, wt <span class="op">=</span> <span class="va">commits</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html" class="external-link">pivot_wider</a></span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">year</span>, values_from <span class="op">=</span> <span class="va">n</span>, values_fill <span class="op">=</span> <span class="fl">0</span>, names_sort <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>total <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/colSums.html" class="external-link">rowSums</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html" class="external-link">across</a></span><span class="op">(</span><span class="op">-</span><span class="va">repository_type</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html" class="external-link">desc</a></span><span class="op">(</span><span class="va">total</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="38%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="8%">
+<col width="9%">
+</colgroup>
+<thead><tr>
+<th align="left">repository_type</th>
+<th align="right">2021</th>
+<th align="right">2022</th>
+<th align="right">2023</th>
+<th align="right">2024</th>
+<th align="right">2025</th>
+<th align="right">2026</th>
+<th align="right">total</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">data package</td>
+<td align="right">42</td>
+<td align="right">57</td>
+<td align="right">582</td>
+<td align="right">453</td>
+<td align="right">407</td>
+<td align="right">836</td>
+<td align="right">2377</td>
+</tr>
+<tr>
+<td align="left">research project</td>
+<td align="right">0</td>
+<td align="right">5</td>
+<td align="right">56</td>
+<td align="right">295</td>
+<td align="right">420</td>
+<td align="right">793</td>
+<td align="right">1569</td>
+</tr>
+<tr>
+<td align="left">software</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">162</td>
+<td align="right">530</td>
+<td align="right">283</td>
+<td align="right">976</td>
+</tr>
+<tr>
+<td align="left">website and communication</td>
+<td align="right">0</td>
+<td align="right">16</td>
+<td align="right">250</td>
+<td align="right">323</td>
+<td align="right">130</td>
+<td align="right">170</td>
+<td align="right">889</td>
+</tr>
+<tr>
+<td align="left">teaching and training</td>
+<td align="right">38</td>
+<td align="right">176</td>
+<td align="right">79</td>
+<td align="right">22</td>
+<td align="right">137</td>
+<td align="right">415</td>
+<td align="right">867</td>
+</tr>
+<tr>
+<td align="left">hardware</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">11</td>
+<td align="right">301</td>
+<td align="right">105</td>
+<td align="right">403</td>
+<td align="right">820</td>
+</tr>
+<tr>
+<td align="left">student project</td>
+<td align="right">0</td>
+<td align="right">86</td>
+<td align="right">72</td>
+<td align="right">23</td>
+<td align="right">51</td>
+<td align="right">170</td>
+<td align="right">402</td>
+</tr>
+<tr>
+<td align="left">manuscript</td>
+<td align="right">0</td>
+<td align="right">23</td>
+<td align="right">171</td>
+<td align="right">28</td>
+<td align="right">9</td>
+<td align="right">14</td>
+<td align="right">245</td>
+</tr>
+<tr>
+<td align="left">proposal or report</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">34</td>
+<td align="right">23</td>
+<td align="right">53</td>
+<td align="right">74</td>
+<td align="right">184</td>
+</tr>
+<tr>
+<td align="left">group management</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">56</td>
+<td align="right">10</td>
+<td align="right">22</td>
+<td align="right">15</td>
+<td align="right">106</td>
+</tr>
+<tr>
+<td align="left">learner repository</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">26</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">64</td>
+<td align="right">97</td>
+</tr>
+<tr>
+<td align="left">organisation profile</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">11</td>
+<td align="right">10</td>
+<td align="right">31</td>
+</tr>
+<tr>
+<td align="left">template</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">9</td>
+<td align="right">5</td>
+<td align="right">16</td>
+<td align="right">30</td>
+</tr>
+</tbody>
+</table>
+<p>Commits by bots and automated pushes are counted apart. An automated push is a commit that a device or a script makes under the account of a person, for example a sensor that uploads its readings every hour.</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">github_commits</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>year <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/format.html" class="external-link">format</a></span><span class="op">(</span><span class="va">month</span>, <span class="st">"%Y"</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span></span>
+<span>    people <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">commits</span><span class="op">)</span>,</span>
+<span>    bots <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">commits_bot</span><span class="op">)</span>,</span>
+<span>    automated <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">commits_automated</span><span class="op">)</span>,</span>
+<span>    merge <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">commits_merge</span><span class="op">)</span>,</span>
+<span>    .by <span class="op">=</span> <span class="va">year</span></span>
+<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<table class="table">
+<thead><tr>
+<th align="left">year</th>
+<th align="right">people</th>
+<th align="right">bots</th>
+<th align="right">automated</th>
+<th align="right">merge</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">2021</td>
+<td align="right">87</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">12</td>
+</tr>
+<tr>
+<td align="left">2022</td>
+<td align="right">370</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td align="left">2023</td>
+<td align="right">1344</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">85</td>
+</tr>
+<tr>
+<td align="left">2024</td>
+<td align="right">1649</td>
+<td align="right">31</td>
+<td align="right">0</td>
+<td align="right">137</td>
+</tr>
+<tr>
+<td align="left">2025</td>
+<td align="right">1880</td>
+<td align="right">119</td>
+<td align="right">0</td>
+<td align="right">223</td>
+</tr>
+<tr>
+<td align="left">2026</td>
+<td align="right">3263</td>
+<td align="right">51</td>
+<td align="right">1436</td>
+<td align="right">549</td>
+</tr>
+</tbody>
+</table>
+<p><code><a href="reference/github_commit_change.html">github_commit_change()</a></code> compares the commits of the last 12 complete months with the 12 months before.</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/github_commit_change.html">github_commit_change</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
+<table style="width:100%;" class="table">
+<colgroup>
+<col width="11%">
+<col width="11%">
+<col width="11%">
+<col width="11%">
+<col width="11%">
+<col width="11%">
+<col width="11%">
+<col width="11%">
+<col width="11%">
+</colgroup>
+<thead><tr>
+<th align="left">organisation</th>
+<th align="left">visibility</th>
+<th align="left">current_start</th>
+<th align="left">current_end</th>
+<th align="left">previous_start</th>
+<th align="left">previous_end</th>
+<th align="right">commits_current</th>
+<th align="right">commits_previous</th>
+<th align="right">factor</th>
+</tr></thead>
+<tbody><tr>
+<td align="left">all</td>
+<td align="left">all</td>
+<td align="left">2025-11-01</td>
+<td align="left">2026-10-01</td>
+<td align="left">2024-11-01</td>
+<td align="left">2025-10-01</td>
+<td align="right">3407</td>
+<td align="right">2079</td>
+<td align="right">1.6</td>
+</tr></tbody>
+</table>
+<p>For an overview of the variable names, see the following table.</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; ">
+<table class="table table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+file_name
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+variable_name
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+variable_type
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+description
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+organisation
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Login of the GitHub organisation. An organisation account, not a person.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+purpose
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+What the organisation is used for. Levels: research, data publishing, development, events, training, teaching.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+commits_counted
+</td>
+<td style="text-align:left;">
+logical
+</td>
+<td style="text-align:left;">
+TRUE when the commits of the organisation are counted in github_commits. FALSE for teaching organisations with one repository per student, which appear with repository counts only.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+created_date
+</td>
+<td style="text-align:left;">
+Date
+</td>
+<td style="text-align:left;">
+Date the organisation was created on GitHub.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+repos_public
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of public repositories on the snapshot date.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+repos_private
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of private repositories on the snapshot date. A count only, private repositories are never named.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+repos_archived
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of archived repositories on the snapshot date. NA for organisations whose commits are not counted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+repos_listed
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of public repositories of the organisation that are rows of github_repositories.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_organisations.rda
+</td>
+<td style="text-align:left;">
+snapshot_date
+</td>
+<td style="text-align:left;">
+Date
+</td>
+<td style="text-align:left;">
+Date (UTC) on which the data was read from the GitHub API.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+organisation
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Login of the GitHub organisation that owns the repository.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+repository
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Name of the public repository.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+created_date
+</td>
+<td style="text-align:left;">
+Date
+</td>
+<td style="text-align:left;">
+Date the repository was created.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+pushed_date
+</td>
+<td style="text-align:left;">
+Date
+</td>
+<td style="text-align:left;">
+Date of the last push to the repository before the snapshot date.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+is_archived
+</td>
+<td style="text-align:left;">
+logical
+</td>
+<td style="text-align:left;">
+TRUE when the repository is archived.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+is_fork
+</td>
+<td style="text-align:left;">
+logical
+</td>
+<td style="text-align:left;">
+TRUE when the repository is a fork of another repository.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+license
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+SPDX identifier of the licence that GitHub detects. NA when there is none or GitHub cannot name it.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+primary_language
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Main language of the repository as detected by GitHub. NA when there is none.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+repository_type
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Type of the repository, see github_repository_types for the rules. Levels in this table: data package, student project, hardware, manuscript, organisation profile, proposal or report, research project, software, teaching and training, template, website and communication, group management.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repositories.rda
+</td>
+<td style="text-align:left;">
+commits_total
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits on the default branch up to the last complete month before the snapshot date, made by people, without merge commits, commits by bots and automated commits. NA for forks.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repository_types.rda
+</td>
+<td style="text-align:left;">
+organisation
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Login of the GitHub organisation.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repository_types.rda
+</td>
+<td style="text-align:left;">
+visibility
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Visibility of the repositories on the snapshot date. Levels: public, private.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repository_types.rda
+</td>
+<td style="text-align:left;">
+repository_type
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Type of the repositories, from rules on the name, the top level files, the topics, the main language and the purpose of the organisation. Levels: learner repository, organisation profile, data package, student project, manuscript, proposal or report, teaching and training, website and communication, template, group management, software, hardware, research project.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repository_types.rda
+</td>
+<td style="text-align:left;">
+created_year
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Year the repositories were created.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_repository_types.rda
+</td>
+<td style="text-align:left;">
+repos
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of repositories. A count only, no repository is named.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+organisation
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Login of the GitHub organisation.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+visibility
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Visibility of the repositories on the snapshot date. Levels: public, private.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+month
+</td>
+<td style="text-align:left;">
+Date
+</td>
+<td style="text-align:left;">
+First day of the month (UTC) in which the commits were authored.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+commits
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits made by people on the default branches, without merge commits, commits by bots and automated commits. Forks are not counted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+commits_bot
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits authored by bot accounts and by GitHub Actions. Not part of commits.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+commits_automated
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits pushed by a device or a script under the account of a person, such as sensor data on a schedule. Recognised by the first line of the message with the patterns in data-raw/github_automated_commits.csv. Not part of commits.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+commits_merge
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of merge commits (more than one parent) that are neither by bots nor automated. Not part of commits.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+commits_assisted
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits counted in commits whose message carries a trailer of a coding agent (Co-Authored-By for Claude or Copilot, Assisted-by, or the Claude Code line). A lower bound, since the trailer is optional.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits.rda
+</td>
+<td style="text-align:left;">
+repos_active
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of repositories with at least one commit counted in commits in that month.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+organisation
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Login of the GitHub organisation.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+visibility
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Visibility of the repositories on the snapshot date. Levels: public, private.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+repository_type
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Type of the repositories, see github_repository_types for the levels and the rules.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+month
+</td>
+<td style="text-align:left;">
+Date
+</td>
+<td style="text-align:left;">
+First day of the month (UTC) in which the commits were authored.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+commits
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits made by people on the default branches, without merge commits, commits by bots and automated commits. Forks are not counted. Adds up to commits in github_commits.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+commits_bot
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits authored by bot accounts and by GitHub Actions. Not part of commits.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+commits_automated
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits pushed by a device or a script under the account of a person. Not part of commits.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+commits_assisted
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of commits counted in commits whose message carries a trailer of a coding agent. A lower bound, since the trailer is optional.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_type.rda
+</td>
+<td style="text-align:left;">
+repos_active
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of repositories of that type with at least one commit by a person in that month.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_person.rda
+</td>
+<td style="text-align:left;">
+person_rank
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Rank of the person by number of commits, 1 for the most commits. Stands in for the person; no login or name is kept.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_person.rda
+</td>
+<td style="text-align:left;">
+commits
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Commits by the person in the twelve months from first_month to last_month, counted as in github_commits (no bots, no automated pushes, no merge commits) and without commits in the training organisations.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_person.rda
+</td>
+<td style="text-align:left;">
+commits_assisted
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of these commits that carry an agent trailer.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_person.rda
+</td>
+<td style="text-align:left;">
+share_assisted
+</td>
+<td style="text-align:left;">
+double
+</td>
+<td style="text-align:left;">
+commits_assisted divided by commits. Empty for a person with 0 commits.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_person.rda
+</td>
+<td style="text-align:left;">
+workshop
+</td>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+Part in the workshops of the group in the twelve months: participant (has commits in a training organisation), trainer (ran the workshops) or none.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_person.rda
+</td>
+<td style="text-align:left;">
+first_month
+</td>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+First month of the twelve months counted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_person.rda
+</td>
+<td style="text-align:left;">
+last_month
+</td>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+Last month of the twelve months counted.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_members.rda
+</td>
+<td style="text-align:left;">
+month
+</td>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+First day of the month.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_members.rda
+</td>
+<td style="text-align:left;">
+commits
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Commits by group members in the month, without commits in the training organisations.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_members.rda
+</td>
+<td style="text-align:left;">
+commits_assisted
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:left;">
+Number of these commits that carry an agent trailer.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+github_commits_by_members.rda
+</td>
+<td style="text-align:left;">
+lookup_complete
+</td>
+<td style="text-align:left;">
+logical
+</td>
+<td style="text-align:left;">
+TRUE for the months in which every person was checked against the lookup of group members.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section level3">
+<h3 id="proposals-table">Proposals table<a class="anchor" aria-label="anchor" href="#proposals-table"></a>
+</h3>
+<p>One table holds the funding proposals of the group. It holds no name of a person.</p>
+<ul>
+<li>
+<code>proposals</code> has 81 rows, one per proposal since 2021, with the status, the funder, the dates of submission and answer, and the budget in its currency and in Swiss francs. 23 proposals were accepted. The requested budgets add up to CHF 34,010,433, of which CHF 2,986,253 were accepted. 2 proposals have no budget on record, so the sums are lower bounds.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="reach-table">Reach table<a class="anchor" aria-label="anchor" href="#reach-table"></a>
+</h3>
+<p>One table holds what was published on Zenodo and how often it was viewed and downloaded. It holds no name of an author.</p>
+<ul>
+<li>
+<code>zenodo_records</code> has 66 rows, one per record on Zenodo by a creator from the group or in the openwashdata community, with 13,347 views and 3,706 downloads in total. The counts were read on 2026-11-18.</li>
+</ul>
+</div>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/global-health-engineering/ghedata" class="external-link">ghedata</a></span><span class="op">)</span></span>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/Global-Health-Engineering/ghedata" class="external-link">ghedata</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">undergrad_students</span> <span class="op">&lt;-</span> <span class="va">people</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">b_m_student</span> <span class="op">==</span> <span class="st">"yes"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">thesis_title</span><span class="op">)</span><span class="op">)</span> </span></code></pre></div>
-<p>So far, GHE has supervised 154 projects of which 42 were done by BSc and 112 by MSc students.</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<p>So far, GHE has supervised 164 projects of which 43 were done by BSc and 121 by MSc students.</p>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">undergrad_students</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="va">degree</span>, <span class="va">year</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">n</span>, label <span class="op">=</span> <span class="va">n</span>, fill <span class="op">=</span> <span class="va">degree</span>, color <span class="op">=</span> <span class="va">degree</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -342,8 +1551,8 @@ Title of the thesis.
 <span>            show.legend <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">""</span>,</span>
 <span>       y <span class="op">=</span> <span class="st">"Number of students"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="http://jrnold.github.io/ggthemes/reference/colorblind.html" class="external-link">scale_fill_colorblind</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="http://jrnold.github.io/ggthemes/reference/colorblind.html" class="external-link">scale_color_colorblind</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://jrnold.github.io/ggthemes/reference/colorblind.html" class="external-link">scale_fill_colorblind</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://jrnold.github.io/ggthemes/reference/colorblind.html" class="external-link">scale_color_colorblind</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_minimal</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>panel.grid <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>        axis.text.y <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
@@ -352,36 +1561,36 @@ Title of the thesis.
 <div class="section level2">
 <h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
 </h2>
-<p>Data are available as <a href="https://github.com/global-health-engineering/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md" class="external-link">CC-BY</a>.</p>
+<p>Data are available as <a href="https://github.com/Global-Health-Engineering/ghedata/blob/main/LICENSE.md" class="external-link">CC-BY</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h2>
 <p>Please cite this package using:</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"ghedata"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite package 'ghedata' in publications use:</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   Schöbitz L (2024). _ghedata: What the Package Does (One Line, Title</span></span>
-<span><span class="co">#&gt;   Case)_. R package version 0.0.0.9000,</span></span>
-<span><span class="co">#&gt;   &lt;https://github.com/global-health-engineering/ghedata&gt;.</span></span>
+<span><span class="co">#&gt;   Schöbitz L (2024). _ghedata: Data on the Work of the Global Health</span></span>
+<span><span class="co">#&gt;   Engineering Group at ETH Zurich_. R package version 0.0.0.9000,</span></span>
+<span><span class="co">#&gt;   &lt;https://github.com/Global-Health-Engineering/ghedata&gt;.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;   @Manual{,</span></span>
-<span><span class="co">#&gt;     title = {ghedata: What the Package Does (One Line, Title Case)},</span></span>
+<span><span class="co">#&gt;     title = {ghedata: Data on the Work of the Global Health Engineering Group at ETH Zurich},</span></span>
 <span><span class="co">#&gt;     author = {Lars Schöbitz},</span></span>
 <span><span class="co">#&gt;     year = {2024},</span></span>
 <span><span class="co">#&gt;     note = {R package version 0.0.0.9000},</span></span>
-<span><span class="co">#&gt;     url = {https://github.com/global-health-engineering/ghedata},</span></span>
+<span><span class="co">#&gt;     url = {https://github.com/Global-Health-Engineering/ghedata},</span></span>
 <span><span class="co">#&gt;   }</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/global-health-engineering/ghedata/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/global-health-engineering/ghedata/issues" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/Global-Health-Engineering/ghedata/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/Global-Health-Engineering/ghedata/issues" class="external-link">Report a bug</a></li>
 <li><a href="https://github.com/Global-Health-Engineering/ghedata" class="external-link">GitHub repository</a></li>
 </ul>
 </div>
