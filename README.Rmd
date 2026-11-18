@@ -264,8 +264,7 @@ undergrad_students |>
 
 ## License
 
-Data are available as
-[CC-BY](https://github.com/Global-Health-Engineering/ghedata/blob/main/LICENSE.md).
+Data are available as [CC-BY-4.0](https://github.com/Global-Health-Engineering/ghedata/blob/main/LICENSE.md).
 
 ## Citation
 
@@ -274,3 +273,5 @@ Please cite this package using:
 ```{r}
 citation("ghedata")
 ```
+
+The website of the package is <https://global-health-engineering.github.io/ghedata/>. A DOI follows with the first release.
