@@ -93,6 +93,28 @@ people <- data_in |>
   select(degree, type, b_m_student, start_date, year) |>
   arrange(start_date, degree, type)
 
+## Outputs: theses and projects of students with their titles. Finished and
+## running work, without work that was not finished and without staff rows.
+## Sorted by year, type and title; no column and no row order links a row to
+## the table people.
+outputs <- data_in |>
+  filter(
+    degree %in% c("bsc", "msc", "phd"),
+    !is.na(thesis_title),
+    status != "not finished"
+  ) |>
+  transmute(
+    title = str_squish(thesis_title),
+    output_type = paste(degree, recode(type, "sem-proj" = "semester project", "case-study" = "case study")),
+    year = as.integer(year),
+    research_collection_link = if_else(
+      str_detect(coalesce(as.character(eth_collection_link), ""), "^https?://"),
+      as.character(eth_collection_link),
+      NA_character_
+    )
+  ) |>
+  arrange(year, output_type, title)
+
 # Export Data ------------------------------------------------------------------
 export_table <- function(data, name) {
   readr::write_csv(data, here::here("inst", "extdata", paste0(name, ".csv")))
@@ -103,6 +125,9 @@ fs::dir_create(here::here("inst", "extdata"))
 
 usethis::use_data(people, overwrite = TRUE)
 export_table(people, "people")
+
+usethis::use_data(outputs, overwrite = TRUE)
+export_table(outputs, "outputs")
 
 # Export computational competencies data
 usethis::use_data(computational, overwrite = TRUE)
