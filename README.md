@@ -54,6 +54,11 @@ file from the table below.
 | github_repositories | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repositories.xlsx) |
 | github_repository_types | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repository_types.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_repository_types.xlsx) |
 | github_commits | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits.xlsx) |
+| github_commits_by_type | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_type.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_type.xlsx) |
+| proposals | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/proposals.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/proposals.xlsx) |
+| github_commits_by_person | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_person.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_person.xlsx) |
+| github_commits_by_members | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_members.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/github_commits_by_members.xlsx) |
+| zenodo_records | [Download CSV](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/zenodo_records.csv) | [Download XLSX](https://github.com/global-health-engineering/ghedata/raw/main/inst/extdata/zenodo_records.xlsx) |
 
 ## Data
 
@@ -68,7 +73,7 @@ library(ghedata)
 The dataset `people` contains data about people that have worked for the
 group. This includes staff, as well as undergraduate student projects.
 
-It has 186 observations and 7 variables.
+It has 205 observations and 7 variables.
 
 ``` r
 people |> 
@@ -77,7 +82,7 @@ people |>
   gt::as_raw_html()
 ```
 
-<div id="qcdvzwivak" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="utukofwnuh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -91,27 +96,27 @@ people |>
     </tr>
   </thead>
   <tbody class="gt_table_body" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3;">
-    <tr style="border-style: none;"><td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">2021-bsc-thesis-141444</td>
+    <tr style="border-style: none;"><td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">2021-staff-chair-141444</td>
+<td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">staff</td>
+<td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">chair</td>
+<td headers="b_m_student" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">no</td>
+<td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021-02-01</td>
+<td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021</td>
+<td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">NA</td></tr>
+    <tr style="border-style: none;"><td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">2021-bsc-thesis-565554</td>
 <td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">bsc</td>
 <td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">thesis</td>
 <td headers="b_m_student" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">yes</td>
 <td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021-02-01</td>
 <td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021</td>
 <td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Self-cleaning Preliminary Screening Mechanisms to Improve Health and Wastewater Treatment Efficiency in Low-income Countries</td></tr>
-    <tr style="border-style: none;"><td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">2021-msc-thesis-565554</td>
-<td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">msc</td>
-<td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">thesis</td>
-<td headers="b_m_student" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">yes</td>
-<td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021-09-19</td>
-<td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021</td>
-<td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Barriers to successful data management in the Global South: Case Study of Malawi</td></tr>
-    <tr style="border-style: none;"><td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">2022-phd-thesis-466263</td>
-<td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">phd</td>
-<td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">thesis</td>
+    <tr style="border-style: none;"><td headers="title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">2021-staff-support-466263</td>
+<td headers="degree" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">staff</td>
+<td headers="type" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">support</td>
 <td headers="b_m_student" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">no</td>
-<td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2022-01-25</td>
-<td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2022</td>
-<td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Extent and markers of open waste burning</td></tr>
+<td headers="start_date" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021-07-01</td>
+<td headers="year" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">2021</td>
+<td headers="thesis_title" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">NA</td></tr>
   </tbody>
   &#10;</table>
 </div>
@@ -291,8 +296,9 @@ Title of the thesis.
 
 ### GitHub tables
 
-Four tables describe the work of the group on GitHub. They hold counts
-only and no information about who made a commit.
+Seven tables describe the work of the group on GitHub. They hold counts
+only and no name, login or email address of the person who made a
+commit.
 
 - `github_organisations` has 12 rows, one per organisation, with the
   number of public and private repositories.
@@ -302,8 +308,17 @@ only and no information about who made a commit.
   3,141 repositories, private ones and student work included, and names
   none.
 - `github_commits` has 486 rows, one per organisation, visibility and
-  month, with the number of commits on the default branches. Private
-  repositories are counted and never named.
+  month, with the number of commits on the default branches. Commits by
+  people, by bots, automated pushes and merge commits each have their
+  own column. Private repositories are counted and never named.
+- `github_commits_by_type` has 484 rows with the same commits per
+  organisation, visibility, repository type and month.
+- `github_commits_by_person` has 35 rows, one per group member, with the
+  number of commits over the last twelve full months. A person is a
+  rank, never a name. In a small group a rank can still point to a
+  person for someone who knows the group.
+- `github_commits_by_members` has 63 rows, one per month, with the
+  number of commits by all group members together.
 
 The data was read from GitHub on 2026-11-11.
 
@@ -335,6 +350,61 @@ github_repository_types |>
 | organisation profile      |       0 |      7 |     7 |
 | template                  |       0 |      2 |     2 |
 
+The commits made by people, by repository type and year. The year 2026
+runs up to October.
+
+``` r
+github_commits_by_type |>
+  dplyr::mutate(year = format(month, "%Y")) |>
+  dplyr::count(repository_type, year, wt = commits) |>
+  tidyr::pivot_wider(names_from = year, values_from = n, values_fill = 0, names_sort = TRUE) |>
+  dplyr::mutate(total = rowSums(dplyr::across(-repository_type))) |>
+  dplyr::arrange(dplyr::desc(total)) |>
+  knitr::kable()
+```
+
+| repository_type           | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | total |
+|:--------------------------|-----:|-----:|-----:|-----:|-----:|-----:|------:|
+| data package              |   42 |   57 |  582 |  453 |  407 |  836 |  2377 |
+| research project          |    0 |    5 |   56 |  295 |  420 |  793 |  1569 |
+| software                  |    0 |    0 |    1 |  162 |  530 |  283 |   976 |
+| website and communication |    0 |   16 |  250 |  323 |  130 |  170 |   889 |
+| teaching and training     |   38 |  176 |   79 |   22 |  137 |  415 |   867 |
+| hardware                  |    0 |    0 |   11 |  301 |  105 |  403 |   820 |
+| student project           |    0 |   86 |   72 |   23 |   51 |  170 |   402 |
+| manuscript                |    0 |   23 |  171 |   28 |    9 |   14 |   245 |
+| proposal or report        |    0 |    0 |   34 |   23 |   53 |   74 |   184 |
+| group management          |    0 |    3 |   56 |   10 |   22 |   15 |   106 |
+| learner repository        |    7 |    0 |   26 |    0 |    0 |   64 |    97 |
+| organisation profile      |    0 |    4 |    6 |    0 |   11 |   10 |    31 |
+| template                  |    0 |    0 |    0 |    9 |    5 |   16 |    30 |
+
+Commits by bots and automated pushes are counted apart. An automated
+push is a commit that a device or a script makes under the account of a
+person, for example a sensor that uploads its readings every hour.
+
+``` r
+github_commits |>
+  dplyr::mutate(year = format(month, "%Y")) |>
+  dplyr::summarise(
+    people = sum(commits),
+    bots = sum(commits_bot),
+    automated = sum(commits_automated),
+    merge = sum(commits_merge),
+    .by = year
+  ) |>
+  knitr::kable()
+```
+
+| year | people | bots | automated | merge |
+|:-----|-------:|-----:|----------:|------:|
+| 2021 |     87 |    0 |         0 |    12 |
+| 2022 |    370 |    0 |         0 |     5 |
+| 2023 |   1344 |    0 |         0 |    85 |
+| 2024 |   1649 |   31 |         0 |   137 |
+| 2025 |   1880 |  119 |         0 |   223 |
+| 2026 |   3263 |   51 |      1436 |   549 |
+
 `github_commit_change()` compares the commits of the last 12 complete
 months with the 12 months before.
 
@@ -345,7 +415,7 @@ github_commit_change() |>
 
 | organisation | visibility | current_start | current_end | previous_start | previous_end | commits_current | commits_previous | factor |
 |:---|:---|:---|:---|:---|:---|---:|---:|---:|
-| all | all | 2025-11-01 | 2026-10-01 | 2024-11-01 | 2025-10-01 | 4890 | 2183 | 2.2 |
+| all | all | 2025-11-01 | 2026-10-01 | 2024-11-01 | 2025-10-01 | 3407 | 2079 | 1.6 |
 
 For an overview of the variable names, see the following table.
 
@@ -847,8 +917,8 @@ integer
 <td style="text-align:left;">
 
 Number of commits on the default branch up to the last complete month
-before the snapshot date, without merge commits and commits by bots. NA
-for forks.
+before the snapshot date, made by people, without merge commits, commits
+by bots and automated commits. NA for forks.
 </td>
 
 </tr>
@@ -1071,8 +1141,8 @@ integer
 
 <td style="text-align:left;">
 
-Number of commits on the default branches, without merge commits and
-commits by bots. Forks are not counted.
+Number of commits made by people on the default branches, without merge
+commits, commits by bots and automated commits. Forks are not counted.
 </td>
 
 </tr>
@@ -1096,7 +1166,35 @@ integer
 
 <td style="text-align:left;">
 
-Number of commits authored by bot accounts. Not part of commits.
+Number of commits authored by bot accounts and by GitHub Actions. Not
+part of commits.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_automated
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits pushed by a device or a script under the account of a
+person, such as sensor data on a schedule. Recognised by the first line
+of the message with the patterns in
+data-raw/github_automated_commits.csv. Not part of commits.
 </td>
 
 </tr>
@@ -1120,8 +1218,8 @@ integer
 
 <td style="text-align:left;">
 
-Number of merge commits (more than one parent) not authored by bots. Not
-part of commits.
+Number of merge commits (more than one parent) that are neither by bots
+nor automated. Not part of commits.
 </td>
 
 </tr>
@@ -1177,11 +1275,527 @@ that month.
 
 </tr>
 
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+organisation
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Login of the GitHub organisation.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+visibility
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Visibility of the repositories on the snapshot date. Levels: public,
+private.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+repository_type
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Type of the repositories, see github_repository_types for the levels and
+the rules.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+month
+</td>
+
+<td style="text-align:left;">
+
+Date
+</td>
+
+<td style="text-align:left;">
+
+First day of the month (UTC) in which the commits were authored.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+commits
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits made by people on the default branches, without merge
+commits, commits by bots and automated commits. Forks are not counted.
+Adds up to commits in github_commits.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_bot
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits authored by bot accounts and by GitHub Actions. Not
+part of commits.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_automated
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits pushed by a device or a script under the account of a
+person. Not part of commits.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_assisted
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of commits counted in commits whose message carries a trailer of
+a coding agent. A lower bound, since the trailer is optional.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_type.rda
+</td>
+
+<td style="text-align:left;">
+
+repos_active
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of repositories of that type with at least one commit by a person
+in that month.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_person.rda
+</td>
+
+<td style="text-align:left;">
+
+person_rank
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Rank of the person by number of commits, 1 for the most commits. Stands
+in for the person; no login or name is kept.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_person.rda
+</td>
+
+<td style="text-align:left;">
+
+commits
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Commits by the person in the twelve months from first_month to
+last_month, counted as in github_commits (no bots, no automated pushes,
+no merge commits) and without commits in the training organisations.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_person.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_assisted
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of these commits that carry an agent trailer.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_person.rda
+</td>
+
+<td style="text-align:left;">
+
+share_assisted
+</td>
+
+<td style="text-align:left;">
+
+double
+</td>
+
+<td style="text-align:left;">
+
+commits_assisted divided by commits. Empty for a person with 0 commits.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_person.rda
+</td>
+
+<td style="text-align:left;">
+
+workshop
+</td>
+
+<td style="text-align:left;">
+
+character
+</td>
+
+<td style="text-align:left;">
+
+Part in the workshops of the group in the twelve months: participant
+(has commits in a training organisation), trainer (ran the workshops) or
+none.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_person.rda
+</td>
+
+<td style="text-align:left;">
+
+first_month
+</td>
+
+<td style="text-align:left;">
+
+date
+</td>
+
+<td style="text-align:left;">
+
+First month of the twelve months counted.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_person.rda
+</td>
+
+<td style="text-align:left;">
+
+last_month
+</td>
+
+<td style="text-align:left;">
+
+date
+</td>
+
+<td style="text-align:left;">
+
+Last month of the twelve months counted.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_members.rda
+</td>
+
+<td style="text-align:left;">
+
+month
+</td>
+
+<td style="text-align:left;">
+
+date
+</td>
+
+<td style="text-align:left;">
+
+First day of the month.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_members.rda
+</td>
+
+<td style="text-align:left;">
+
+commits
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Commits by group members in the month, without commits in the training
+organisations.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_members.rda
+</td>
+
+<td style="text-align:left;">
+
+commits_assisted
+</td>
+
+<td style="text-align:left;">
+
+integer
+</td>
+
+<td style="text-align:left;">
+
+Number of these commits that carry an agent trailer.
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+github_commits_by_members.rda
+</td>
+
+<td style="text-align:left;">
+
+lookup_complete
+</td>
+
+<td style="text-align:left;">
+
+logical
+</td>
+
+<td style="text-align:left;">
+
+TRUE for the months in which every person was checked against the lookup
+of group members.
+</td>
+
+</tr>
+
 </tbody>
 
 </table>
 
 </div>
+
+### Proposals table
+
+One table holds the funding proposals of the group. It holds no name of
+a person.
+
+- `proposals` has 81 rows, one per proposal since 2021, with the status,
+  the funder, the dates of submission and answer, and the budget in its
+  currency and in Swiss francs. 23 proposals were accepted. The
+  requested budgets add up to CHF 34,010,433, of which CHF 2,986,253
+  were accepted. 2 proposals have no budget on record, so the sums are
+  lower bounds.
+
+### Reach table
+
+One table holds what was published on Zenodo and how often it was viewed
+and downloaded. It holds no name of an author.
+
+- `zenodo_records` has 66 rows, one per record on Zenodo by a creator
+  from the group or in the openwashdata community, with 13,347 views and
+  3,706 downloads in total. The counts were read on 2026-11-18.
 
 ## Example
 
@@ -1193,8 +1807,8 @@ undergrad_students <- people |>
   filter(!is.na(thesis_title)) 
 ```
 
-So far, GHE has supervised 154 projects of which 42 were done by BSc and
-112 by MSc students.
+So far, GHE has supervised 164 projects of which 43 were done by BSc and
+121 by MSc students.
 
 ``` r
 undergrad_students |> 

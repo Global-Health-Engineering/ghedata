@@ -114,12 +114,15 @@ readr::read_csv("data-raw/dictionary.csv") |>
 
 ### GitHub tables
 
-Four tables describe the work of the group on GitHub. They hold counts only and no information about who made a commit.
+Seven tables describe the work of the group on GitHub. They hold counts only and no name, login or email address of the person who made a commit.
 
 - `github_organisations` has `r nrow(github_organisations)` rows, one per organisation, with the number of public and private repositories.
 - `github_repositories` has `r nrow(github_repositories)` rows, one per public repository.
 - `github_repository_types` has `r nrow(github_repository_types)` rows with the number of repositories per organisation, visibility, type and year of creation. It counts all `r format(sum(github_repository_types$repos), big.mark = ",")` repositories, private ones and student work included, and names none.
-- `github_commits` has `r nrow(github_commits)` rows, one per organisation, visibility and month, with the number of commits on the default branches. Private repositories are counted and never named.
+- `github_commits` has `r nrow(github_commits)` rows, one per organisation, visibility and month, with the number of commits on the default branches. Commits by people, by bots, automated pushes and merge commits each have their own column. Private repositories are counted and never named.
+- `github_commits_by_type` has `r nrow(github_commits_by_type)` rows with the same commits per organisation, visibility, repository type and month.
+- `github_commits_by_person` has `r nrow(github_commits_by_person)` rows, one per group member, with the number of commits over the last twelve full months. A person is a rank, never a name. In a small group a rank can still point to a person for someone who knows the group.
+- `github_commits_by_members` has `r nrow(github_commits_by_members)` rows, one per month, with the number of commits by all group members together.
 
 The data was read from GitHub on `r unique(github_organisations$snapshot_date)`.
 
@@ -132,6 +135,33 @@ github_repository_types |>
   tidyr::pivot_wider(names_from = visibility, values_from = n, values_fill = 0) |>
   dplyr::mutate(total = public + private) |>
   dplyr::arrange(dplyr::desc(total)) |>
+  knitr::kable()
+```
+
+The commits made by people, by repository type and year. The year `r format(max(github_commits_by_type$month), "%Y")` runs up to `r format(max(github_commits_by_type$month), "%B")`.
+
+```{r github-commits-by-type}
+github_commits_by_type |>
+  dplyr::mutate(year = format(month, "%Y")) |>
+  dplyr::count(repository_type, year, wt = commits) |>
+  tidyr::pivot_wider(names_from = year, values_from = n, values_fill = 0, names_sort = TRUE) |>
+  dplyr::mutate(total = rowSums(dplyr::across(-repository_type))) |>
+  dplyr::arrange(dplyr::desc(total)) |>
+  knitr::kable()
+```
+
+Commits by bots and automated pushes are counted apart. An automated push is a commit that a device or a script makes under the account of a person, for example a sensor that uploads its readings every hour.
+
+```{r github-commit-classes}
+github_commits |>
+  dplyr::mutate(year = format(month, "%Y")) |>
+  dplyr::summarise(
+    people = sum(commits),
+    bots = sum(commits_bot),
+    automated = sum(commits_automated),
+    merge = sum(commits_merge),
+    .by = year
+  ) |>
   knitr::kable()
 ```
 
@@ -152,6 +182,18 @@ readr::read_csv("data-raw/dictionary.csv") |>
   kableExtra::kable_styling("striped") |>
   kableExtra::scroll_box(height = "200px")
 ```
+
+### Proposals table
+
+One table holds the funding proposals of the group. It holds no name of a person.
+
+- `proposals` has `r nrow(proposals)` rows, one per proposal since `r format(min(proposals$submitted_date, na.rm = TRUE), "%Y")`, with the status, the funder, the dates of submission and answer, and the budget in its currency and in Swiss francs. `r sum(proposals$status == "accepted", na.rm = TRUE)` proposals were accepted. The requested budgets add up to CHF `r format(round(sum(proposals$budget_chf, na.rm = TRUE)), big.mark = ",")`, of which CHF `r format(round(sum(proposals$budget_chf[proposals$status == "accepted"], na.rm = TRUE)), big.mark = ",")` were accepted. `r sum(is.na(proposals$budget_chf))` proposals have no budget on record, so the sums are lower bounds.
+
+### Reach table
+
+One table holds what was published on Zenodo and how often it was viewed and downloaded. It holds no name of an author.
+
+- `zenodo_records` has `r nrow(zenodo_records)` rows, one per record on Zenodo by a creator from the group or in the openwashdata community, with `r format(sum(zenodo_records$views), big.mark = ",")` views and `r format(sum(zenodo_records$downloads), big.mark = ",")` downloads in total. The counts were read on `r unique(zenodo_records$snapshot_date)`.
 
 ## Example
 
