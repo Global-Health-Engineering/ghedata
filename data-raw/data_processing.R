@@ -86,25 +86,23 @@ computational <- pre_course_survey |>
 # Tidy data --------------------------------------------------------------------
 ## Clean the raw data into a tidy format here
 
-set.seed(seed = 0721)
-
+## People: one row per engagement, without titles and without an identifier.
+## Sorted by start date, so the order of the rows says nothing about the
+## order of the source table. There is no key to the table outputs.
 people <- data_in |>
-  select(title, degree, type, b_m_student, start_date, year, thesis_title) |>
-  mutate(title = map_chr(title, replace_last_dash))
+  select(degree, type, b_m_student, start_date, year) |>
+  arrange(start_date, degree, type)
 
 # Export Data ------------------------------------------------------------------
-# Export people data
-usethis::use_data(people, overwrite = TRUE)
+export_table <- function(data, name) {
+  readr::write_csv(data, here::here("inst", "extdata", paste0(name, ".csv")))
+  writexl::write_xlsx(data, here::here("inst", "extdata", paste0(name, ".xlsx")))
+}
 
 fs::dir_create(here::here("inst", "extdata"))
-readr::write_csv(
-  people,
-  here::here("inst", "extdata", paste0("people", ".csv"))
-)
-openxlsx::write.xlsx(
-  people,
-  here::here("inst", "extdata", paste0("people", ".xlsx"))
-)
+
+usethis::use_data(people, overwrite = TRUE)
+export_table(people, "people")
 
 # Export computational competencies data
 usethis::use_data(computational, overwrite = TRUE)
