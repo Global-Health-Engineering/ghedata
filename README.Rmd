@@ -127,16 +127,6 @@ people |>
   gt::as_raw_html()
 ```
 
-For an overview of the variable names, see the following table.
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-readr::read_csv("data-raw/dictionary.csv") |>
-  dplyr::filter(file_name == "people.rda") |>
-  dplyr::select(variable_name:description) |> 
-  knitr::kable() |> 
-  kableExtra::kable_styling("striped") |> 
-  kableExtra::scroll_box(height = "200px")
-```
 
 ### outputs
 
@@ -219,17 +209,6 @@ github_commit_change() |>
   knitr::kable(digits = 1)
 ```
 
-For an overview of the variable names, see the following table.
-
-```{r github-dictionary, echo=FALSE, message=FALSE, warning=FALSE}
-readr::read_csv("data-raw/dictionary.csv") |>
-  dplyr::filter(stringr::str_starts(file_name, "github_")) |>
-  dplyr::select(file_name:description) |>
-  knitr::kable() |>
-  kableExtra::kable_styling("striped") |>
-  kableExtra::scroll_box(height = "200px")
-```
-
 ### Proposals table
 
 One table holds the funding proposals of the group. It holds no name of a person.
@@ -241,6 +220,19 @@ One table holds the funding proposals of the group. It holds no name of a person
 One table holds what was published on Zenodo and how often it was viewed and downloaded. It holds no name of an author.
 
 - `zenodo_records` has `r nrow(zenodo_records)` rows, one per record on Zenodo by a creator from the group or in the openwashdata community, with `r format(sum(zenodo_records$views), big.mark = ",")` views and `r format(sum(zenodo_records$downloads), big.mark = ",")` downloads in total. The counts were read on `r unique(zenodo_records$snapshot_date)`.
+
+## Variables
+
+The dictionary describes every variable of every table.
+
+```{r dictionary, echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::mutate(table = stringr::str_remove(file_name, ".rda")) |>
+  dplyr::select(table, variable_name, variable_type, description) |>
+  knitr::kable() |>
+  kableExtra::kable_styling("striped") |>
+  kableExtra::scroll_box(height = "400px")
+```
 
 ## Example
 
