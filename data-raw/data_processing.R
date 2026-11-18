@@ -1,35 +1,30 @@
 # Description ------------------------------------------------------------------
-# R script to process uploaded raw data into a tidy, analysis-ready data frame
+# Builds three tables from two Google Sheets that hold names and stay outside
+# this repository:
+# - people: one row per engagement in the group, without titles and without
+#   an identifier.
+# - outputs: theses and projects of students with their titles. No key links
+#   it to people.
+# - computational: counts per question and answer of the group survey of
+#   June 2025. The answers per respondent are held in memory only.
+#
+# The Google account that may read the sheets is set in ~/.Renviron:
+#   GHE_GOOGLE_EMAIL=<address>
+#
+# Run from the package root:
+#   Rscript data-raw/data_processing.R
+
 # Load packages ----------------------------------------------------------------
-## Run the following code in console if you don't have the packages
-## install.packages(c("usethis", "fs", "here", "readr", "readxl", "openxlsx"))
 library(usethis)
 library(fs)
 library(here)
 library(readr)
-library(readxl)
-library(openxlsx)
+library(writexl)
 library(googlesheets4)
 library(dplyr)
 library(lubridate)
 library(stringr)
-library(purrr)
 library(tidyr)
-
-# functions ---------------------------------------------------------------
-
-# Functions generated with perplexity.ai:
-# https://www.perplexity.ai/search/write-r-code-to-use-stringr-to-RgzUzkXuQgqZ4IAPHJvlpg
-
-# Function to generate a unique ID
-generate_unique_id <- function(length = 6) {
-  paste0(sample(length, replace = TRUE), collapse = "")
-}
-
-# Function to replace the last word after dash with a unique ID
-replace_last_dash <- function(string) {
-  str_replace(string, "-([^-]+)$", paste0("-", generate_unique_id()))
-}
 
 # Read data --------------------------------------------------------------------
 
@@ -37,10 +32,6 @@ replace_last_dash <- function(string) {
 
 # Configure authentication to use the correct email
 gs4_auth(email = Sys.getenv("GHE_GOOGLE_EMAIL", unset = NA))
-
-# data_in <- readr::read_csv("data-raw/dataset.csv")
-# codebook <- readxl::read_excel("data-raw/codebook.xlsx") |>
-#  clean_names()
 
 data_in <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L2YTUd5obTbBnR1qCrIJIwhUvFE/edit?gid=0#gid=0"
