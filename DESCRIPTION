@@ -15,8 +15,7 @@ Authors@R: c(
 Description: Data that documents the work of the Global Health Engineering
     group at ETH Zurich since 2021: theses, projects and staff, computational
     competencies of the group, repositories and commits on GitHub, funding
-    proposals, and records on Zenodo with their views and downloads. The
-    tables hold counts and descriptions and no name of a person.
+    proposals, and records on Zenodo with their views and downloads.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
