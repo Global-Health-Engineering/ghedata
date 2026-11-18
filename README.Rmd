@@ -247,7 +247,8 @@ undergrad_students <- people |>
 
 So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
 
-```{r}
+```{r students-by-year}
+#| fig-alt: "Bar chart of the number of theses and projects of BSc and MSc students per year."
 undergrad_students |> 
   count(degree, year) |> 
   ggplot(aes(x = year, y = n, label = n, fill = degree, color = degree)) +
@@ -255,8 +256,10 @@ undergrad_students |>
   geom_text(position=position_dodge(width=0.9), 
             vjust=-0.5,
             show.legend = FALSE) +
-  labs(x = "",
-       y = "Number of students") +
+  labs(x = "Year the work started",
+       y = "Theses and projects",
+       fill = "Degree",
+       color = "Degree") +
   scale_fill_colorblind() +
   scale_color_colorblind() +
   theme_minimal() +
