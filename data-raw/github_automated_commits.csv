@@ -1,0 +1,3 @@
+pattern,note
+"^Periodic CSV update$","Sensor data pushed by a device on a schedule"
+"^data: auto-push ","Sensor data pushed twice a day by a timer"

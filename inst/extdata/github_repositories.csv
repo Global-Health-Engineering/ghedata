@@ -33,7 +33,7 @@ Global-Health-Engineering,grasp,2024-10-29,2024-12-30,FALSE,FALSE,CC-BY-4.0,Pyth
 Global-Health-Engineering,grant-parser,2024-10-31,2026-03-29,FALSE,FALSE,NA,Python,research project,17
 Global-Health-Engineering,ghedata,2024-11-16,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,44
 Global-Health-Engineering,cookstove-sensing,2025-01-29,2025-03-14,FALSE,FALSE,CC-BY-4.0,Python,research project,10
-Global-Health-Engineering,ghe_transcribe,2025-03-26,2026-10-22,FALSE,FALSE,MIT,Python,software,274
+Global-Health-Engineering,ghe_transcribe,2025-03-26,2026-10-22,FALSE,FALSE,MIT,Python,software,249
 Global-Health-Engineering,biogasoffset,2025-03-31,2026-10-23,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,research project,5
 Global-Health-Engineering,incinerate-with-hx,2025-04-08,2025-04-14,FALSE,FALSE,CC-BY-4.0,SCSS,research project,12
 Global-Health-Engineering,injection-molding-with-resin-molds,2025-04-09,2025-06-01,FALSE,FALSE,CC-BY-4.0,NA,research project,8
@@ -62,7 +62,7 @@ Global-Health-Engineering,ghedata-code,2025-11-11,2026-05-27,FALSE,FALSE,NA,HTML
 Global-Health-Engineering,plastic-separation-blantyre,2025-12-03,2026-01-06,FALSE,FALSE,CC-BY-4.0,R,research project,19
 Global-Health-Engineering,autoclean,2025-12-10,2026-03-10,FALSE,FALSE,MIT,Python,student project,135
 Global-Health-Engineering,man-ethord,2026-01-14,2026-01-19,FALSE,FALSE,NA,HTML,manuscript,8
-Global-Health-Engineering,mzuzu-biogas-research,2026-02-25,2026-05-27,FALSE,FALSE,MIT,C,hardware,1230
+Global-Health-Engineering,mzuzu-biogas-research,2026-02-25,2026-05-27,FALSE,FALSE,MIT,C,hardware,7
 Global-Health-Engineering,ultrasonic-flowmeter,2026-03-02,2026-03-02,FALSE,FALSE,CC-BY-4.0,C++,hardware,4
 Global-Health-Engineering,h2s-monitor,2026-04-02,2026-08-12,FALSE,FALSE,NA,C++,hardware,28
 Global-Health-Engineering,glass-tumbler,2026-04-16,2026-04-24,FALSE,FALSE,CERN-OHL-S-2.0,SCSS,research project,26
@@ -83,7 +83,7 @@ Global-Health-Engineering,workshop-dcc-2027,2026-10-20,2026-11-10,FALSE,FALSE,NA
 Global-Health-Engineering,ghedatapublishing,2026-10-27,2026-10-27,TRUE,FALSE,NA,NA,research project,2
 openwashdata,jmpdata,2022-04-26,2026-10-03,FALSE,TRUE,CC-BY-4.0,R,data package,NA
 openwashdata,.github,2022-11-30,2023-08-04,FALSE,FALSE,NA,NA,organisation profile,6
-openwashdata,website,2022-11-30,2026-11-11,FALSE,FALSE,NA,JavaScript,website and communication,535
+openwashdata,website,2022-11-30,2026-11-11,FALSE,FALSE,NA,JavaScript,website and communication,466
 openwashdata,fsmglobal,2022-12-13,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,48
 openwashdata,data,2023-03-08,2026-07-18,FALSE,FALSE,NA,NA,research project,4
 openwashdata,cbssuitabilityhaiti,2023-04-06,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,75
@@ -103,12 +103,12 @@ openwashdata,cleanteamghana,2023-10-25,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,dat
 openwashdata,faecalsludgekampala,2023-11-30,2023-11-30,FALSE,FALSE,NA,R,data package,3
 openwashdata,universityrankingafrica,2023-12-04,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,38
 openwashdata,wastecollectionblantyre,2023-12-06,2023-12-06,TRUE,FALSE,NA,R,data package,2
-openwashdata,washopenresearch,2023-12-21,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,112
+openwashdata,washopenresearch,2023-12-21,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,109
 openwashdata,rwpfunctionality,2024-03-11,2026-11-01,FALSE,FALSE,CC-BY-4.0,TeX,data package,56
 openwashdata,washinvestments,2024-03-11,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,43
 openwashdata,wsabrazil,2024-03-26,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,45
 openwashdata,whdxdata,2024-04-16,2024-04-16,TRUE,FALSE,CC-BY-4.0,R,data package,10
-openwashdata,washr,2024-04-22,2026-11-11,FALSE,FALSE,GPL-3.0,R,software,146
+openwashdata,washr,2024-04-22,2026-11-11,FALSE,FALSE,GPL-3.0,R,software,145
 openwashdata,ugabore,2024-04-30,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,20
 openwashdata,portawaterperu,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,26
 openwashdata,waschoolpiracema,2024-06-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,22
@@ -117,22 +117,22 @@ openwashdata,boreholefuncmwi,2024-06-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data 
 openwashdata,breathablepitlat,2024-06-21,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,17
 openwashdata,saniabidjan,2024-07-03,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,20
 openwashdata,fslogisticskampala,2024-07-18,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,45
-openwashdata,fair-publishing,2024-09-16,2026-11-11,FALSE,FALSE,NA,R,research project,34
-openwashdata,dashboard,2024-10-01,2025-02-24,FALSE,FALSE,NA,JavaScript,website and communication,62
+openwashdata,fair-publishing,2024-09-16,2026-11-11,FALSE,FALSE,NA,R,research project,33
+openwashdata,dashboard,2024-10-01,2025-02-24,FALSE,FALSE,NA,JavaScript,website and communication,36
 openwashdata,choleramalawi,2024-10-04,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,22
 openwashdata,worldhdi,2024-10-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,13
 openwashdata,unhcrwash,2024-11-13,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,17
 openwashdata,planetaryhdi,2024-12-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,19
-openwashdata,ploswater,2025-01-08,2025-01-08,TRUE,FALSE,CC-BY-4.0,R,data package,8
-openwashdata,glossarywho,2025-01-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,data package,15
-openwashdata,ds4owdanalytics,2025-01-31,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,5
-openwashdata,undpcomposite,2025-02-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,14
+openwashdata,ploswater,2025-01-08,2025-01-08,TRUE,FALSE,CC-BY-4.0,R,data package,0
+openwashdata,glossarywho,2025-01-28,2026-11-01,FALSE,FALSE,CC-BY-4.0,Jupyter Notebook,data package,9
+openwashdata,ds4owdanalytics,2025-01-31,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,3
+openwashdata,undpcomposite,2025-02-10,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,9
 openwashdata,boreholeforensicspumpingtest,2025-03-05,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,32
 openwashdata,whatawaste,2025-03-10,2025-03-11,TRUE,FALSE,CC-BY-4.0,R,data package,10
 openwashdata,drillingdata,2025-04-08,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,22
 openwashdata,glaas,2025-04-28,2026-11-11,FALSE,FALSE,CC-BY-4.0,R,data package,58
 openwashdata,washmalawi,2025-04-29,2026-11-01,FALSE,FALSE,CC-BY-4.0,R,data package,31
-openwashdata,fairenough,2025-05-15,2026-09-09,TRUE,FALSE,NA,R,software,308
+openwashdata,fairenough,2025-05-15,2026-09-09,TRUE,FALSE,NA,R,software,307
 openwashdata,artesianwells,2025-06-02,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,36
 openwashdata,ds4owd-001-analysis,2025-06-20,2026-10-28,FALSE,FALSE,NA,JavaScript,research project,22
 openwashdata,thyolocbcc,2025-06-24,2026-11-01,FALSE,FALSE,CC-BY-4.0,HTML,data package,14

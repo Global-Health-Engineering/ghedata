@@ -1,0 +1,485 @@
+organisation,visibility,repository_type,month,commits,commits_bot,commits_automated,commits_assisted,repos_active
+Global-Health-Engineering,private,data package,2023-04-01,8,0,0,0,1
+Global-Health-Engineering,private,data package,2023-05-01,10,0,0,0,1
+Global-Health-Engineering,private,data package,2023-07-01,9,0,0,0,1
+Global-Health-Engineering,private,data package,2023-08-01,2,0,0,0,1
+Global-Health-Engineering,private,data package,2023-10-01,2,0,0,0,1
+Global-Health-Engineering,private,data package,2023-11-01,2,0,0,0,1
+Global-Health-Engineering,private,data package,2023-12-01,1,0,0,0,1
+Global-Health-Engineering,private,data package,2024-04-01,2,0,0,0,1
+Global-Health-Engineering,private,data package,2024-07-01,4,0,0,0,1
+Global-Health-Engineering,private,data package,2024-08-01,7,0,0,0,1
+Global-Health-Engineering,private,data package,2025-03-01,1,0,0,0,1
+Global-Health-Engineering,private,data package,2025-05-01,17,0,0,0,1
+Global-Health-Engineering,private,data package,2025-06-01,4,0,0,0,1
+Global-Health-Engineering,private,data package,2025-07-01,17,0,0,0,2
+Global-Health-Engineering,private,data package,2025-11-01,9,0,0,0,1
+Global-Health-Engineering,private,data package,2026-01-01,19,0,0,0,1
+Global-Health-Engineering,private,data package,2026-07-01,34,0,0,20,1
+Global-Health-Engineering,private,data package,2026-08-01,33,0,0,31,1
+Global-Health-Engineering,private,data package,2026-09-01,11,0,0,10,1
+Global-Health-Engineering,private,data package,2026-10-01,7,0,0,6,1
+Global-Health-Engineering,private,group management,2026-05-01,4,0,0,0,1
+Global-Health-Engineering,private,group management,2026-06-01,6,0,0,6,1
+Global-Health-Engineering,private,group management,2026-09-01,1,0,0,1,1
+Global-Health-Engineering,private,manuscript,2023-08-01,2,0,0,0,1
+Global-Health-Engineering,private,manuscript,2023-09-01,28,0,0,0,2
+Global-Health-Engineering,private,manuscript,2023-10-01,43,0,0,0,2
+Global-Health-Engineering,private,manuscript,2023-11-01,14,0,0,0,2
+Global-Health-Engineering,private,manuscript,2023-12-01,4,0,0,0,2
+Global-Health-Engineering,private,manuscript,2024-01-01,8,0,0,0,2
+Global-Health-Engineering,private,manuscript,2024-02-01,5,0,0,0,2
+Global-Health-Engineering,private,manuscript,2024-03-01,5,0,0,0,1
+Global-Health-Engineering,private,manuscript,2024-07-01,2,0,0,0,1
+Global-Health-Engineering,private,manuscript,2025-03-01,2,0,0,0,1
+Global-Health-Engineering,private,manuscript,2025-04-01,2,0,0,0,1
+Global-Health-Engineering,private,manuscript,2026-10-01,6,0,0,5,1
+Global-Health-Engineering,private,proposal or report,2023-08-01,2,0,0,0,1
+Global-Health-Engineering,private,proposal or report,2023-12-01,3,0,0,0,1
+Global-Health-Engineering,private,proposal or report,2024-02-01,6,0,0,0,1
+Global-Health-Engineering,private,proposal or report,2025-04-01,3,0,0,0,1
+Global-Health-Engineering,private,proposal or report,2025-08-01,5,0,0,0,1
+Global-Health-Engineering,private,proposal or report,2025-10-01,1,0,0,0,1
+Global-Health-Engineering,private,proposal or report,2025-12-01,5,0,0,0,1
+Global-Health-Engineering,private,research project,2023-02-01,6,0,0,0,1
+Global-Health-Engineering,private,research project,2023-04-01,2,0,0,0,1
+Global-Health-Engineering,private,research project,2024-08-01,4,0,0,0,2
+Global-Health-Engineering,private,research project,2024-11-01,7,0,0,0,2
+Global-Health-Engineering,private,research project,2024-12-01,4,0,0,0,1
+Global-Health-Engineering,private,research project,2025-01-01,4,0,0,0,1
+Global-Health-Engineering,private,research project,2025-02-01,1,0,0,0,1
+Global-Health-Engineering,private,research project,2025-06-01,1,0,0,0,1
+Global-Health-Engineering,private,research project,2025-12-01,1,0,0,0,1
+Global-Health-Engineering,private,research project,2026-01-01,5,0,0,0,1
+Global-Health-Engineering,private,research project,2026-04-01,10,0,0,1,2
+Global-Health-Engineering,private,research project,2026-05-01,53,0,0,7,3
+Global-Health-Engineering,private,research project,2026-06-01,31,0,0,4,2
+Global-Health-Engineering,private,research project,2026-07-01,148,0,0,111,9
+Global-Health-Engineering,private,research project,2026-08-01,81,0,0,75,4
+Global-Health-Engineering,private,research project,2026-09-01,90,0,0,71,6
+Global-Health-Engineering,private,research project,2026-10-01,179,0,0,162,6
+Global-Health-Engineering,private,software,2025-05-01,2,0,0,0,1
+Global-Health-Engineering,private,software,2026-05-01,56,0,13,26,1
+Global-Health-Engineering,private,software,2026-06-01,0,0,60,0,0
+Global-Health-Engineering,private,software,2026-07-01,1,0,62,0,1
+Global-Health-Engineering,private,software,2026-08-01,0,0,62,0,0
+Global-Health-Engineering,private,software,2026-09-01,0,0,16,0,0
+Global-Health-Engineering,private,student project,2022-08-01,12,0,0,0,1
+Global-Health-Engineering,private,student project,2022-09-01,4,0,0,0,1
+Global-Health-Engineering,private,student project,2022-11-01,1,0,0,0,1
+Global-Health-Engineering,private,student project,2022-12-01,2,0,0,0,1
+Global-Health-Engineering,private,student project,2023-02-01,6,0,0,0,1
+Global-Health-Engineering,private,student project,2023-03-01,14,0,0,0,1
+Global-Health-Engineering,private,student project,2023-05-01,5,0,0,0,1
+Global-Health-Engineering,private,student project,2023-06-01,1,0,0,0,1
+Global-Health-Engineering,private,student project,2023-08-01,13,0,0,0,1
+Global-Health-Engineering,private,student project,2023-09-01,24,0,0,0,1
+Global-Health-Engineering,private,student project,2023-10-01,2,0,0,0,1
+Global-Health-Engineering,private,student project,2024-02-01,2,0,0,0,1
+Global-Health-Engineering,private,student project,2024-04-01,10,0,0,0,1
+Global-Health-Engineering,private,student project,2024-05-01,6,0,0,0,1
+Global-Health-Engineering,private,student project,2024-06-01,5,0,0,0,2
+Global-Health-Engineering,private,student project,2026-03-01,20,0,0,0,1
+Global-Health-Engineering,private,student project,2026-08-01,1,0,0,0,1
+Global-Health-Engineering,private,teaching and training,2026-04-01,9,0,0,0,1
+Global-Health-Engineering,private,teaching and training,2026-09-01,3,0,0,1,1
+Global-Health-Engineering,public,data package,2021-10-01,29,0,0,0,1
+Global-Health-Engineering,public,data package,2021-11-01,12,0,0,0,1
+Global-Health-Engineering,public,data package,2021-12-01,1,0,0,0,1
+Global-Health-Engineering,public,data package,2022-02-01,5,0,0,0,1
+Global-Health-Engineering,public,data package,2022-03-01,9,0,0,0,1
+Global-Health-Engineering,public,data package,2022-04-01,24,0,0,0,2
+Global-Health-Engineering,public,data package,2022-06-01,3,0,0,0,1
+Global-Health-Engineering,public,data package,2022-09-01,1,0,0,0,1
+Global-Health-Engineering,public,data package,2022-11-01,5,0,0,0,1
+Global-Health-Engineering,public,data package,2023-02-01,43,0,0,0,1
+Global-Health-Engineering,public,data package,2023-03-01,17,0,0,0,1
+Global-Health-Engineering,public,data package,2023-04-01,89,0,0,0,2
+Global-Health-Engineering,public,data package,2023-05-01,4,0,0,0,2
+Global-Health-Engineering,public,data package,2023-07-01,28,0,0,0,1
+Global-Health-Engineering,public,data package,2023-08-01,16,0,0,0,1
+Global-Health-Engineering,public,data package,2023-09-01,23,0,0,0,2
+Global-Health-Engineering,public,data package,2023-10-01,3,0,0,0,1
+Global-Health-Engineering,public,data package,2023-11-01,3,0,0,0,1
+Global-Health-Engineering,public,data package,2024-01-01,3,0,0,0,1
+Global-Health-Engineering,public,data package,2024-02-01,2,0,0,0,1
+Global-Health-Engineering,public,data package,2024-03-01,29,0,0,0,1
+Global-Health-Engineering,public,data package,2024-04-01,2,0,0,0,1
+Global-Health-Engineering,public,data package,2024-05-01,2,0,0,0,1
+Global-Health-Engineering,public,data package,2024-07-01,2,0,0,0,1
+Global-Health-Engineering,public,data package,2024-08-01,11,0,0,0,1
+Global-Health-Engineering,public,data package,2024-11-01,10,0,0,0,1
+Global-Health-Engineering,public,data package,2025-03-01,3,0,0,0,1
+Global-Health-Engineering,public,data package,2025-05-01,2,0,0,0,1
+Global-Health-Engineering,public,data package,2025-06-01,1,0,0,0,1
+Global-Health-Engineering,public,data package,2025-07-01,14,0,0,9,1
+Global-Health-Engineering,public,data package,2025-08-01,1,0,0,0,1
+Global-Health-Engineering,public,data package,2025-10-01,6,0,0,2,1
+Global-Health-Engineering,public,data package,2026-04-01,2,0,0,0,1
+Global-Health-Engineering,public,data package,2026-05-01,23,0,0,3,2
+Global-Health-Engineering,public,data package,2026-09-01,6,0,0,1,1
+Global-Health-Engineering,public,data package,2026-10-01,1,0,0,1,1
+Global-Health-Engineering,public,group management,2022-09-01,3,0,0,0,1
+Global-Health-Engineering,public,group management,2023-06-01,7,0,0,0,2
+Global-Health-Engineering,public,group management,2023-11-01,42,0,0,0,1
+Global-Health-Engineering,public,group management,2023-12-01,7,0,0,0,1
+Global-Health-Engineering,public,group management,2024-01-01,2,0,0,0,1
+Global-Health-Engineering,public,group management,2024-02-01,2,0,0,0,1
+Global-Health-Engineering,public,group management,2024-08-01,6,0,0,0,1
+Global-Health-Engineering,public,group management,2025-01-01,2,0,0,0,1
+Global-Health-Engineering,public,group management,2025-05-01,1,0,0,0,1
+Global-Health-Engineering,public,group management,2025-08-01,19,0,0,0,1
+Global-Health-Engineering,public,group management,2026-10-01,4,0,0,0,1
+Global-Health-Engineering,public,hardware,2023-12-01,11,0,0,0,1
+Global-Health-Engineering,public,hardware,2024-02-01,39,0,0,0,1
+Global-Health-Engineering,public,hardware,2024-03-01,27,0,0,0,3
+Global-Health-Engineering,public,hardware,2024-04-01,58,0,0,0,3
+Global-Health-Engineering,public,hardware,2024-05-01,17,0,0,0,3
+Global-Health-Engineering,public,hardware,2024-06-01,6,0,0,0,3
+Global-Health-Engineering,public,hardware,2024-07-01,39,0,0,0,4
+Global-Health-Engineering,public,hardware,2024-08-01,32,0,0,0,1
+Global-Health-Engineering,public,hardware,2024-09-01,83,0,0,0,1
+Global-Health-Engineering,public,hardware,2025-06-01,13,0,0,0,1
+Global-Health-Engineering,public,hardware,2025-07-01,3,0,0,0,1
+Global-Health-Engineering,public,hardware,2025-08-01,47,0,0,0,2
+Global-Health-Engineering,public,hardware,2025-09-01,40,0,0,0,3
+Global-Health-Engineering,public,hardware,2025-10-01,2,0,0,0,2
+Global-Health-Engineering,public,hardware,2026-01-01,58,0,0,0,2
+Global-Health-Engineering,public,hardware,2026-02-01,11,0,0,0,3
+Global-Health-Engineering,public,hardware,2026-03-01,18,0,589,6,2
+Global-Health-Engineering,public,hardware,2026-04-01,19,0,634,0,2
+Global-Health-Engineering,public,hardware,2026-05-01,175,0,0,85,3
+Global-Health-Engineering,public,hardware,2026-06-01,19,0,0,0,1
+Global-Health-Engineering,public,hardware,2026-07-01,12,0,0,11,1
+Global-Health-Engineering,public,hardware,2026-08-01,38,0,0,37,1
+Global-Health-Engineering,public,hardware,2026-09-01,51,0,0,48,3
+Global-Health-Engineering,public,hardware,2026-10-01,2,0,0,0,1
+Global-Health-Engineering,public,manuscript,2022-04-01,6,0,0,0,1
+Global-Health-Engineering,public,manuscript,2022-06-01,1,0,0,0,1
+Global-Health-Engineering,public,manuscript,2022-11-01,16,0,0,0,2
+Global-Health-Engineering,public,manuscript,2023-04-01,66,0,0,0,2
+Global-Health-Engineering,public,manuscript,2023-05-01,11,0,0,0,1
+Global-Health-Engineering,public,manuscript,2023-08-01,1,0,0,0,1
+Global-Health-Engineering,public,manuscript,2023-09-01,1,0,0,0,1
+Global-Health-Engineering,public,manuscript,2023-10-01,1,0,0,0,1
+Global-Health-Engineering,public,manuscript,2024-04-01,8,0,0,0,1
+Global-Health-Engineering,public,manuscript,2025-10-01,5,0,0,2,1
+Global-Health-Engineering,public,manuscript,2026-01-01,8,0,0,0,1
+Global-Health-Engineering,public,organisation profile,2025-07-01,8,0,0,0,1
+Global-Health-Engineering,public,proposal or report,2023-08-01,2,0,0,0,1
+Global-Health-Engineering,public,proposal or report,2023-09-01,16,0,0,0,1
+Global-Health-Engineering,public,proposal or report,2023-12-01,10,0,0,0,1
+Global-Health-Engineering,public,proposal or report,2024-03-01,5,0,0,0,1
+Global-Health-Engineering,public,proposal or report,2024-07-01,1,0,0,0,1
+Global-Health-Engineering,public,proposal or report,2025-07-01,1,0,0,0,1
+Global-Health-Engineering,public,research project,2022-11-01,5,0,0,0,1
+Global-Health-Engineering,public,research project,2023-02-01,32,0,0,0,1
+Global-Health-Engineering,public,research project,2023-04-01,11,0,0,0,1
+Global-Health-Engineering,public,research project,2023-05-01,1,0,0,0,1
+Global-Health-Engineering,public,research project,2024-04-01,8,0,0,0,1
+Global-Health-Engineering,public,research project,2024-05-01,9,0,0,0,1
+Global-Health-Engineering,public,research project,2024-06-01,16,0,0,0,3
+Global-Health-Engineering,public,research project,2024-07-01,3,0,0,0,2
+Global-Health-Engineering,public,research project,2024-09-01,11,0,0,0,2
+Global-Health-Engineering,public,research project,2024-10-01,14,0,0,0,3
+Global-Health-Engineering,public,research project,2024-11-01,43,2,0,0,4
+Global-Health-Engineering,public,research project,2024-12-01,161,2,0,0,2
+Global-Health-Engineering,public,research project,2025-01-01,68,4,0,0,3
+Global-Health-Engineering,public,research project,2025-02-01,48,7,0,0,3
+Global-Health-Engineering,public,research project,2025-03-01,121,0,0,0,3
+Global-Health-Engineering,public,research project,2025-04-01,46,0,0,0,4
+Global-Health-Engineering,public,research project,2025-05-01,28,0,0,0,4
+Global-Health-Engineering,public,research project,2025-06-01,9,0,0,0,3
+Global-Health-Engineering,public,research project,2025-07-01,6,0,0,0,1
+Global-Health-Engineering,public,research project,2025-08-01,5,0,0,0,2
+Global-Health-Engineering,public,research project,2025-09-01,8,4,0,0,3
+Global-Health-Engineering,public,research project,2025-10-01,5,4,0,0,1
+Global-Health-Engineering,public,research project,2025-11-01,18,5,0,0,1
+Global-Health-Engineering,public,research project,2025-12-01,13,4,0,0,2
+Global-Health-Engineering,public,research project,2026-01-01,30,4,0,0,2
+Global-Health-Engineering,public,research project,2026-02-01,6,4,0,0,1
+Global-Health-Engineering,public,research project,2026-03-01,0,5,0,0,0
+Global-Health-Engineering,public,research project,2026-04-01,26,0,0,0,1
+Global-Health-Engineering,public,research project,2026-05-01,66,0,0,6,5
+Global-Health-Engineering,public,research project,2026-06-01,20,0,0,14,2
+Global-Health-Engineering,public,research project,2026-08-01,10,0,0,6,1
+Global-Health-Engineering,public,research project,2026-09-01,4,0,0,0,2
+Global-Health-Engineering,public,research project,2026-10-01,10,0,0,1,3
+Global-Health-Engineering,public,software,2025-03-01,5,0,0,0,1
+Global-Health-Engineering,public,software,2025-04-01,112,9,0,0,1
+Global-Health-Engineering,public,software,2025-05-01,22,0,0,0,3
+Global-Health-Engineering,public,software,2025-06-01,77,10,0,27,1
+Global-Health-Engineering,public,software,2025-07-01,5,1,0,0,1
+Global-Health-Engineering,public,software,2025-09-01,30,0,0,0,2
+Global-Health-Engineering,public,software,2025-10-01,42,3,0,0,2
+Global-Health-Engineering,public,software,2025-11-01,5,1,0,0,1
+Global-Health-Engineering,public,software,2026-05-01,3,0,0,2,1
+Global-Health-Engineering,public,software,2026-06-01,7,0,0,7,1
+Global-Health-Engineering,public,software,2026-07-01,2,0,0,2,1
+Global-Health-Engineering,public,software,2026-09-01,10,0,0,10,1
+Global-Health-Engineering,public,software,2026-10-01,5,1,0,5,2
+Global-Health-Engineering,public,student project,2022-09-01,15,0,0,0,1
+Global-Health-Engineering,public,student project,2022-10-01,22,0,0,0,1
+Global-Health-Engineering,public,student project,2022-11-01,23,0,0,0,1
+Global-Health-Engineering,public,student project,2022-12-01,7,0,0,0,1
+Global-Health-Engineering,public,student project,2023-01-01,1,0,0,0,1
+Global-Health-Engineering,public,student project,2023-02-01,1,0,0,0,1
+Global-Health-Engineering,public,student project,2023-03-01,4,0,0,0,1
+Global-Health-Engineering,public,student project,2023-07-01,1,0,0,0,1
+Global-Health-Engineering,public,student project,2025-11-01,11,0,0,0,1
+Global-Health-Engineering,public,student project,2025-12-01,29,0,0,0,1
+Global-Health-Engineering,public,student project,2026-01-01,82,0,0,0,1
+Global-Health-Engineering,public,student project,2026-02-01,11,0,0,0,1
+Global-Health-Engineering,public,student project,2026-03-01,2,0,0,0,1
+Global-Health-Engineering,public,student project,2026-05-01,5,0,0,0,1
+Global-Health-Engineering,public,student project,2026-06-01,48,0,0,0,1
+Global-Health-Engineering,public,student project,2026-07-01,1,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2024-07-01,12,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2024-08-01,3,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2024-10-01,3,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2024-11-01,3,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2025-02-01,1,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2025-05-01,4,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2025-06-01,1,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2025-07-01,5,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2025-08-01,6,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2025-09-01,1,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2026-07-01,4,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2026-08-01,1,0,0,0,1
+Global-Health-Engineering,public,teaching and training,2026-09-01,35,0,0,29,2
+Global-Health-Engineering,public,teaching and training,2026-10-01,10,0,0,9,2
+Global-Health-Engineering,public,template,2024-02-01,8,0,0,0,1
+Global-Health-Engineering,public,template,2024-03-01,1,0,0,0,1
+Global-Health-Engineering,public,template,2025-02-01,4,0,0,0,1
+Global-Health-Engineering,public,template,2025-03-01,1,0,0,0,1
+Global-Health-Engineering,public,template,2026-01-01,1,0,0,0,1
+Global-Health-Engineering,public,website and communication,2023-02-01,7,0,0,0,1
+Global-Health-Engineering,public,website and communication,2023-03-01,3,0,0,0,1
+Global-Health-Engineering,public,website and communication,2023-06-01,8,0,0,0,1
+Global-Health-Engineering,public,website and communication,2023-09-01,8,0,0,0,1
+Global-Health-Engineering,public,website and communication,2023-10-01,7,0,0,0,1
+Global-Health-Engineering,public,website and communication,2023-11-01,9,0,0,0,1
+Global-Health-Engineering,public,website and communication,2024-02-01,4,0,0,0,1
+Global-Health-Engineering,public,website and communication,2024-03-01,4,0,0,0,1
+Global-Health-Engineering,public,website and communication,2024-06-01,14,0,0,0,1
+Global-Health-Engineering,public,website and communication,2024-07-01,22,0,0,0,2
+Global-Health-Engineering,public,website and communication,2024-09-01,1,0,0,0,1
+Global-Health-Engineering,public,website and communication,2024-10-01,2,0,0,0,1
+Global-Health-Engineering,public,website and communication,2024-11-01,9,0,0,0,1
+Global-Health-Engineering,public,website and communication,2025-05-01,11,0,0,0,1
+Global-Health-Engineering,public,website and communication,2025-06-01,7,0,0,0,1
+Global-Health-Engineering,public,website and communication,2025-07-01,10,0,0,0,1
+Global-Health-Engineering,public,website and communication,2025-08-01,2,0,0,2,1
+Global-Health-Engineering,public,website and communication,2025-09-01,11,0,0,1,2
+Global-Health-Engineering,public,website and communication,2025-11-01,1,0,0,0,1
+Global-Health-Engineering,public,website and communication,2026-05-01,8,0,0,7,1
+Global-Health-Engineering,public,website and communication,2026-06-01,11,0,0,8,1
+Global-Health-Engineering,public,website and communication,2026-07-01,4,0,0,1,1
+Global-Health-Engineering,public,website and communication,2026-09-01,23,0,0,14,1
+openwashdata,private,data package,2024-06-01,10,0,0,0,1
+openwashdata,private,data package,2024-09-01,4,0,0,0,1
+openwashdata,private,data package,2024-10-01,12,0,0,0,2
+openwashdata,private,data package,2025-01-01,0,4,0,0,0
+openwashdata,private,data package,2025-03-01,6,0,0,0,1
+openwashdata,private,data package,2025-06-01,12,0,0,0,2
+openwashdata,private,data package,2025-09-01,10,0,0,0,1
+openwashdata,private,data package,2025-10-01,4,0,0,0,1
+openwashdata,private,data package,2026-01-01,4,0,0,0,1
+openwashdata,private,data package,2026-03-01,2,0,0,2,1
+openwashdata,private,data package,2026-09-01,16,0,0,13,2
+openwashdata,private,data package,2026-10-01,32,0,0,30,3
+openwashdata,private,research project,2025-06-01,2,0,0,0,1
+openwashdata,private,research project,2025-11-01,2,0,0,0,1
+openwashdata,private,research project,2025-12-01,12,0,0,9,1
+openwashdata,private,research project,2026-07-01,1,0,0,0,1
+openwashdata,private,research project,2026-10-01,2,0,0,1,2
+openwashdata,private,software,2025-08-01,6,0,0,0,1
+openwashdata,private,website and communication,2026-10-01,1,0,0,1,1
+openwashdata,public,data package,2022-12-01,10,0,0,0,1
+openwashdata,public,data package,2023-03-01,2,0,0,0,1
+openwashdata,public,data package,2023-04-01,21,0,0,0,2
+openwashdata,public,data package,2023-05-01,10,0,0,0,2
+openwashdata,public,data package,2023-06-01,31,0,0,0,3
+openwashdata,public,data package,2023-07-01,28,0,0,0,5
+openwashdata,public,data package,2023-08-01,93,0,0,0,6
+openwashdata,public,data package,2023-09-01,33,0,0,0,7
+openwashdata,public,data package,2023-10-01,48,0,0,0,9
+openwashdata,public,data package,2023-11-01,22,0,0,0,3
+openwashdata,public,data package,2023-12-01,34,0,0,0,6
+openwashdata,public,data package,2024-01-01,15,0,0,0,4
+openwashdata,public,data package,2024-02-01,11,0,0,0,2
+openwashdata,public,data package,2024-03-01,98,0,0,0,5
+openwashdata,public,data package,2024-04-01,25,0,0,0,4
+openwashdata,public,data package,2024-05-01,35,0,0,0,6
+openwashdata,public,data package,2024-06-01,64,0,0,0,7
+openwashdata,public,data package,2024-07-01,50,0,0,0,6
+openwashdata,public,data package,2024-08-01,1,0,0,0,1
+openwashdata,public,data package,2024-09-01,2,0,0,0,2
+openwashdata,public,data package,2024-10-01,31,0,0,0,4
+openwashdata,public,data package,2024-11-01,10,0,0,0,4
+openwashdata,public,data package,2024-12-01,11,3,0,0,1
+openwashdata,public,data package,2025-01-01,0,13,0,0,0
+openwashdata,public,data package,2025-02-01,0,8,0,0,0
+openwashdata,public,data package,2025-03-01,34,0,0,0,2
+openwashdata,public,data package,2025-04-01,17,0,0,0,3
+openwashdata,public,data package,2025-05-01,40,0,0,0,2
+openwashdata,public,data package,2025-06-01,43,0,0,0,8
+openwashdata,public,data package,2025-07-01,96,0,0,10,12
+openwashdata,public,data package,2025-08-01,26,0,0,0,4
+openwashdata,public,data package,2025-09-01,6,0,0,0,1
+openwashdata,public,data package,2025-10-01,13,0,0,0,5
+openwashdata,public,data package,2025-11-01,20,0,0,0,6
+openwashdata,public,data package,2025-12-01,5,0,0,0,4
+openwashdata,public,data package,2026-02-01,42,0,0,14,5
+openwashdata,public,data package,2026-03-01,4,0,0,1,1
+openwashdata,public,data package,2026-04-01,12,0,0,0,2
+openwashdata,public,data package,2026-06-01,9,0,0,6,2
+openwashdata,public,data package,2026-07-01,80,0,0,37,5
+openwashdata,public,data package,2026-08-01,26,0,0,11,5
+openwashdata,public,data package,2026-09-01,238,0,0,232,43
+openwashdata,public,data package,2026-10-01,208,1,0,191,59
+openwashdata,public,organisation profile,2022-11-01,3,0,0,0,1
+openwashdata,public,organisation profile,2022-12-01,1,0,0,0,1
+openwashdata,public,organisation profile,2023-03-01,1,0,0,0,1
+openwashdata,public,organisation profile,2023-08-01,1,0,0,0,1
+openwashdata,public,research project,2023-03-01,3,0,0,0,1
+openwashdata,public,research project,2023-06-01,1,0,0,0,1
+openwashdata,public,research project,2024-09-01,9,0,0,0,1
+openwashdata,public,research project,2024-10-01,4,0,0,0,1
+openwashdata,public,research project,2025-01-01,0,1,0,0,0
+openwashdata,public,research project,2025-06-01,11,0,0,0,1
+openwashdata,public,research project,2025-07-01,10,0,0,0,1
+openwashdata,public,research project,2025-08-01,1,0,0,0,1
+openwashdata,public,research project,2026-09-01,15,0,0,15,1
+openwashdata,public,research project,2026-10-01,5,0,0,5,2
+openwashdata,public,software,2023-08-01,1,0,0,0,1
+openwashdata,public,software,2024-04-01,18,0,0,0,2
+openwashdata,public,software,2024-05-01,54,0,0,0,2
+openwashdata,public,software,2024-06-01,12,0,0,0,2
+openwashdata,public,software,2024-07-01,8,0,0,0,2
+openwashdata,public,software,2024-09-01,6,0,0,0,2
+openwashdata,public,software,2024-10-01,20,0,0,0,2
+openwashdata,public,software,2024-11-01,34,0,0,0,2
+openwashdata,public,software,2024-12-01,8,0,0,0,2
+openwashdata,public,software,2025-01-01,0,2,0,0,0
+openwashdata,public,software,2025-05-01,2,0,0,0,2
+openwashdata,public,software,2025-07-01,88,0,0,16,2
+openwashdata,public,software,2025-08-01,122,1,0,0,1
+openwashdata,public,software,2025-10-01,4,0,0,0,1
+openwashdata,public,software,2025-11-01,8,0,0,0,1
+openwashdata,public,software,2026-01-01,2,0,0,0,2
+openwashdata,public,software,2026-04-01,5,0,0,5,1
+openwashdata,public,software,2026-05-01,29,0,0,29,1
+openwashdata,public,software,2026-07-01,42,0,0,42,2
+openwashdata,public,software,2026-08-01,4,0,0,4,1
+openwashdata,public,software,2026-09-01,38,0,0,38,3
+openwashdata,public,software,2026-10-01,76,0,0,76,3
+openwashdata,public,teaching and training,2026-03-01,2,0,0,0,1
+openwashdata,public,teaching and training,2026-04-01,5,0,0,0,1
+openwashdata,public,teaching and training,2026-05-01,8,0,0,0,1
+openwashdata,public,teaching and training,2026-06-01,2,0,0,0,1
+openwashdata,public,teaching and training,2026-07-01,6,0,0,1,1
+openwashdata,public,template,2026-09-01,15,0,0,14,1
+openwashdata,public,website and communication,2022-11-01,6,0,0,0,1
+openwashdata,public,website and communication,2022-12-01,10,0,0,0,1
+openwashdata,public,website and communication,2023-02-01,6,0,0,0,1
+openwashdata,public,website and communication,2023-03-01,19,0,0,0,1
+openwashdata,public,website and communication,2023-04-01,3,0,0,0,1
+openwashdata,public,website and communication,2023-06-01,21,0,0,0,2
+openwashdata,public,website and communication,2023-07-01,38,0,0,0,2
+openwashdata,public,website and communication,2023-08-01,31,0,0,0,2
+openwashdata,public,website and communication,2023-09-01,21,0,0,0,2
+openwashdata,public,website and communication,2023-10-01,28,0,0,0,2
+openwashdata,public,website and communication,2023-11-01,24,0,0,0,2
+openwashdata,public,website and communication,2023-12-01,17,0,0,0,2
+openwashdata,public,website and communication,2024-01-01,12,0,0,0,2
+openwashdata,public,website and communication,2024-02-01,14,0,0,0,2
+openwashdata,public,website and communication,2024-03-01,24,0,0,0,2
+openwashdata,public,website and communication,2024-04-01,24,0,0,0,2
+openwashdata,public,website and communication,2024-05-01,14,0,0,0,2
+openwashdata,public,website and communication,2024-06-01,38,0,0,0,2
+openwashdata,public,website and communication,2024-07-01,54,0,0,0,2
+openwashdata,public,website and communication,2024-08-01,11,0,0,0,1
+openwashdata,public,website and communication,2024-09-01,21,0,0,0,2
+openwashdata,public,website and communication,2024-10-01,12,0,0,0,3
+openwashdata,public,website and communication,2024-11-01,27,0,0,0,2
+openwashdata,public,website and communication,2024-12-01,16,24,0,0,3
+openwashdata,public,website and communication,2025-01-01,3,2,0,0,2
+openwashdata,public,website and communication,2025-02-01,7,5,0,0,2
+openwashdata,public,website and communication,2025-03-01,5,0,0,0,1
+openwashdata,public,website and communication,2025-05-01,3,0,0,0,2
+openwashdata,public,website and communication,2025-06-01,11,0,0,0,2
+openwashdata,public,website and communication,2025-07-01,45,9,0,7,2
+openwashdata,public,website and communication,2025-08-01,2,4,0,0,1
+openwashdata,public,website and communication,2025-09-01,12,5,0,0,2
+openwashdata,public,website and communication,2025-10-01,0,4,0,0,0
+openwashdata,public,website and communication,2025-11-01,0,4,0,0,0
+openwashdata,public,website and communication,2025-12-01,0,5,0,0,0
+openwashdata,public,website and communication,2026-01-01,1,4,0,0,1
+openwashdata,public,website and communication,2026-02-01,6,4,0,0,1
+openwashdata,public,website and communication,2026-03-01,6,5,0,0,2
+openwashdata,public,website and communication,2026-04-01,0,4,0,0,0
+openwashdata,public,website and communication,2026-05-01,0,4,0,0,0
+openwashdata,public,website and communication,2026-06-01,3,5,0,0,1
+openwashdata,public,website and communication,2026-07-01,0,4,0,0,0
+openwashdata,public,website and communication,2026-08-01,15,6,0,7,3
+openwashdata,public,website and communication,2026-09-01,68,0,0,67,4
+openwashdata,public,website and communication,2026-10-01,24,0,0,23,2
+openwashdata-dev,private,proposal or report,2025-09-01,33,0,0,0,1
+openwashdata-dev,private,proposal or report,2025-12-01,4,0,0,0,1
+openwashdata-dev,private,proposal or report,2026-02-01,2,0,0,0,1
+openwashdata-dev,private,proposal or report,2026-03-01,1,0,0,0,1
+openwashdata-dev,private,proposal or report,2026-06-01,2,0,0,0,2
+openwashdata-dev,private,proposal or report,2026-07-01,7,0,0,3,1
+openwashdata-dev,private,proposal or report,2026-09-01,18,0,0,17,1
+openwashdata-dev,private,proposal or report,2026-10-01,44,0,0,40,4
+openwashdata-dev,private,research project,2026-10-01,1,0,0,0,1
+openwashdata-dev,public,organisation profile,2023-09-01,3,0,0,0,1
+openwashdata-dev,public,proposal or report,2023-11-01,1,0,0,0,1
+openwashdata-dev,public,proposal or report,2024-01-01,5,0,0,0,1
+openwashdata-dev,public,proposal or report,2024-02-01,4,0,0,0,1
+openwashdata-dev,public,proposal or report,2024-03-01,1,0,0,0,1
+openwashdata-dev,public,proposal or report,2024-04-01,1,0,0,0,1
+openwashdata-dev,public,proposal or report,2025-12-01,1,0,0,0,1
+openwashdata-dev,public,research project,2024-03-01,1,0,0,0,1
+openwashdata-dev,public,research project,2024-04-01,1,0,0,0,1
+openwashdata-dev,public,software,2024-03-01,2,0,0,0,1
+openwashdata-dev,public,software,2026-09-01,3,0,0,2,1
+openwashdata-conf,private,student project,2025-07-01,11,0,0,6,1
+openwashdata-conf,private,teaching and training,2025-07-01,28,0,0,11,9
+openwashdata-conf,public,organisation profile,2025-07-01,3,0,0,2,1
+openwashdata-conf,public,teaching and training,2025-07-01,90,0,0,72,7
+ghe-learn,private,learner repository,2021-11-01,7,0,0,0,2
+ghe-learn,private,teaching and training,2021-11-01,12,0,0,0,3
+ghe-learn,private,teaching and training,2022-02-01,2,0,0,0,1
+ghe-learn,private,teaching and training,2023-05-01,1,0,0,0,1
+ghe-learn,private,teaching and training,2023-06-01,2,0,0,0,1
+ghe-learn,private,teaching and training,2023-07-01,1,0,0,0,1
+ghe-learn,public,learner repository,2023-05-01,24,0,0,0,9
+ghe-learn,public,learner repository,2023-10-01,2,0,0,0,1
+ghe-learn,public,organisation profile,2023-05-01,1,0,0,0,1
+ghe-learn,public,teaching and training,2021-10-01,18,0,0,0,3
+ghe-learn,public,teaching and training,2021-11-01,8,0,0,0,2
+ghe-learn,public,teaching and training,2022-02-01,2,0,0,0,1
+ghe-learn,public,teaching and training,2022-03-01,44,0,0,0,5
+ghe-learn,public,teaching and training,2022-04-01,33,0,0,0,5
+ghe-learn,public,teaching and training,2022-05-01,86,0,0,0,8
+ghe-learn,public,teaching and training,2022-06-01,9,0,0,0,3
+ghe-learn,public,teaching and training,2023-02-01,7,0,0,0,1
+ghe-learn,public,teaching and training,2023-04-01,20,0,0,0,1
+ghe-learn,public,teaching and training,2023-05-01,17,0,0,0,3
+ghe-learn,public,teaching and training,2023-08-01,8,0,0,0,1
+ghe-learn,public,teaching and training,2023-10-01,23,0,0,0,2
+ghe-learn,public,teaching and training,2024-07-01,1,0,0,0,1
+ghe-learn,public,teaching and training,2025-04-01,1,0,0,0,1
+agentsforsci-ghe,private,data package,2026-09-01,14,0,0,11,1
+agentsforsci-ghe,private,learner repository,2026-09-01,22,0,0,0,15
+agentsforsci-ghe,private,teaching and training,2026-09-01,82,0,0,51,7
+agentsforsci-ghe,public,data package,2026-09-01,13,0,0,9,1
+agentsforsci-ghe,public,learner repository,2026-09-01,1,0,0,0,1
+agentsforsci-ghe,public,organisation profile,2026-09-01,3,0,0,3,1
+agentsforsci-ghe,public,teaching and training,2026-09-01,125,0,0,102,6
+agentsforsci-ghe,public,teaching and training,2026-10-01,4,0,0,4,1
+gitforsci-ghe,private,learner repository,2026-07-01,41,0,0,0,20
+gitforsci-ghe,public,organisation profile,2026-07-01,7,0,0,3,1
+gitforsci-ghe,public,teaching and training,2026-07-01,119,0,0,77,14

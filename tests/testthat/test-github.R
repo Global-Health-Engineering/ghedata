@@ -34,7 +34,14 @@ test_that("the GitHub tables have the documented columns", {
     github_commits,
     c(
       "organisation", "visibility", "month", "commits", "commits_bot",
-      "commits_merge", "commits_assisted", "repos_active"
+      "commits_automated", "commits_merge", "commits_assisted", "repos_active"
+    )
+  )
+  expect_named(
+    github_commits_by_type,
+    c(
+      "organisation", "visibility", "repository_type", "month", "commits",
+      "commits_bot", "commits_automated", "commits_assisted", "repos_active"
     )
   )
 })
@@ -44,7 +51,8 @@ test_that("names and types match the dictionary", {
     github_organisations.rda = github_organisations,
     github_repositories.rda = github_repositories,
     github_repository_types.rda = github_repository_types,
-    github_commits.rda = github_commits
+    github_commits.rda = github_commits,
+    github_commits_by_type.rda = github_commits_by_type
   )
   for (file_name in names(tables)) {
     dictionary <- dictionary_columns(file_name)
@@ -56,7 +64,8 @@ test_that("names and types match the dictionary", {
 test_that("no table has a column for a person", {
   all_names <- c(
     names(github_organisations), names(github_repositories),
-    names(github_repository_types), names(github_commits)
+    names(github_repository_types), names(github_commits),
+    names(github_commits_by_type)
   )
   expect_false(any(grepl("login|author|email|user|name$|message|sha|hash", all_names)))
 })
@@ -95,7 +104,8 @@ test_that("commit counts are complete monthly series without negative values", {
   )
 
   count_columns <- c(
-    "commits", "commits_bot", "commits_merge", "commits_assisted", "repos_active"
+    "commits", "commits_bot", "commits_automated", "commits_merge",
+    "commits_assisted", "repos_active"
   )
   for (column in count_columns) {
     expect_false(anyNA(github_commits[[column]]))
@@ -210,4 +220,42 @@ test_that("no repository named after a degree and no learner repository is liste
     tolower(github_repositories$repository)
   )))
   expect_false(any(github_repositories$repository_type == "learner repository"))
+})
+
+test_that("the commits by type add up to the commits per month", {
+  columns <- c("commits", "commits_bot", "commits_automated", "commits_assisted")
+  keys <- c("organisation", "visibility", "month")
+  by_type <- stats::aggregate(
+    github_commits_by_type[columns],
+    by = github_commits_by_type[keys],
+    FUN = sum
+  )
+  active <- rowSums(github_commits[c("commits", "commits_bot", "commits_automated")]) > 0
+  per_month <- github_commits[active, ]
+  both <- merge(per_month, by_type, by = keys, suffixes = c("", "_type"))
+  expect_equal(nrow(both), nrow(per_month))
+  expect_equal(nrow(both), nrow(by_type))
+  for (column in columns) {
+    expect_equal(both[[paste0(column, "_type")]], both[[column]])
+  }
+})
+
+test_that("automated pushes are counted apart from the commits of people", {
+  expect_true(sum(github_commits$commits_automated) > 0)
+  expect_true(sum(github_commits$commits_bot) > 0)
+})
+
+test_that("the commits by type have known types and positive counts", {
+  expect_true(all(
+    github_commits_by_type$repository_type %in% github_repository_types$repository_type
+  ))
+  totals <- rowSums(
+    github_commits_by_type[c("commits", "commits_bot", "commits_automated")]
+  )
+  expect_true(all(totals > 0))
+  expect_true(all(github_commits_by_type$commits_assisted <= github_commits_by_type$commits))
+  expect_true(all(github_commits_by_type$repos_active <= github_commits_by_type$commits))
+  expect_false(anyDuplicated(
+    github_commits_by_type[c("organisation", "visibility", "repository_type", "month")]
+  ) > 0)
 })

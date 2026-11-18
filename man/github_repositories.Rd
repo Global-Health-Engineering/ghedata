@@ -16,7 +16,7 @@ A tibble with 10 variables
 \item{license}{ SPDX identifier of the licence that GitHub detects. NA when there is none or GitHub cannot name it.}
 \item{primary_language}{ Main language of the repository as detected by GitHub. NA when there is none.}
 \item{repository_type}{ Type of the repository, see \link{github_repository_types} for the rules. Levels in this table: data package, student project, hardware, manuscript, organisation profile, proposal or report, research project, software, teaching and training, template, website and communication, group management.}
-\item{commits_total}{ Number of commits on the default branch up to the last complete month before the snapshot date, without merge commits and commits by bots. NA for forks.}
+\item{commits_total}{ Number of commits on the default branch up to the last complete month before the snapshot date, made by people, without merge commits, commits by bots and automated commits. NA for forks.}
 }
 }
 \source{

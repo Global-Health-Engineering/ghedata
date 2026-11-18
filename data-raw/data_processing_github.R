@@ -1,7 +1,7 @@
 # Description ------------------------------------------------------------------
-# R script to build the three GitHub tables of ghedata from the GitHub REST API:
-# github_organisations, github_repositories, github_repository_types and
-# github_commits.
+# R script to build the five GitHub tables of ghedata from the GitHub REST API:
+# github_organisations, github_repositories, github_repository_types,
+# github_commits and github_commits_by_type.
 #
 # Run from the package root: Rscript data-raw/data_processing_github.R
 # Needs the GitHub CLI (gh), signed in with an account that is a member of the
@@ -10,9 +10,9 @@
 #
 # Personal data rules of this script:
 # - No login, name, email, commit message or commit hash of a person is written
-#   to any file, cache or log. The jq filters below reduce every commit to four
-#   fields (month, bot flag, number of parents, agent trailer flag) before the
-#   data reaches R.
+#   to any file, cache or log. The jq filters below reduce every commit to five
+#   fields (month, bot flag, number of parents, agent trailer flag, automated
+#   flag) before the data reaches R.
 # - Names of private repositories are held in memory to call the API and are
 #   never written to a file.
 # - Public repositories whose name contains the login of an organisation member
@@ -22,6 +22,8 @@
 #   flag (student work or not) inside the jq filter and never reaches R.
 # - github_repository_types counts all repositories by type, private ones and
 #   student work included, and holds no repository name.
+# - github_commits_by_type counts commits per month by repository type, with
+#   the same rule: counts only, no repository name.
 
 # Load packages ----------------------------------------------------------------
 library(usethis)
@@ -77,18 +79,31 @@ jq_repos <- '.[] | [.name, .private, .fork, .archived, .created_at[0:10], (.push
 # package (DESCRIPTION), a data folder (data or data-raw), a Python package.
 jq_root <- '[.[].name] | [(index("DESCRIPTION") != null), ((index("data") != null) or (index("data-raw") != null)), ((index("pyproject.toml") != null) or (index("setup.py") != null))] | map(if . then 1 else 0 end) | @tsv'
 
+# Commits that a device or a script pushes under the account of a person are
+# recognised by the first line of their message. The patterns are kept by hand
+# in data-raw/github_automated_commits.csv.
+automated_pattern <- read_csv(
+  here::here("data-raw", "github_automated_commits.csv"),
+  col_types = "cc"
+) |>
+  pull(pattern) |>
+  paste(collapse = "|")
+
 # One line per commit: month of the author date, bot flag, number of parents,
-# agent trailer flag. Nothing else leaves the API response.
+# agent trailer flag, automated flag. Nothing else leaves the API response.
 jq_commits <- r"(.[] | [
   .commit.author.date[0:7],
   (if ((.author.type // "") == "Bot")
-      or ((.commit.author.name // "") | test("\\[bot\\]$"))
-      or ((.commit.author.email // "") | test("\\[bot\\]@|^actions@github\\.com$|github-actions"))
+      or ((.commit.author.name // "") | test("\\[bot\\]$|^GitHub Actions?$|^github-actions$|Changelog Action$"))
+      or ((.commit.author.email // "") | test("\\[bot\\]@|^actions?@github\\.com$|github-actions"))
    then 1 else 0 end),
   (.parents | length),
   (if (.commit.message | test("(^|\\n)\\s*(co-authored-by: *(claude|copilot)|assisted-by:)|generated with \\[claude code\\]"; "i"))
+   then 1 else 0 end),
+  (if (.commit.message | split("\n")[0] | test("AUTOMATED_PATTERN"))
    then 1 else 0 end)
-] | @tsv)"
+] | @tsv)" |>
+  str_replace(fixed("AUTOMATED_PATTERN"), automated_pattern)
 
 get_org <- function(organisation) {
   res <- gh_lines(paste0("orgs/", organisation), jq_org, paginate = FALSE)
@@ -197,7 +212,8 @@ get_commits <- function(organisation, repository) {
     month = as.Date(character()),
     is_bot = logical(),
     is_merge = logical(),
-    is_assisted = logical()
+    is_assisted = logical(),
+    is_automated = logical()
   )
   if (!res$ok) {
     if (gh_is_empty(organisation, repository)) {
@@ -210,14 +226,15 @@ get_commits <- function(organisation, repository) {
   }
   read_tsv(
     I(paste0(res$lines, collapse = "\n")),
-    col_names = c("month", "bot", "parents", "assisted"),
-    col_types = "ciii"
+    col_names = c("month", "bot", "parents", "assisted", "automated"),
+    col_types = "ciiii"
   ) |>
     transmute(
       month = as.Date(paste0(month, "-01")),
       is_bot = bot == 1,
       is_merge = parents > 1,
-      is_assisted = assisted == 1
+      is_assisted = assisted == 1,
+      is_automated = automated == 1
     )
 }
 
@@ -328,6 +345,7 @@ commits_raw <- repos_raw |>
     visibility = if_else(is_private, "private", "public"),
     class = case_when(
       is_bot ~ "bot",
+      is_automated ~ "automated",
       is_merge ~ "merge",
       TRUE ~ "counted"
     )
@@ -351,6 +369,7 @@ github_commits <- commits_raw |>
   summarise(
     commits = sum(class == "counted"),
     commits_bot = sum(class == "bot"),
+    commits_automated = sum(class == "automated"),
     commits_merge = sum(class == "merge"),
     commits_assisted = sum(class == "counted" & is_assisted),
     repos_active = n_distinct(repository[class == "counted"]),
@@ -362,9 +381,35 @@ github_commits <- commits_raw |>
   arrange(organisation, visibility, month) |>
   mutate(organisation = as.character(organisation)) |>
   select(
-    organisation, visibility, month, commits, commits_bot, commits_merge,
-    commits_assisted, repos_active
+    organisation, visibility, month, commits, commits_bot, commits_automated,
+    commits_merge, commits_assisted, repos_active
   )
+
+## github_commits_by_type: one row per organisation, visibility, repository
+## type and month with at least one commit by a person, a bot or an automated
+## push. The counts add up to the columns of the same name in github_commits.
+
+github_commits_by_type <- commits_raw |>
+  filter(class != "merge") |>
+  left_join(
+    repos_typed |> select(organisation, repository, repository_type),
+    by = c("organisation", "repository")
+  ) |>
+  semi_join(month_grid, by = c("organisation", "visibility", "month")) |>
+  summarise(
+    commits = sum(class == "counted"),
+    commits_bot = sum(class == "bot"),
+    commits_automated = sum(class == "automated"),
+    commits_assisted = sum(class == "counted" & is_assisted),
+    repos_active = n_distinct(repository[class == "counted"]),
+    .by = c(organisation, visibility, repository_type, month)
+  ) |>
+  mutate(
+    across(commits:repos_active, as.integer),
+    organisation = factor(organisation, levels = core$organisation)
+  ) |>
+  arrange(organisation, visibility, repository_type, month) |>
+  mutate(organisation = as.character(organisation))
 
 ## github_repositories: one row per public repository
 
@@ -468,6 +513,7 @@ usethis::use_data(github_organisations, overwrite = TRUE)
 usethis::use_data(github_repositories, overwrite = TRUE)
 usethis::use_data(github_repository_types, overwrite = TRUE)
 usethis::use_data(github_commits, overwrite = TRUE)
+usethis::use_data(github_commits_by_type, overwrite = TRUE)
 
 export_extdata <- function(data, name) {
   readr::write_csv(data, here::here("inst", "extdata", paste0(name, ".csv")))
@@ -478,3 +524,4 @@ export_extdata(github_organisations, "github_organisations")
 export_extdata(github_repositories, "github_repositories")
 export_extdata(github_repository_types, "github_repository_types")
 export_extdata(github_commits, "github_commits")
+export_extdata(github_commits_by_type, "github_commits_by_type")
