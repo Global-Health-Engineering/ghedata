@@ -31,7 +31,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of ghedata is to share data resources that document the work of the Global Health Engineering group at ETH Zurich. The data can be used for research, teaching, and learning purposes. The data is available as an R data package, in CSV and XLSX formats.
+The goal of ghedata is to share data that documents the work of the Global Health Engineering group at ETH Zurich. The package holds 12 tables on the people and their theses and projects, the computational competencies of the group, its repositories and commits on GitHub, its funding proposals, and its records on Zenodo. The tables hold counts, dates and titles of work, and no name of a person. They can be used for research on how a research group works, for teaching and for learning.
 
 ## Installation
 
