@@ -5,7 +5,7 @@
 \alias{github_repositories}
 \title{github_repositories: Public GitHub repositories of Global Health Engineering}
 \format{
-A tibble with 10 variables
+A tibble with 212 rows and 10 variables
 \describe{
 \item{organisation}{ Login of the GitHub organisation that owns the repository.}
 \item{repository}{ Name of the public repository.}
@@ -36,5 +36,8 @@ how many repositories of an organisation are in this table.
 \details{
 The table has a total number of commits per repository and no monthly
 series, because most repositories have one contributor.
+}
+\examples{
+head(github_repositories)
 }
 \keyword{datasets}

@@ -5,7 +5,7 @@
 \alias{github_commits_by_members}
 \title{github_commits_by_members: Commits by group members per month}
 \format{
-A tibble with 4 variables
+A tibble with 63 rows and 4 variables
 \describe{
 \item{month}{ First day of the month.}
 \item{commits}{ Commits by group members in the month, without commits in the training organisations.}
@@ -29,5 +29,8 @@ organisations (workshop exercises). Who is a group member comes from a
 lookup that is not part of the package. The lookup is complete for the last
 24 months; in the months before, everyone counts as a group member except
 the people the lookup names as outside the group.
+}
+\examples{
+head(github_commits_by_members)
 }
 \keyword{datasets}

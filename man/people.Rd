@@ -29,4 +29,7 @@ wrote a semester project and later a thesis has two rows. The table holds no
 name, no title of a work and no identifier, and there is no key to the table
 \link{outputs}. The rows are sorted by start date.
 }
+\examples{
+head(people)
+}
 \keyword{datasets}

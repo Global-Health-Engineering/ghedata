@@ -14,7 +14,7 @@
 #' are the ones of [github_repository_types], which describes the rules. The
 #' type is the type on the snapshot date in [github_organisations].
 #'
-#' @format A tibble with 9 variables
+#' @format A tibble with 484 rows and 9 variables
 #' \describe{
 #'   \item{organisation}{ Login of the GitHub organisation.}
 #'   \item{visibility}{ Visibility of the repositories on the snapshot date. Levels: public, private.}
@@ -27,4 +27,6 @@
 #'   \item{repos_active}{ Number of repositories of that type with at least one commit by a person in that month.}
 #' }
 #' @source GitHub REST API, read with `data-raw/data_processing_github.R`.
+#' @examples
+#' head(github_commits_by_type)
 "github_commits_by_type"

@@ -15,4 +15,6 @@
 #' @source The supervision table of the group, kept by the data steward. It
 #'   holds names and stays outside the package; the table is built by
 #'   `data-raw/data_processing.R`.
+#' @examples
+#' head(outputs)
 "outputs"

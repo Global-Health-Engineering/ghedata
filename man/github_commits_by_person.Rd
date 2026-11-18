@@ -5,7 +5,7 @@
 \alias{github_commits_by_person}
 \title{github_commits_by_person: Commits per person over twelve months}
 \format{
-A tibble with 7 variables
+A tibble with 35 rows and 7 variables
 \describe{
 \item{person_rank}{ Rank of the person by number of commits, 1 for the most commits. Stands in for the person; no login or name is kept.}
 \item{commits}{ Commits by the person in the twelve months from first_month to last_month, counted as in github_commits (no bots, no automated pushes, no merge commits) and without commits in the training organisations.}
@@ -33,5 +33,8 @@ workshop. A person with 0 commits took part in a workshop and has no commit
 outside it. A person is
 a rank; no login, name or email address is part of the data. In a small
 group a rank can still point to a person for someone who knows the group.
+}
+\examples{
+head(github_commits_by_person)
 }
 \keyword{datasets}

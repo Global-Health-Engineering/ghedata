@@ -18,4 +18,6 @@
 #' @source A survey among the members of the group, June 2025. The answers
 #'   per respondent stay outside the package; the table is built by
 #'   `data-raw/data_processing.R`.
+#' @examples
+#' head(computational)
 "computational"

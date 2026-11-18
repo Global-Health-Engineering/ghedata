@@ -27,4 +27,7 @@ group since 2021, finished or running, with its title. Work that was not
 finished is left out. The table holds no name of a person. It is sorted by
 year, type and title, and there is no key to the table \link{people}.
 }
+\examples{
+head(outputs)
+}
 \keyword{datasets}

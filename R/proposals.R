@@ -10,7 +10,7 @@
 #' because each request is a proposal of its own. `project_id` shows which
 #' proposals belong to the same project.
 #'
-#' @format A tibble with 16 variables
+#' @format A tibble with 81 rows and 16 variables
 #' \describe{
 #'   \item{proposal_id}{ Identifier of the proposal, numbered in the order of submission. Carries no name of a project or a person.}
 #'   \item{project_id}{ Identifier of the project. Proposals with the same project_id are requests for the same project to different funders or in different years.}
@@ -33,4 +33,6 @@
 #'   Sheets with `data-raw/data_processing_proposals.R`. Exchange rates:
 #'   reference rates of the European Central Bank, kept in
 #'   `data-raw/proposals_exchange_rates.csv`.
+#' @examples
+#' head(proposals)
 "proposals"

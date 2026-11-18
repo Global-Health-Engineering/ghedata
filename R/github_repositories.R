@@ -10,7 +10,7 @@
 #' The table has a total number of commits per repository and no monthly
 #' series, because most repositories have one contributor.
 #'
-#' @format A tibble with 10 variables
+#' @format A tibble with 212 rows and 10 variables
 #' \describe{
 #'   \item{organisation}{ Login of the GitHub organisation that owns the repository.}
 #'   \item{repository}{ Name of the public repository.}
@@ -24,4 +24,6 @@
 #'   \item{commits_total}{ Number of commits on the default branch up to the last complete month before the snapshot date, made by people, without merge commits, commits by bots and automated commits. NA for forks.}
 #' }
 #' @source GitHub REST API, read with `data-raw/data_processing_github.R`.
+#' @examples
+#' head(github_repositories)
 "github_repositories"

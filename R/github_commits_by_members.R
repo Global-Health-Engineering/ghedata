@@ -9,7 +9,7 @@
 #' 24 months; in the months before, everyone counts as a group member except
 #' the people the lookup names as outside the group.
 #'
-#' @format A tibble with 4 variables
+#' @format A tibble with 63 rows and 4 variables
 #' \describe{
 #'   \item{month}{ First day of the month.}
 #'   \item{commits}{ Commits by group members in the month, without commits in the training organisations.}
@@ -18,4 +18,6 @@
 #' }
 #' @source GitHub REST API, read with
 #'   `data-raw/data_processing_github_people.R`.
+#' @examples
+#' head(github_commits_by_members)
 "github_commits_by_members"
