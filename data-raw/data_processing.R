@@ -58,14 +58,14 @@ sheet_pre_course <- "https://docs.google.com/spreadsheets/d/19AbV2P0yybzMbrFiq8_
 
 pre_course_survey <- googlesheets4::read_sheet(ss = sheet_pre_course)
 
-# Process survey data and handle multi-answer columns
-computational <- pre_course_survey |>
+# One row per respondent. This table is held in memory only and is never
+# written to a file: the package publishes counts per answer.
+responses <- pre_course_survey |>
   mutate(id = seq(1:n())) |>
   relocate(id) |>
   filter(!id %in% c(3, 8, 17)) |>
   select(
     id,
-    # gh_username = `Please provide your GitHub username. Please get an account if you do not have one: https://github.com/`,
     experience_programming_general = `Which of these best describes your experience with programming in general?`,
     experience_programming_r = `Which of these best describes your experience with programming in R?`,
     experience_programming_python = `Which of these best describes your experience with programming in Python?`,
@@ -115,6 +115,33 @@ outputs <- data_in |>
   ) |>
   arrange(year, output_type, title)
 
+## Computational: counts per question and answer. Three questions allowed
+## several picks; their answers are split at the commas between the picks
+## (commas inside brackets belong to one pick) and counted per pick.
+multiple_picks <- c("other_languages", "ides_used", "llm_tools_used")
+
+computational <- responses |>
+  select(-id) |>
+  mutate(across(everything(), as.character)) |>
+  pivot_longer(everything(), names_to = "question", values_to = "answer") |>
+  filter(!is.na(answer)) |>
+  mutate(
+    answer = if_else(
+      question %in% multiple_picks,
+      str_split(answer, ",\\s*(?![^()]*\\))"),
+      as.list(answer)
+    )
+  ) |>
+  unnest(answer) |>
+  mutate(answer = str_squish(answer)) |>
+  count(question, answer, name = "n") |>
+  mutate(
+    question = factor(question, levels = setdiff(names(responses), "id")),
+    respondents = nrow(responses)
+  ) |>
+  arrange(question, desc(n), answer) |>
+  mutate(question = as.character(question))
+
 # Export Data ------------------------------------------------------------------
 export_table <- function(data, name) {
   readr::write_csv(data, here::here("inst", "extdata", paste0(name, ".csv")))
@@ -129,17 +156,5 @@ export_table(people, "people")
 usethis::use_data(outputs, overwrite = TRUE)
 export_table(outputs, "outputs")
 
-# Export computational competencies data
 usethis::use_data(computational, overwrite = TRUE)
-
-# Export as CSV
-readr::write_csv(
-  computational,
-  here::here("inst", "extdata", "computational.csv")
-)
-
-# Export as XLSX
-openxlsx::write.xlsx(
-  computational,
-  here::here("inst", "extdata", "computational.xlsx")
-)
+export_table(computational, "computational")
