@@ -5,7 +5,7 @@
 \alias{people}
 \title{people: A registry of all people that have worked for Global Health Engineering, including undergraduate student projects.}
 \format{
-A tibble with 129 rows and 7 variables
+A tibble with 205 rows and 7 variables
 \describe{
 \item{title}{ Unique identifier for each person using a combination of other metadata. Folder name on Google Drive.}
 \item{degree}{ Categorical variable with four levels: bsc, msc, phd, staff.}

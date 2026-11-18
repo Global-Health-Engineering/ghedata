@@ -82,7 +82,7 @@ read_csv("data-raw/dictionary.csv") |>
 
 ## Data
 
-The package provides access to one data resource.
+The package provides access to 11 tables, described below by topic.
 
 ```{r}
 library(ghedata)
@@ -227,7 +227,7 @@ undergrad_students |>
 ## License
 
 Data are available as
-[CC-BY](https://github.com/global-health-engineering/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+[CC-BY](https://github.com/Global-Health-Engineering/ghedata/blob/main/LICENSE.md).
 
 ## Citation
 
