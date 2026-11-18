@@ -37,3 +37,5 @@ URL: https://github.com/Global-Health-Engineering/ghedata, https://global-health
 BugReports: https://github.com/Global-Health-Engineering/ghedata/issues
 Config/roxygen2/version: 8.0.0
 X-schema.org-keywords: open data, global health, research group, research data management, data stewardship, GitHub, funding proposals, Switzerland
+X-schema.org-spatialCoverage: Zurich, Switzerland
+X-schema.org-temporalCoverage: 2021-02-01/2026-11-18
