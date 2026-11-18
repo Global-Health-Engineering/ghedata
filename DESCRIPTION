@@ -31,7 +31,7 @@ Suggests:
 Config/testthat/edition: 3
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown
+Config/Needs/website: rmarkdown, knitr, kableExtra, readr, gt, ggplot2, ggthemes, forcats, scales, here, quanteda, quanteda.textplots, tidyverse
 Date: 2026-11-18
 URL: https://github.com/Global-Health-Engineering/ghedata,
     https://global-health-engineering.github.io/ghedata/
