@@ -5,7 +5,7 @@
 \alias{github_organisations}
 \title{github_organisations: GitHub organisations of Global Health Engineering}
 \format{
-A tibble with 9 variables
+A tibble with 12 rows and 9 variables
 \describe{
 \item{organisation}{ Login of the GitHub organisation. An organisation account, not a person.}
 \item{purpose}{ What the organisation is used for. Levels: research, data publishing, development, events, training, teaching.}
@@ -32,5 +32,8 @@ private repositories on the snapshot date. Commits are counted in
 \link{github_commits} for the organisations with \code{commits_counted == TRUE}.
 Teaching organisations, which hold one repository per student, appear with
 their repository counts only.
+}
+\examples{
+head(github_organisations)
 }
 \keyword{datasets}

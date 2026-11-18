@@ -5,7 +5,7 @@
 \alias{github_commits}
 \title{github_commits: Commits per month in the GitHub organisations of Global Health Engineering}
 \format{
-A tibble with 9 variables
+A tibble with 486 rows and 9 variables
 \describe{
 \item{organisation}{ Login of the GitHub organisation.}
 \item{visibility}{ Visibility of the repositories on the snapshot date. Levels: public, private.}
@@ -42,5 +42,8 @@ Visibility is the visibility on the snapshot date.
 
 Use \code{\link[=github_commit_change]{github_commit_change()}} to compare the last 12 complete months with the
 12 months before.
+}
+\examples{
+head(github_commits)
 }
 \keyword{datasets}

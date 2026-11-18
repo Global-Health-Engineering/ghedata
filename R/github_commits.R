@@ -17,7 +17,7 @@
 #' Use [github_commit_change()] to compare the last 12 complete months with the
 #' 12 months before.
 #'
-#' @format A tibble with 9 variables
+#' @format A tibble with 486 rows and 9 variables
 #' \describe{
 #'   \item{organisation}{ Login of the GitHub organisation.}
 #'   \item{visibility}{ Visibility of the repositories on the snapshot date. Levels: public, private.}
@@ -30,4 +30,6 @@
 #'   \item{repos_active}{ Number of repositories with at least one commit counted in commits in that month.}
 #' }
 #' @source GitHub REST API, read with `data-raw/data_processing_github.R`.
+#' @examples
+#' head(github_commits)
 "github_commits"

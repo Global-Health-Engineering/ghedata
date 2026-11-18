@@ -10,3 +10,7 @@
 ^\.secrets$
 ^\.claude$
 ^\.vscode$
+^CITATION\.cff$
+^\.zenodo\.json$
+^\.github$
+^CONTRIBUTING\.md$

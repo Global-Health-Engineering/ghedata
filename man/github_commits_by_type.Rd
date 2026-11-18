@@ -5,7 +5,7 @@
 \alias{github_commits_by_type}
 \title{github_commits_by_type: Commits per month by repository type}
 \format{
-A tibble with 9 variables
+A tibble with 484 rows and 9 variables
 \describe{
 \item{organisation}{ Login of the GitHub organisation.}
 \item{visibility}{ Visibility of the repositories on the snapshot date. Levels: public, private.}
@@ -39,5 +39,8 @@ The columns \code{commits}, \code{commits_bot}, \code{commits_automated} and
 and forks are left out. The types
 are the ones of \link{github_repository_types}, which describes the rules. The
 type is the type on the snapshot date in \link{github_organisations}.
+}
+\examples{
+head(github_commits_by_type)
 }
 \keyword{datasets}

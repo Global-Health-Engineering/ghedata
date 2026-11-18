@@ -23,20 +23,20 @@ This document provides an overview of the projects that GHE has supervised so fa
 
 ```{r}
 undergrad_students <- people |> 
-  filter(b_m_student == "yes") |>
-  filter(!is.na(title)) 
+  filter(b_m_student == "yes")
 ```
 
 So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
 
-```{r}
+```{r students-by-degree}
+#| fig-alt: "Bar chart of the number of theses and projects by degree."
 undergrad_students |> 
   count(degree) |> 
   ggplot(aes(x = degree, y = n, label = n)) +
   geom_col() +
   geom_label() +
   labs(x = "Degree",
-       y = "Number of students") +
+       y = "Theses and projects") +
   theme_minimal() +
   theme(panel.grid = element_blank(),
         axis.text.y = element_blank())
@@ -44,7 +44,8 @@ undergrad_students |>
 
 The next chart shows the type of projects supervised. For Bachelor's students it was exclusively theses, for Master's students both semester projects and theses, with the latter being represented more frequently.
 
-```{r}
+```{r students-by-type}
+#| fig-alt: "Bar chart of the number of theses and semester projects by degree."
 undergrad_students |> 
   count(degree, type) |> 
   ggplot(aes(x = degree, y = n, label = n, fill = type, color = type)) +
@@ -53,7 +54,9 @@ undergrad_students |>
             vjust=-0.5,
             show.legend = FALSE) +
   labs(x = "Degree",
-       y = "Number of students") +
+       y = "Theses and projects",
+       fill = "Kind of work",
+       color = "Kind of work") +
   scale_fill_colorblind() +
   scale_color_colorblind() +
   theme_minimal() +
@@ -63,7 +66,8 @@ undergrad_students |>
 
 The number of students has risen steadily over the years, with the number of Bachelor's students more than doubling from 2023 to 2024. The number of Master's students has risen more slowly in comparison, but is still significantly higher in absolute numbers.
 
-```{r}
+```{r students-by-year}
+#| fig-alt: "Bar chart of the number of theses and projects of BSc and MSc students per year."
 undergrad_students |> 
   count(degree, year) |> 
   ggplot(aes(x = year, y = n, label = n, fill = degree, color = degree)) +
@@ -71,8 +75,10 @@ undergrad_students |>
   geom_text(position=position_dodge(width=0.9), 
             vjust=-0.5,
             show.legend = FALSE) +
-  labs(x = "",
-       y = "Number of students") +
+  labs(x = "Year the work started",
+       y = "Theses and projects",
+       fill = "Degree",
+       color = "Degree") +
   scale_fill_colorblind() +
   scale_color_colorblind() +
   theme_minimal() +
@@ -80,13 +86,14 @@ undergrad_students |>
         axis.text.y = element_blank())
 ```
 
-Finally, the word cloud shows the most frequently used terms in the thesis titles. The larger the font, the more frequently the term was used. It should be noted that the terms have been reduced to their stems (e.g. ‘design’, ‘designing’, ‘designed’ all become ‘design’).
+Finally, the word cloud shows the most frequently used terms in the titles of theses and projects, which the table `outputs` holds. The larger the font, the more frequently the term was used. It should be noted that the terms have been reduced to their stems (e.g. ‘design’, ‘designing’, ‘designed’ all become ‘design’).
 
-```{r}
+```{r title-wordcloud}
+#| fig-alt: "Word cloud of the most frequent word stems in the titles of theses and projects."
 library(quanteda)
 library(quanteda.textplots)
 
-textcorpus <- corpus(undergrad_students$thesis_title)
+textcorpus <- corpus(outputs$title)
 
 wordcloud <- textcorpus |> 
   tokens(remove_punct = TRUE) |>

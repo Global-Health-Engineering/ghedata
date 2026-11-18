@@ -5,7 +5,7 @@
 \alias{proposals}
 \title{proposals: Funding proposals submitted by Global Health Engineering}
 \format{
-A tibble with 16 variables
+A tibble with 81 rows and 16 variables
 \describe{
 \item{proposal_id}{ Identifier of the proposal, numbered in the order of submission. Carries no name of a project or a person.}
 \item{project_id}{ Identifier of the project. Proposals with the same project_id are requests for the same project to different funders or in different years.}
@@ -45,5 +45,8 @@ other currencies are converted to Swiss francs with the exchange rate of
 A project that was requested from several funders appears once per request,
 because each request is a proposal of its own. \code{project_id} shows which
 proposals belong to the same project.
+}
+\examples{
+head(proposals)
 }
 \keyword{datasets}

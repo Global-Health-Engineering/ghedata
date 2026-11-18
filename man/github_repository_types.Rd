@@ -5,7 +5,7 @@
 \alias{github_repository_types}
 \title{github_repository_types: Number of GitHub repositories by type}
 \format{
-A tibble with 5 variables
+A tibble with 133 rows and 5 variables
 \describe{
 \item{organisation}{ Login of the GitHub organisation.}
 \item{visibility}{ Visibility of the repositories on the snapshot date. Levels: public, private.}
@@ -34,5 +34,8 @@ levels below. The rules are rough: a thesis project that is named after its
 topic counts as a research project or as hardware. Single public
 repositories are corrected by hand in
 \code{data-raw/github_repository_types.csv}.
+}
+\examples{
+head(github_repository_types)
 }
 \keyword{datasets}

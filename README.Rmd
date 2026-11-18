@@ -29,9 +29,12 @@ knitr::opts_chunk$set(
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+[![R-CMD-check](https://github.com/Global-Health-Engineering/ghedata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Global-Health-Engineering/ghedata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of ghedata is to share data resources that document the work of the Global Health Engineering group at ETH Zurich. The data can be used for research, teaching, and learning purposes. The data is available as an R data package, in CSV and XLSX formats.
+The goal of ghedata is to share data that documents the work of the Global Health Engineering group at ETH Zurich. The package holds 12 tables on the people and their theses and projects, the computational competencies of the group, its repositories and commits on GitHub, its funding proposals, and its records on Zenodo. The tables hold counts, dates and titles of work, and no name of a person. They can be used for research on how a research group works, for teaching and for learning.
+
+The data steward of the group keeps the source tables. The tables on people, outputs and proposals come from the group's own records since 2021, the competencies from a survey among the group members in June 2025, and the GitHub and Zenodo tables are read from the public interfaces of the two services on the snapshot date given in each table. All of it concerns the group in Zurich, Switzerland, and is published under CC BY 4.0.
 
 ## Installation
 
@@ -82,15 +85,41 @@ read_csv("data-raw/dictionary.csv") |>
 
 ## Data
 
-The package provides access to 11 tables, described below by topic.
+The package provides access to 12 tables, described below by topic.
 
 ```{r}
 library(ghedata)
 ```
 
+```{r data-overview, echo=FALSE}
+overview <- tibble::tribble(
+  ~table, ~holds,
+  "people", "Engagements in the group: theses, semester projects and staff positions",
+  "outputs", "Theses and projects of students with their titles",
+  "computational", "Answers to a survey on computational competencies, as counts",
+  "github_organisations", "GitHub organisations of the group",
+  "github_repositories", "Public repositories",
+  "github_repository_types", "Number of repositories by type and year",
+  "github_commits", "Commits per organisation and month",
+  "github_commits_by_type", "Commits per repository type and month",
+  "github_commits_by_person", "Commits per group member over twelve months, by rank",
+  "github_commits_by_members", "Commits of all group members per month",
+  "proposals", "Funding proposals with status, funder and budget",
+  "zenodo_records", "Records on Zenodo with views and downloads"
+)
+overview |>
+  dplyr::mutate(
+    rows = vapply(table, function(x) nrow(get(x)), integer(1)),
+    columns = vapply(table, function(x) ncol(get(x)), integer(1)),
+    table = paste0("`", table, "`")
+  ) |>
+  dplyr::select(table, rows, columns, holds) |>
+  knitr::kable()
+```
+
 ### people
 
-The dataset `people` contains data about people that have worked for the group. This includes staff, as well as undergraduate student projects.
+The dataset `people` has one row per engagement of a person in the group since 2021: theses and semester projects of students, and the positions of staff. It holds no name, no title of a work and no identifier.
 
 It has `r nrow(people)` observations and `r ncol(people)` variables.
 
@@ -101,15 +130,26 @@ people |>
   gt::as_raw_html()
 ```
 
-For an overview of the variable names, see the following table.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-readr::read_csv("data-raw/dictionary.csv") |>
-  dplyr::filter(file_name == "people.rda") |>
-  dplyr::select(variable_name:description) |> 
-  knitr::kable() |> 
-  kableExtra::kable_styling("striped") |> 
-  kableExtra::scroll_box(height = "200px")
+### outputs
+
+The dataset `outputs` has `r nrow(outputs)` rows, one per thesis or project of a student, finished or running, with its title, its type, the year it started and the link to the ETH Research Collection where the work is deposited. No key links it to `people`.
+
+```{r}
+outputs |> 
+  dplyr::count(output_type, name = "works") |> 
+  knitr::kable()
+```
+
+### computational
+
+The dataset `computational` holds the answers to a survey on computational competencies among `r unique(computational$respondents)` members of the group in June 2025, as counts per question and answer. It has `r nrow(computational)` rows and no row per respondent.
+
+```{r}
+computational |> 
+  dplyr::filter(question == "experience_git") |> 
+  dplyr::select(answer, n) |> 
+  knitr::kable()
 ```
 
 ### GitHub tables
@@ -172,17 +212,6 @@ github_commit_change() |>
   knitr::kable(digits = 1)
 ```
 
-For an overview of the variable names, see the following table.
-
-```{r github-dictionary, echo=FALSE, message=FALSE, warning=FALSE}
-readr::read_csv("data-raw/dictionary.csv") |>
-  dplyr::filter(stringr::str_starts(file_name, "github_")) |>
-  dplyr::select(file_name:description) |>
-  knitr::kable() |>
-  kableExtra::kable_styling("striped") |>
-  kableExtra::scroll_box(height = "200px")
-```
-
 ### Proposals table
 
 One table holds the funding proposals of the group. It holds no name of a person.
@@ -195,19 +224,32 @@ One table holds what was published on Zenodo and how often it was viewed and dow
 
 - `zenodo_records` has `r nrow(zenodo_records)` rows, one per record on Zenodo by a creator from the group or in the openwashdata community, with `r format(sum(zenodo_records$views), big.mark = ",")` views and `r format(sum(zenodo_records$downloads), big.mark = ",")` downloads in total. The counts were read on `r unique(zenodo_records$snapshot_date)`.
 
+## Variables
+
+The dictionary describes every variable of every table.
+
+```{r dictionary, echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::mutate(table = stringr::str_remove(file_name, ".rda")) |>
+  dplyr::select(table, variable_name, variable_type, description) |>
+  knitr::kable() |>
+  kableExtra::kable_styling("striped") |>
+  kableExtra::scroll_box(height = "400px")
+```
+
 ## Example
 
 ```{r}
 library(ghedata)
 
 undergrad_students <- people |> 
-  filter(b_m_student == "yes") |>
-  filter(!is.na(thesis_title)) 
+  filter(b_m_student == "yes")
 ```
 
 So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
 
-```{r}
+```{r students-by-year}
+#| fig-alt: "Bar chart of the number of theses and projects of BSc and MSc students per year."
 undergrad_students |> 
   count(degree, year) |> 
   ggplot(aes(x = year, y = n, label = n, fill = degree, color = degree)) +
@@ -215,8 +257,10 @@ undergrad_students |>
   geom_text(position=position_dodge(width=0.9), 
             vjust=-0.5,
             show.legend = FALSE) +
-  labs(x = "",
-       y = "Number of students") +
+  labs(x = "Year the work started",
+       y = "Theses and projects",
+       fill = "Degree",
+       color = "Degree") +
   scale_fill_colorblind() +
   scale_color_colorblind() +
   theme_minimal() +
@@ -226,8 +270,7 @@ undergrad_students |>
 
 ## License
 
-Data are available as
-[CC-BY](https://github.com/Global-Health-Engineering/ghedata/blob/main/LICENSE.md).
+Data are available as [CC-BY-4.0](https://github.com/Global-Health-Engineering/ghedata/blob/main/LICENSE.md).
 
 ## Citation
 
@@ -236,3 +279,5 @@ Please cite this package using:
 ```{r}
 citation("ghedata")
 ```
+
+The website of the package is <https://global-health-engineering.github.io/ghedata/>. A DOI follows with the first release.

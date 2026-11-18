@@ -1,0 +1,37 @@
+{
+  "title": "Data on the Work of the Global Health Engineering Group",
+  "description": "<p>Data that documents the work of the Global Health Engineering group at ETH Zurich since 2021: theses, projects and staff, computational competencies of the group, repositories and commits on GitHub, funding proposals, and records on Zenodo with their views and downloads.<\/p><p>Explore the data on a curated website: <a href=\"https://global-health-engineering.github.io/ghedata/\">https://global-health-engineering.github.io/ghedata/<\/a><\/p>",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Schöbitz, Lars",
+      "orcid": "0000-0003-2196-5015"
+    },
+    {
+      "name": "Walder, Colin",
+      "orcid": "0009-0006-0969-1954"
+    },
+    {
+      "name": "Clavijo Daza, Adriana",
+      "orcid": "0000-0002-6352-9839"
+    },
+    {
+      "name": "Tilley, Elizabeth",
+      "orcid": "0000-0002-2095-9724"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["open data", "global health", "research group", "research data management", "data stewardship", "GitHub", "funding proposals", "Switzerland"],
+  "version": "0.0.0.9000",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Global-Health-Engineering/ghedata",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://global-health-engineering.github.io/ghedata/",
+      "relation": "isDocumentedBy",
+      "resource_type": "other"
+    }
+  ]
+}

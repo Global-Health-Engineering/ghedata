@@ -13,7 +13,7 @@
 #' repositories are corrected by hand in
 #' `data-raw/github_repository_types.csv`.
 #'
-#' @format A tibble with 5 variables
+#' @format A tibble with 133 rows and 5 variables
 #' \describe{
 #'   \item{organisation}{ Login of the GitHub organisation.}
 #'   \item{visibility}{ Visibility of the repositories on the snapshot date. Levels: public, private.}
@@ -22,4 +22,6 @@
 #'   \item{repos}{ Number of repositories.}
 #' }
 #' @source GitHub REST API, read with `data-raw/data_processing_github.R`.
+#' @examples
+#' head(github_repository_types)
 "github_repository_types"

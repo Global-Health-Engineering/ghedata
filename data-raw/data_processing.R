@@ -1,35 +1,30 @@
 # Description ------------------------------------------------------------------
-# R script to process uploaded raw data into a tidy, analysis-ready data frame
+# Builds three tables from two Google Sheets that hold names and stay outside
+# this repository:
+# - people: one row per engagement in the group, without titles and without
+#   an identifier.
+# - outputs: theses and projects of students with their titles. No key links
+#   it to people.
+# - computational: counts per question and answer of the group survey of
+#   June 2025. The answers per respondent are held in memory only.
+#
+# The Google account that may read the sheets is set in ~/.Renviron:
+#   GHE_GOOGLE_EMAIL=<address>
+#
+# Run from the package root:
+#   Rscript data-raw/data_processing.R
+
 # Load packages ----------------------------------------------------------------
-## Run the following code in console if you don't have the packages
-## install.packages(c("usethis", "fs", "here", "readr", "readxl", "openxlsx"))
 library(usethis)
 library(fs)
 library(here)
 library(readr)
-library(readxl)
-library(openxlsx)
+library(writexl)
 library(googlesheets4)
 library(dplyr)
 library(lubridate)
 library(stringr)
-library(purrr)
 library(tidyr)
-
-# functions ---------------------------------------------------------------
-
-# Functions generated with perplexity.ai:
-# https://www.perplexity.ai/search/write-r-code-to-use-stringr-to-RgzUzkXuQgqZ4IAPHJvlpg
-
-# Function to generate a unique ID
-generate_unique_id <- function(length = 6) {
-  paste0(sample(length, replace = TRUE), collapse = "")
-}
-
-# Function to replace the last word after dash with a unique ID
-replace_last_dash <- function(string) {
-  str_replace(string, "-([^-]+)$", paste0("-", generate_unique_id()))
-}
 
 # Read data --------------------------------------------------------------------
 
@@ -37,10 +32,6 @@ replace_last_dash <- function(string) {
 
 # Configure authentication to use the correct email
 gs4_auth(email = Sys.getenv("GHE_GOOGLE_EMAIL", unset = NA))
-
-# data_in <- readr::read_csv("data-raw/dataset.csv")
-# codebook <- readxl::read_excel("data-raw/codebook.xlsx") |>
-#  clean_names()
 
 data_in <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1LuXu3u-bmvYMjmc7L2YTUd5obTbBnR1qCrIJIwhUvFE/edit?gid=0#gid=0"
@@ -58,14 +49,14 @@ sheet_pre_course <- "https://docs.google.com/spreadsheets/d/19AbV2P0yybzMbrFiq8_
 
 pre_course_survey <- googlesheets4::read_sheet(ss = sheet_pre_course)
 
-# Process survey data and handle multi-answer columns
-computational <- pre_course_survey |>
+# One row per respondent. This table is held in memory only and is never
+# written to a file: the package publishes counts per answer.
+responses <- pre_course_survey |>
   mutate(id = seq(1:n())) |>
   relocate(id) |>
   filter(!id %in% c(3, 8, 17)) |>
   select(
     id,
-    # gh_username = `Please provide your GitHub username. Please get an account if you do not have one: https://github.com/`,
     experience_programming_general = `Which of these best describes your experience with programming in general?`,
     experience_programming_r = `Which of these best describes your experience with programming in R?`,
     experience_programming_python = `Which of these best describes your experience with programming in Python?`,
@@ -86,37 +77,75 @@ computational <- pre_course_survey |>
 # Tidy data --------------------------------------------------------------------
 ## Clean the raw data into a tidy format here
 
-set.seed(seed = 0721)
-
+## People: one row per engagement, without titles and without an identifier.
+## Sorted by start date, so the order of the rows says nothing about the
+## order of the source table. There is no key to the table outputs.
 people <- data_in |>
-  select(title, degree, type, b_m_student, start_date, year, thesis_title) |>
-  mutate(title = map_chr(title, replace_last_dash))
+  select(degree, type, b_m_student, start_date, year) |>
+  arrange(start_date, degree, type)
+
+## Outputs: theses and projects of students with their titles. Finished and
+## running work, without work that was not finished and without staff rows.
+## Sorted by year, type and title; no column and no row order links a row to
+## the table people.
+outputs <- data_in |>
+  filter(
+    degree %in% c("bsc", "msc", "phd"),
+    !is.na(thesis_title),
+    status != "not finished"
+  ) |>
+  transmute(
+    title = str_squish(thesis_title),
+    output_type = paste(degree, recode(type, "sem-proj" = "semester project", "case-study" = "case study")),
+    year = as.integer(year),
+    research_collection_link = if_else(
+      str_detect(coalesce(as.character(eth_collection_link), ""), "^https?://"),
+      as.character(eth_collection_link),
+      NA_character_
+    )
+  ) |>
+  arrange(year, output_type, title)
+
+## Computational: counts per question and answer. Three questions allowed
+## several picks; their answers are split at the commas between the picks
+## (commas inside brackets belong to one pick) and counted per pick.
+multiple_picks <- c("other_languages", "ides_used", "llm_tools_used")
+
+computational <- responses |>
+  select(-id) |>
+  mutate(across(everything(), as.character)) |>
+  pivot_longer(everything(), names_to = "question", values_to = "answer") |>
+  filter(!is.na(answer)) |>
+  mutate(
+    answer = if_else(
+      question %in% multiple_picks,
+      str_split(answer, ",\\s*(?![^()]*\\))"),
+      as.list(answer)
+    )
+  ) |>
+  unnest(answer) |>
+  mutate(answer = str_squish(answer)) |>
+  count(question, answer, name = "n") |>
+  mutate(
+    question = factor(question, levels = setdiff(names(responses), "id")),
+    respondents = nrow(responses)
+  ) |>
+  arrange(question, desc(n), answer) |>
+  mutate(question = as.character(question))
 
 # Export Data ------------------------------------------------------------------
-# Export people data
-usethis::use_data(people, overwrite = TRUE)
+export_table <- function(data, name) {
+  readr::write_csv(data, here::here("inst", "extdata", paste0(name, ".csv")))
+  writexl::write_xlsx(data, here::here("inst", "extdata", paste0(name, ".xlsx")))
+}
 
 fs::dir_create(here::here("inst", "extdata"))
-readr::write_csv(
-  people,
-  here::here("inst", "extdata", paste0("people", ".csv"))
-)
-openxlsx::write.xlsx(
-  people,
-  here::here("inst", "extdata", paste0("people", ".xlsx"))
-)
 
-# Export computational competencies data
+usethis::use_data(people, overwrite = TRUE)
+export_table(people, "people")
+
+usethis::use_data(outputs, overwrite = TRUE)
+export_table(outputs, "outputs")
+
 usethis::use_data(computational, overwrite = TRUE)
-
-# Export as CSV
-readr::write_csv(
-  computational,
-  here::here("inst", "extdata", "computational.csv")
-)
-
-# Export as XLSX
-openxlsx::write.xlsx(
-  computational,
-  here::here("inst", "extdata", "computational.xlsx")
-)
+export_table(computational, "computational")
