@@ -43,3 +43,31 @@ footer:
   components:
     publisher: Published by [Global Health Engineering](https://ghe.ethz.ch/) at ETH Zurich.
     washr: Package built with [washr](https://openwashdata.github.io/washr/) 1.3.0.
+
+reference:
+  - title: People and their work
+    desc: Engagements in the group, and theses and projects of students.
+    contents:
+      - people
+      - outputs
+  - title: Computational competencies
+    contents:
+      - computational
+  - title: GitHub
+    desc: Organisations, repositories and commits of the group on GitHub.
+    contents:
+      - github_organisations
+      - github_repositories
+      - github_repository_types
+      - github_commits
+      - github_commits_by_type
+      - github_commits_by_person
+      - github_commits_by_members
+      - github_commit_change
+  - title: Funding proposals
+    contents:
+      - proposals
+  - title: Reach
+    desc: Records on Zenodo with their views and downloads.
+    contents:
+      - zenodo_records
