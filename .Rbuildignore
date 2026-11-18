@@ -12,3 +12,4 @@
 ^\.vscode$
 ^CITATION\.cff$
 ^\.zenodo\.json$
+^\.github$
