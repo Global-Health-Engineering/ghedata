@@ -1,0 +1,67 @@
+record_id,doi,title,publication_date,resource_type,openwashdata_community,views,unique_views,downloads,unique_downloads,snapshot_date
+7331120,10.5281/zenodo.7331120,"Research Beyond the Lab, Spring Term 2022, Global Health Engineering, ETH Zurich. Raw data and analysis-ready derived data on waste management in public spaces in Zurich, Switzerland.",2022-11-17,dataset,FALSE,412,375,31,31,2026-11-18
+7825679,10.5281/zenodo.7825679,"qechairquality: Air Quality Data at Queen Elizabeth Central Hospital (QECH), Blantyre, Malawi.",2023-04-13,dataset,FALSE,368,340,71,71,2026-11-18
+7845779,10.5281/zenodo.7845779,durbanplasticwaste: Durban (South Aftica) Plastic Waste Data,2023-04-19,software,FALSE,597,575,112,110,2026-11-18
+7950842,10.5281/zenodo.7950842,"Manuscript: ""'It Is Unbearable To Breath Here': Air Quality, Open Incineration, And Misinformation In Blantyre, Malawi""",2023-05-19,software,FALSE,262,253,50,49,2026-11-18
+8019853,10.5281/zenodo.8019853,JakubTk/SolidProps: First stable release,2023-06-09,software,FALSE,91,85,17,17,2026-11-18
+8208293,10.5281/zenodo.8208293,fsmglobal: Global Faecal Sludge Emptying Services Demand,2023-08-02,dataset,TRUE,293,281,55,52,2026-11-18
+8208417,10.5281/zenodo.8208417,"wasteskipsblantyre: Locations of Public Waste Skips in Blantyre, Malawi",2023-08-02,dataset,TRUE,1134,1095,92,87,2026-11-18
+8289621,10.5281/zenodo.8289621,biogasoutcomesmalawi: Data for 61 semi-structured interviews with biogas owners in Malawi,2023-08-28,dataset,TRUE,621,587,47,46,2026-11-18
+8318442,10.5281/zenodo.8318442,website: Open Science website of the Global Health Engineering group at ETH Zurich,2023-09-05,software,FALSE,263,250,69,67,2026-11-18
+8361085,10.5281/zenodo.8361085,"cbssuitabilityhaiti: This package contains data for a sanitation zoning assessment done for the city of Cap Haitien, Haiti. It combines two datasets used for an analysis of the suitability of container-based sanitation (CBS).",2023-09-19,software,TRUE,150,146,37,36,2026-11-18
+8399887,10.5281/zenodo.8399887,"waterpumpkwale: Weekly volume of water pumped for handpumps monitored with Smart Handpump technology, Kwale County, Kenya",2023-10-02,software,TRUE,194,190,73,72,2026-11-18
+10016875,10.5281/zenodo.10016875,openwashdata/grdwtrsmpkwale: v0.0.1,2023-10-16,software,TRUE,106,99,13,12,2026-11-18
+10039803,10.5281/zenodo.10039803,zurichwastecollection: Zurich (Switzerland) Waste Collection Data,2023-10-25,software,FALSE,152,146,24,22,2026-11-18
+10459433,10.5281/zenodo.10459433,"chckapmalawi: Knowledge, Attitudes and Practices (KAP) Survey about Community Health Centers (CHC) in Malawi",2024-01-04,software,FALSE,202,201,62,62,2026-11-18
+10727977,10.5281/zenodo.10727977,gdho: Global Database of Humanitarian Organizations,2024-03-01,dataset,TRUE,469,458,80,75,2026-11-18
+10947980,10.5281/zenodo.10947980,"Design of an HDPE bottle collection and pre-cleaning system for recycling in Blantyre, Malawi",2024-04-09,software,FALSE,228,209,39,39,2026-11-18
+11185700,10.5281/zenodo.11185700,"washopenresearch: Dataset about open research data information in Water, Sanitation, and Hygiene",2024-05-13,dataset,TRUE,199,188,69,68,2026-11-18
+11259330,10.5281/zenodo.11259330,"Low-Cost Glass Crusher for Cape Maclear, Malawi: Design, Maintenance, Operation, and Results",2024-05-23,software,FALSE,236,197,54,50,2026-11-18
+11265497,10.5281/zenodo.11265497,"Waste Characterization, Quantification, and Composting in Cape Maclear, Malawi",2024-05-23,dataset,FALSE,173,169,35,35,2026-11-18
+12635355,10.5281/zenodo.12635355,openwashdata/boreholefuncmwi: boreholefuncmwi v0.0.1,2024-06-27,dataset,TRUE,217,210,44,41,2026-11-18
+12622542,10.5281/zenodo.12622542,"Development of a Low-Cost Incinerator in Cape Maclear, Malawi",2024-07-02,physicalobject,FALSE,206,198,31,31,2026-11-18
+12664476,10.5281/zenodo.12664476,Data Logger for Remote Monitoring of Biogas,2024-07-05,software,FALSE,171,159,23,23,2026-11-18
+12685803,10.5281/zenodo.12685803,"bcsa: Data for source-apportionment of light absorbing carbon in Blantyre, Malawi",2024-07-08,software,FALSE,1122,1076,159,153,2026-11-18
+12701107,10.5281/zenodo.12701107,openwashdata/waschoolpiracema: waschoolpiracema v0.0.1,2024-07-09,dataset,TRUE,204,200,21,21,2026-11-18
+12743514,10.5281/zenodo.12743514,From Smoke to Solution: Advancing Black Carbon as a Regulatory Pollutant,2024-07-15,software,FALSE,392,376,58,55,2026-11-18
+13134220,10.5281/zenodo.13134220,openwashdata/saniabidjan: saniabidjan v0.0.1,2024-07-30,dataset,TRUE,124,115,35,34,2026-11-18
+13134310,10.5281/zenodo.13134310,openwashdata/portawaterperu: portawaterperu: v0.0.1,2024-07-30,dataset,TRUE,120,110,16,15,2026-11-18
+13784723,10.5281/zenodo.13784723,Thermodynamic Model for Parameter Analysis of Biogas-Powered Pasteuriser,2024-09-18,model,FALSE,97,95,954,21,2026-11-18
+14006907,10.5281/zenodo.14006907,Solar Water Heater Modeling for Fecal Sludge Pasteurization,2024-10-29,model,FALSE,162,158,37,37,2026-11-18
+14801224,10.5281/zenodo.14801224,"Data Underlying the Study on Willingness to Pay and Economic Feasibility for Waste Management in Cape Maclear, Malawi",2025-02-04,software,FALSE,113,106,25,25,2026-11-18
+15028263,10.5281/zenodo.15028263,Sensing improved cookstoves to estimate CO2 emission reduction,2025-03-14,software,FALSE,151,147,28,27,2026-11-18
+15211040,10.5281/zenodo.15211040,"Incinerator design and air quality monitoring data for Cape Maclear, Malawi",2025-04-14,software,FALSE,555,523,40,40,2026-11-18
+15223264,10.5281/zenodo.15223264,Data Underlying the Study on Improving the Solar Sludge Pasteurization Technology,2025-04-15,software,FALSE,67,59,23,23,2026-11-18
+15320180,10.5281/zenodo.15320180,"Algorithms and data for optimizing the recycling network in the city of Zurich, Switzerland",2025-05-01,software,FALSE,87,82,19,19,2026-11-18
+15632959,10.5281/zenodo.15632959,Sitting Interface for Urine Diverting Dry Toilet,2025-06-10,software,FALSE,99,97,21,21,2026-11-18
+15856031,10.5281/zenodo.15856031,"manuscript-bcsa-2024: Data analysis code for manuscript on ""Light Absorbing Carbonaceous Aerosols: Concentrations and Sources in an Under-Monitored Setting""",2025-07-10,software,FALSE,198,180,76,74,2026-11-18
+16563064,10.5281/zenodo.16563064,ethord: ETH Board Open Research Data (ORD) Program Project Metadata and Report Data [RETRACTED - February 2026],2025-07-29,software,FALSE,445,411,28,28,2026-11-18
+16743742,10.5281/zenodo.16743742,openwashdata/hydrogeologicalghana: Initial package release,2025-08-05,dataset,FALSE,87,73,15,15,2026-11-18
+16780698,10.5281/zenodo.16780698,Raw and derived data for recycling network optimization in Zurich,2025-08-08,dataset,FALSE,128,127,14,12,2026-11-18
+17055463,10.5281/zenodo.17055463,Video: Researchers of the ETH Domain on Open Research and FAIR Data,2025-09-04,video,FALSE,142,126,460,187,2026-11-18
+17226213,10.5281/zenodo.17226213,"Development of a Remote Communications Infrastructure for an Off-Grid Energy System: Hardware, Software, and Data",2025-09-29,software,FALSE,52,49,19,19,2026-11-18
+17349516,10.5281/zenodo.17349516,Sludge Pasteurization with Solar Water Heater: Design and Data,2025-10-14,software,FALSE,61,52,19,19,2026-11-18
+18162726,10.5281/zenodo.18162726,Plastic Separator - Design and Results,2026-01-06,software,FALSE,240,220,23,23,2026-11-18
+18839168,10.5281/zenodo.18839168,Development of a Low-Cost Ultrasound Flow Meter,2026-03-02,software,FALSE,60,60,8,8,2026-11-18
+19608383,10.5281/zenodo.19608383,"Solar-Powered Glass Tumbler for Cape Maclear, Malawi",2026-04-16,software,FALSE,35,30,9,6,2026-11-18
+19877599,10.5281/zenodo.19877599,Swiss Reproducibility Network (SwissRN) - Annual Report 2025,2026-05-04,publication,FALSE,131,126,55,48,2026-11-18
+20407897,10.5281/zenodo.20407897,Solar Sludge Pasteurization Control System,2026-05-27,software,FALSE,35,32,8,8,2026-11-18
+20410212,10.5281/zenodo.20410212,Sludge Pasteurization with Solar Water Heaters: An Off-Grid Electrically Controlled Solution,2026-05-27,publication,FALSE,83,80,52,45,2026-11-18
+20698757,10.5281/zenodo.20698757,dataitd24: FAIRqual Workshop Data from ITD24,2026-06-15,software,FALSE,321,303,67,65,2026-11-18
+20795856,10.5281/zenodo.20795856,unhcrwash: WASH Data From Refugee Camps and Settlements (UNHCR),2026-06-22,software,FALSE,216,212,42,42,2026-11-18
+21256642,10.5281/zenodo.21256642,Product Development of a Substrate Mixer and Portioning Device,2026-07-08,publication,FALSE,45,39,24,22,2026-11-18
+21260446,10.5281/zenodo.21260446,"fslogisticskampala: Data on Faecal Sludge Transporting Logistics in Kampala, Uganda",2026-07-08,software,FALSE,69,68,18,16,2026-11-18
+21703567,10.5281/zenodo.21703567,Git for Scientists,2026-07-30,publication,FALSE,75,65,17,15,2026-11-18
+21704115,10.5281/zenodo.21704115,Git for Scientists,2026-07-30,lesson,FALSE,46,41,4,4,2026-11-18
+22047774,10.5281/zenodo.22047774,3D-Printed Device for Microbial Water Quality Testing,2026-08-21,publication,FALSE,71,57,11,10,2026-11-18
+22231975,10.5281/zenodo.22231975,fungalgrowth: Fungal Growth Assay on Human Faeces,2026-09-01,software,FALSE,71,58,3,3,2026-11-18
+22811936,10.5281/zenodo.22811936,solidwastekampala: Quantity and Composition of Domestic Solid Waste in Kampala City,2026-09-17,software,FALSE,170,160,25,23,2026-11-18
+23016356,10.5281/zenodo.23016356,"Module ""Qualitative Data Governance for Transdisciplinary and Participatory Research""",2026-09-30,lesson,FALSE,50,44,10,9,2026-11-18
+23414472,10.5281/zenodo.23414472,"ecoTrace biogas-sensor pilot, Kiambu County, Kenya: sensor telemetry, gas composition, household survey and derivation code",2026-10-16,dataset,FALSE,148,132,43,39,2026-11-18
+23414488,10.5281/zenodo.23414488,"ecoTrace biogas-sensor pilot, Kiambu County, Kenya: installation and feasibility figure code",2026-10-16,software,FALSE,94,90,15,15,2026-11-18
+23918126,10.5281/zenodo.23918126,"Household Waste Survey and Characterisation in Gulu City, Uganda",2026-11-03,dataset,TRUE,61,52,4,4,2026-11-18
+24010365,10.5281/zenodo.24010365,"SpaceCup (AMMITY): an open-source menstrual cup that seals before extraction, for menstruation in reduced gravity",2026-11-06,software,FALSE,16,10,7,5,2026-11-18
+23811444,10.5281/zenodo.23811444,"Formalizing Manual Pit Emptying in Mzuzu, Malawi",2026-11-10,poster,FALSE,36,35,33,30,2026-11-18
+24160210,10.5281/zenodo.24160210,"Household Water Insecurity and Drinking Water Service Levels from the Kalai Project in Nampula, Mozambique",2026-11-12,dataset,FALSE,12,9,3,3,2026-11-18
+24169338,10.5281/zenodo.24169338,"manuscript-exposure-wate-burning-2026: Data analysis code for manuscript on ""Assessing personal black carbon exposure associated with domestic open waste burning in urban Malawi""",2026-11-12,software,FALSE,26,23,10,10,2026-11-18
+24317402,10.5281/zenodo.24317402,"3DPLAM, 3D-Printed Lightweight Affordable Manifold for Microbial Water Quality Testing",2026-11-17,software,FALSE,86,73,20,19,2026-11-18
