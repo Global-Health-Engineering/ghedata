@@ -3,23 +3,30 @@
 \docType{data}
 \name{people}
 \alias{people}
-\title{people: A registry of all people that have worked for Global Health Engineering, including undergraduate student projects.}
+\title{people: engagements in the Global Health Engineering group}
 \format{
-A tibble with 205 rows and 7 variables
+A tibble with 205 rows and 5 variables
 \describe{
-\item{title}{ Unique identifier for each person using a combination of other metadata. Folder name on Google Drive.}
-\item{degree}{ Categorical variable with four levels: bsc, msc, phd, staff.}
-\item{type}{ Categorical variable with six levels: hiwi, intern, post-doc, scientific-assitant, sem-proj, thesis.}
-\item{b_m_student}{ Binary variable to identify if person is BSc or MSc students. Levels: yes, no.}
-\item{start_date}{ Start date of the person.}
-\item{year}{ Year of the start date.}
-\item{thesis_title}{ Title of the thesis.}
+\item{degree}{ Degree the person worked towards in this engagement, or staff: bsc, msc, phd, mob (mobility student) or staff.}
+\item{type}{ Kind of engagement: thesis, sem-proj (semester project), case-study, student, or for staff the role (chair, senior-scientist, post-doc, scientific-assistant, support, intern, hiwi).}
+\item{b_m_student}{ Whether the engagement is that of a BSc or MSc student: yes or no.}
+\item{start_date}{ Date on which the engagement started.}
+\item{year}{ Year in which the engagement started.}
 }
+}
+\source{
+The supervision table of the group, kept by the data steward. It
+holds names and stays outside the package; the table is built by
+\code{data-raw/data_processing.R}.
 }
 \usage{
 people
 }
 \description{
-This dataset contains the following columns:
+One row per engagement of a person in the group since 2021: theses and
+semester projects of students, and the positions of staff. A person who
+wrote a semester project and later a thesis has two rows. The table holds no
+name, no title of a work and no identifier, and there is no key to the table
+\link{outputs}. The rows are sorted by start date.
 }
 \keyword{datasets}
