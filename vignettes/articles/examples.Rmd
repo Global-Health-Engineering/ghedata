@@ -23,8 +23,7 @@ This document provides an overview of the projects that GHE has supervised so fa
 
 ```{r}
 undergrad_students <- people |> 
-  filter(b_m_student == "yes") |>
-  filter(!is.na(title)) 
+  filter(b_m_student == "yes")
 ```
 
 So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
@@ -80,13 +79,13 @@ undergrad_students |>
         axis.text.y = element_blank())
 ```
 
-Finally, the word cloud shows the most frequently used terms in the thesis titles. The larger the font, the more frequently the term was used. It should be noted that the terms have been reduced to their stems (e.g. ‘design’, ‘designing’, ‘designed’ all become ‘design’).
+Finally, the word cloud shows the most frequently used terms in the titles of theses and projects, which the table `outputs` holds. The larger the font, the more frequently the term was used. It should be noted that the terms have been reduced to their stems (e.g. ‘design’, ‘designing’, ‘designed’ all become ‘design’).
 
 ```{r}
 library(quanteda)
 library(quanteda.textplots)
 
-textcorpus <- corpus(undergrad_students$thesis_title)
+textcorpus <- corpus(outputs$title)
 
 wordcloud <- textcorpus |> 
   tokens(remove_punct = TRUE) |>

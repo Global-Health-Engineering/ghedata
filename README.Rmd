@@ -82,7 +82,7 @@ read_csv("data-raw/dictionary.csv") |>
 
 ## Data
 
-The package provides access to 11 tables, described below by topic.
+The package provides access to 12 tables, described below by topic.
 
 ```{r}
 library(ghedata)
@@ -90,7 +90,7 @@ library(ghedata)
 
 ### people
 
-The dataset `people` contains data about people that have worked for the group. This includes staff, as well as undergraduate student projects.
+The dataset `people` has one row per engagement of a person in the group since 2021: theses and semester projects of students, and the positions of staff. It holds no name, no title of a work and no identifier.
 
 It has `r nrow(people)` observations and `r ncol(people)` variables.
 
@@ -110,6 +110,27 @@ readr::read_csv("data-raw/dictionary.csv") |>
   knitr::kable() |> 
   kableExtra::kable_styling("striped") |> 
   kableExtra::scroll_box(height = "200px")
+```
+
+### outputs
+
+The dataset `outputs` has `r nrow(outputs)` rows, one per thesis or project of a student, finished or running, with its title, its type, the year it started and the link to the ETH Research Collection where the work is deposited. No key links it to `people`.
+
+```{r}
+outputs |> 
+  dplyr::count(output_type, name = "works") |> 
+  knitr::kable()
+```
+
+### computational
+
+The dataset `computational` holds the answers to a survey on computational competencies among `r unique(computational$respondents)` members of the group in June 2025, as counts per question and answer. It has `r nrow(computational)` rows and no row per respondent.
+
+```{r}
+computational |> 
+  dplyr::filter(question == "experience_git") |> 
+  dplyr::select(answer, n) |> 
+  knitr::kable()
 ```
 
 ### GitHub tables
@@ -201,8 +222,7 @@ One table holds what was published on Zenodo and how often it was viewed and dow
 library(ghedata)
 
 undergrad_students <- people |> 
-  filter(b_m_student == "yes") |>
-  filter(!is.na(thesis_title)) 
+  filter(b_m_student == "yes")
 ```
 
 So far, GHE has supervised `r nrow(undergrad_students)` projects of which `r nrow(undergrad_students[undergrad_students$degree == "bsc",])` were done by BSc and `r nrow(undergrad_students[undergrad_students$degree == "msc",])` by MSc students.
