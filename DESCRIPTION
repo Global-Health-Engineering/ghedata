@@ -40,11 +40,11 @@ X-schema.org-temporalCoverage: 2021-02-01/2026-11-18
 Config/washr/funding: This project was funded by the [Global Health Engineering group at ETH Zurich](https://ghe.ethz.ch/).
 Config/washr/analytics-domain: none
 Config/washr/doi-provider: zenodo
-Config/washr/zenodo-community: none
+Config/washr/zenodo-community: global-health-engineering
 Config/washr/brand-source: none
-Config/washr/publisher: none
-Config/washr/home: none
+Config/washr/publisher: Published by [Global Health Engineering](https://ghe.ethz.ch/) at ETH Zurich.
+Config/washr/home: https://ghe.ethz.ch
 Config/washr/catalog: none
 Config/washr/community: none
-Config/washr/parent-organizations: none
+Config/washr/parent-organizations: ETH Zurich <https://ror.org/05a28rw58>
 Config/washr/version: 1.3.0

@@ -6,6 +6,15 @@ template:
     in_header: |
       <script defer data-domain="global-health-engineering.github.io/ghedata" src="https://plausible.io/js/script.js"></script>
 
+navbar:
+  structure:
+    right: [search, home, github, lightswitch]
+  components:
+    home:
+      text: ghe.ethz.ch
+      href: https://ghe.ethz.ch
+      aria-label: Global-Health-Engineering website
+
 home:
   links:
     - icon: github
@@ -26,3 +35,11 @@ authors:
     roles: [cre, aut, ctb]
     before: "So *who* does the work?"
     after: "Thanks all!"
+
+footer:
+  structure:
+    left: [developed_by, publisher]
+    right: [washr, built_with]
+  components:
+    publisher: Published by [Global Health Engineering](https://ghe.ethz.ch/) at ETH Zurich.
+    washr: Package built with [washr](https://openwashdata.github.io/washr/) 1.3.0.
