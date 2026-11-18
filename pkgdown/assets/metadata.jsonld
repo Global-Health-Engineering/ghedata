@@ -74,113 +74,68 @@
   "variableMeasured": [
     {
       "@type": "PropertyValue",
-      "name": "people.project_id",
-      "description": " Unique identifier for each person using a combination of other metadata. Folder name on Google Drive."
-    },
-    {
-      "@type": "PropertyValue",
       "name": "people.degree",
-      "description": " Categorical variable with four levels: bsc, msc, phd, staff."
+      "description": " Degree the person worked towards in this engagement, or staff: bsc, msc, phd, mob (mobility student) or staff."
     },
     {
       "@type": "PropertyValue",
       "name": "people.type",
-      "description": " Categorical variable with six levels: hiwi, intern, post-doc, scientific-assitant, sem-proj, thesis."
+      "description": " Kind of engagement: thesis, sem-proj (semester project), case-study, student, or for staff the role (chair, senior-scientist, post-doc, scientific-assistant, support, intern, hiwi)."
     },
     {
       "@type": "PropertyValue",
       "name": "people.b_m_student",
-      "description": " Binary variable to identify if person is BSc or MSc students. Levels: yes, no."
+      "description": " Whether the engagement is that of a BSc or MSc student: yes or no."
     },
     {
       "@type": "PropertyValue",
       "name": "people.start_date",
-      "description": " Start date of the person."
+      "description": " Date on which the engagement started."
     },
     {
       "@type": "PropertyValue",
       "name": "people.year",
-      "description": " Year of the start date."
+      "description": " Year in which the engagement started."
     },
     {
       "@type": "PropertyValue",
-      "name": "people.thesis_title",
-      "description": " Title of the thesis."
+      "name": "outputs.title",
+      "description": " Title of the thesis or project."
     },
     {
       "@type": "PropertyValue",
-      "name": "computational.id",
-      "description": " Unique identifier for each survey respondent."
+      "name": "outputs.output_type",
+      "description": " Kind of work: bsc thesis, msc thesis, msc semester project, msc case study or phd thesis."
     },
     {
       "@type": "PropertyValue",
-      "name": "computational.experience_programming_general",
-      "description": " Self-reported experience with programming in general."
+      "name": "outputs.year",
+      "description": " Year in which the work started."
     },
     {
       "@type": "PropertyValue",
-      "name": "computational.experience_programming_r",
-      "description": " Self-reported experience with programming in R."
+      "name": "outputs.research_collection_link",
+      "description": " Address of the work in the ETH Research Collection, where it is deposited; empty otherwise."
     },
     {
       "@type": "PropertyValue",
-      "name": "computational.experience_programming_python",
-      "description": " Self-reported experience with programming in Python."
+      "name": "computational.question",
+      "description": " Short name of the survey question, for example experience_git or ides_used."
     },
     {
       "@type": "PropertyValue",
-      "name": "computational.other_languages",
-      "description": " Other programming languages or software the respondent has experience with (comma-separated)."
+      "name": "computational.answer",
+      "description": " Answer option as worded in the survey; for the three questions that allowed several picks (other_languages, ides_used, llm_tools_used), one pick."
     },
     {
       "@type": "PropertyValue",
-      "name": "computational.programming_confidence",
-      "description": " Self-reported confidence in writing a program to find the largest number in a list."
+      "name": "computational.n",
+      "description": " Number of respondents who gave this answer or picked this option."
     },
     {
       "@type": "PropertyValue",
-      "name": "computational.experience_git",
-      "description": " Self-reported experience with using Git."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.experience_github",
-      "description": " Self-reported experience with using GitHub."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.data_storage_format",
-      "description": " Primary format used for data storage."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.document_writing_approach",
-      "description": " Approach to writing narrative documents that include text and analysis."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.experience_ides",
-      "description": " Self-reported experience with using Integrated Development Environments (IDEs)."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.ides_used",
-      "description": " IDEs that the respondent has used (comma-separated list)."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.cli_usage",
-      "description": " Self-reported usage of command-line interface on their operating system."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.llm_usage",
-      "description": " Self-reported usage of Language Learning Models (LLMs) for various tasks."
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "computational.llm_tools_used",
-      "description": " LLM tools or platforms used for research, ideation, writing, or coding (comma-separated list)."
+      "name": "computational.respondents",
+      "description": " Number of respondents of the survey, the same in every row."
     },
     {
       "@type": "PropertyValue",
@@ -679,6 +634,18 @@
       "name": "github_repository_types.xlsx",
       "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
       "contentUrl": "https://raw.githubusercontent.com/Global-Health-Engineering/ghedata/main/inst/extdata/github_repository_types.xlsx"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "outputs.csv",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://raw.githubusercontent.com/Global-Health-Engineering/ghedata/main/inst/extdata/outputs.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "outputs.xlsx",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "contentUrl": "https://raw.githubusercontent.com/Global-Health-Engineering/ghedata/main/inst/extdata/outputs.xlsx"
     },
     {
       "@type": "DataDownload",
