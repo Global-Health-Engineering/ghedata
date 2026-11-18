@@ -22,10 +22,7 @@ Roxygen: list(markdown = TRUE)
 Depends: 
     R (>= 3.5)
 Imports:
-    dplyr,
-    tidyr,
-    stringr,
-    rlang
+    dplyr
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

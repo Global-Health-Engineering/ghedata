@@ -9,21 +9,54 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup, message=FALSE, warning=FALSE}
 library(ghedata)
 library(dplyr)
-library(stringr)
-library(here)
+library(ggplot2)
+```
 
-# Source helper functions
-source(here::here("R", "computational_competencies_helpers.R"))
+In June 2025 the members of the group answered a survey on their computational competencies. The table `computational` holds the answers as counts: one row per question and answer, with the number of respondents who gave it. It holds no row per respondent, so the answers to two questions cannot be combined.
+
+`r unique(computational$respondents)` people answered the survey.
+
+## Experience with Git and GitHub
+
+```{r}
+computational |>
+  filter(question %in% c("experience_git", "experience_github")) |>
+  select(question, answer, n) |>
+  knitr::kable()
+```
+
+## Tools used
+
+Three questions allowed several picks. Their rows count the respondents per pick and do not add up to the number of respondents.
+
+```{r}
+#| fig-alt: "Bar chart of the development environments the respondents have used, by number of respondents."
+#| fig-height: 4
+computational |>
+  filter(question == "ides_used") |>
+  ggplot(aes(x = n, y = reorder(answer, n))) +
+  geom_col() +
+  labs(x = "Respondents", y = NULL, title = "Development environments used") +
+  theme_minimal()
 ```
 
 ```{r}
-# Process multi-answer columns into long format using the helper function
-computational_competencies_ides <- separate_delimited_column(computational, "id", "ides_used", "ide")
-computational_competencies_llm_tools <- separate_delimited_column(computational, "id", "llm_tools_used", "llm_tool")
-computational_competencies_languages <- separate_delimited_column(computational, "id", "other_languages", "language")
-
+#| fig-alt: "Bar chart of the AI tools the respondents have used, by number of respondents."
+#| fig-height: 6
+computational |>
+  filter(question == "llm_tools_used") |>
+  ggplot(aes(x = n, y = reorder(answer, n))) +
+  geom_col() +
+  labs(x = "Respondents", y = NULL, title = "AI tools used") +
+  theme_minimal()
 ```
 
+```{r}
+computational |>
+  filter(question == "other_languages") |>
+  select(language = answer, respondents = n) |>
+  knitr::kable()
+```
