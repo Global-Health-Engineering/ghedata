@@ -1,0 +1,13 @@
+organisation,purpose,commits_counted,created_date,repos_public,repos_private,repos_archived,repos_listed,snapshot_date
+Global-Health-Engineering,research,TRUE,2021-08-02,84,53,21,82,2026-11-11
+openwashdata,data publishing,TRUE,2022-04-05,86,19,8,86,2026-11-11
+openwashdata-dev,development,TRUE,2023-09-25,10,11,3,10,2026-11-11
+openwashdata-conf,events,TRUE,2025-07-10,10,11,0,10,2026-11-11
+ghe-learn,training,TRUE,2021-10-21,35,7,0,0,2026-11-11
+agentsforsci-ghe,training,TRUE,2026-06-10,9,23,0,8,2026-11-11
+gitforsci-ghe,training,TRUE,2026-06-10,16,20,0,16,2026-11-11
+ds4owd-001,teaching,FALSE,2023-09-20,833,285,NA,0,2026-11-11
+ds4owd-002,teaching,FALSE,2025-02-06,233,934,NA,0,2026-11-11
+rbtl-fs22,teaching,FALSE,2021-10-15,7,163,NA,0,2026-11-11
+rbtl-fs24,teaching,FALSE,2024-01-23,108,35,NA,0,2026-11-11
+rbtl-fs25,teaching,FALSE,2024-10-28,115,34,NA,0,2026-11-11

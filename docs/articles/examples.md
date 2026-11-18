@@ -19,8 +19,8 @@ undergrad_students <- people |>
   filter(!is.na(title)) 
 ```
 
-So far, GHE has supervised 154 projects of which 42 were done by BSc and
-112 by MSc students.
+So far, GHE has supervised 166 projects of which 44 were done by BSc and
+122 by MSc students.
 
 ``` r
 

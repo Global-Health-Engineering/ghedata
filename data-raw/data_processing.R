@@ -36,7 +36,7 @@ replace_last_dash <- function(string) {
 ## People - metadata table for all staff and students at GHE
 
 # Configure authentication to use the correct email
-gs4_auth(email = "lschoebitz@ethz.ch")
+gs4_auth(email = Sys.getenv("GHE_GOOGLE_EMAIL", unset = NA))
 
 # data_in <- readr::read_csv("data-raw/dataset.csv")
 # codebook <- readxl::read_excel("data-raw/codebook.xlsx") |>

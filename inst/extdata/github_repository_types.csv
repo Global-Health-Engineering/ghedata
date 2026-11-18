@@ -1,0 +1,134 @@
+organisation,visibility,repository_type,created_year,repos
+Global-Health-Engineering,private,data package,2023,1
+Global-Health-Engineering,private,data package,2024,1
+Global-Health-Engineering,private,data package,2025,1
+Global-Health-Engineering,private,data package,2026,3
+Global-Health-Engineering,private,group management,2026,3
+Global-Health-Engineering,private,manuscript,2023,2
+Global-Health-Engineering,private,manuscript,2025,1
+Global-Health-Engineering,private,manuscript,2026,2
+Global-Health-Engineering,private,proposal or report,2023,2
+Global-Health-Engineering,private,proposal or report,2025,2
+Global-Health-Engineering,private,research project,2023,2
+Global-Health-Engineering,private,research project,2024,4
+Global-Health-Engineering,private,research project,2025,4
+Global-Health-Engineering,private,research project,2026,16
+Global-Health-Engineering,private,software,2025,1
+Global-Health-Engineering,private,software,2026,1
+Global-Health-Engineering,private,student project,2022,1
+Global-Health-Engineering,private,student project,2024,2
+Global-Health-Engineering,private,student project,2026,2
+Global-Health-Engineering,private,teaching and training,2026,2
+Global-Health-Engineering,public,data package,2021,1
+Global-Health-Engineering,public,data package,2022,1
+Global-Health-Engineering,public,data package,2023,3
+Global-Health-Engineering,public,data package,2024,2
+Global-Health-Engineering,public,data package,2026,1
+Global-Health-Engineering,public,group management,2022,1
+Global-Health-Engineering,public,group management,2023,2
+Global-Health-Engineering,public,hardware,2023,1
+Global-Health-Engineering,public,hardware,2024,3
+Global-Health-Engineering,public,hardware,2025,5
+Global-Health-Engineering,public,hardware,2026,5
+Global-Health-Engineering,public,manuscript,2022,2
+Global-Health-Engineering,public,manuscript,2023,1
+Global-Health-Engineering,public,manuscript,2024,1
+Global-Health-Engineering,public,manuscript,2025,1
+Global-Health-Engineering,public,manuscript,2026,1
+Global-Health-Engineering,public,organisation profile,2025,1
+Global-Health-Engineering,public,proposal or report,2023,2
+Global-Health-Engineering,public,proposal or report,2024,1
+Global-Health-Engineering,public,proposal or report,2025,1
+Global-Health-Engineering,public,research project,2022,1
+Global-Health-Engineering,public,research project,2024,7
+Global-Health-Engineering,public,research project,2025,14
+Global-Health-Engineering,public,research project,2026,8
+Global-Health-Engineering,public,software,2025,4
+Global-Health-Engineering,public,software,2026,1
+Global-Health-Engineering,public,student project,2022,1
+Global-Health-Engineering,public,student project,2025,1
+Global-Health-Engineering,public,student project,2026,2
+Global-Health-Engineering,public,teaching and training,2024,1
+Global-Health-Engineering,public,teaching and training,2026,3
+Global-Health-Engineering,public,template,2024,1
+Global-Health-Engineering,public,website and communication,2023,1
+Global-Health-Engineering,public,website and communication,2024,1
+Global-Health-Engineering,public,website and communication,2025,2
+openwashdata,private,data package,2024,4
+openwashdata,private,data package,2025,4
+openwashdata,private,data package,2026,4
+openwashdata,private,research project,2025,3
+openwashdata,private,research project,2026,2
+openwashdata,private,software,2025,1
+openwashdata,private,website and communication,2026,1
+openwashdata,public,data package,2022,2
+openwashdata,public,data package,2023,16
+openwashdata,public,data package,2024,16
+openwashdata,public,data package,2025,22
+openwashdata,public,data package,2026,13
+openwashdata,public,organisation profile,2022,1
+openwashdata,public,research project,2023,1
+openwashdata,public,research project,2024,1
+openwashdata,public,research project,2025,2
+openwashdata,public,software,2023,1
+openwashdata,public,software,2024,1
+openwashdata,public,software,2025,2
+openwashdata,public,software,2026,1
+openwashdata,public,teaching and training,2026,1
+openwashdata,public,template,2026,1
+openwashdata,public,website and communication,2022,1
+openwashdata,public,website and communication,2023,1
+openwashdata,public,website and communication,2024,1
+openwashdata,public,website and communication,2026,2
+openwashdata-dev,private,group management,2022,1
+openwashdata-dev,private,proposal or report,2022,1
+openwashdata-dev,private,proposal or report,2025,3
+openwashdata-dev,private,proposal or report,2026,4
+openwashdata-dev,private,research project,2026,1
+openwashdata-dev,private,teaching and training,2026,1
+openwashdata-dev,public,organisation profile,2023,1
+openwashdata-dev,public,proposal or report,2022,2
+openwashdata-dev,public,proposal or report,2023,1
+openwashdata-dev,public,proposal or report,2024,1
+openwashdata-dev,public,research project,2024,1
+openwashdata-dev,public,software,2022,1
+openwashdata-dev,public,software,2026,1
+openwashdata-dev,public,teaching and training,2022,1
+openwashdata-dev,public,teaching and training,2023,1
+openwashdata-conf,private,student project,2025,1
+openwashdata-conf,private,teaching and training,2025,10
+openwashdata-conf,public,organisation profile,2025,1
+openwashdata-conf,public,teaching and training,2025,9
+ghe-learn,private,learner repository,2021,2
+ghe-learn,private,teaching and training,2021,4
+ghe-learn,private,teaching and training,2023,1
+ghe-learn,public,learner repository,2023,11
+ghe-learn,public,organisation profile,2023,1
+ghe-learn,public,teaching and training,2021,3
+ghe-learn,public,teaching and training,2022,15
+ghe-learn,public,teaching and training,2023,5
+agentsforsci-ghe,private,data package,2026,1
+agentsforsci-ghe,private,learner repository,2026,15
+agentsforsci-ghe,private,teaching and training,2026,7
+agentsforsci-ghe,public,data package,2026,1
+agentsforsci-ghe,public,learner repository,2026,1
+agentsforsci-ghe,public,organisation profile,2026,1
+agentsforsci-ghe,public,teaching and training,2026,6
+gitforsci-ghe,private,learner repository,2026,20
+gitforsci-ghe,public,organisation profile,2026,1
+gitforsci-ghe,public,teaching and training,2026,15
+ds4owd-001,private,learner repository,2023,281
+ds4owd-001,private,learner repository,2024,4
+ds4owd-001,public,learner repository,2023,625
+ds4owd-001,public,learner repository,2024,208
+ds4owd-002,private,learner repository,2025,934
+ds4owd-002,public,learner repository,2025,196
+ds4owd-002,public,learner repository,2026,37
+rbtl-fs22,private,learner repository,2022,163
+rbtl-fs22,public,learner repository,2021,1
+rbtl-fs22,public,learner repository,2022,6
+rbtl-fs24,private,learner repository,2024,35
+rbtl-fs24,public,learner repository,2024,108
+rbtl-fs25,private,learner repository,2025,34
+rbtl-fs25,public,learner repository,2024,1
+rbtl-fs25,public,learner repository,2025,114
