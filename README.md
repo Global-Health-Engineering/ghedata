@@ -82,7 +82,7 @@ people |>
   gt::as_raw_html()
 ```
 
-<div id="inbyaprufw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="uzhlyujrba" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -1842,17 +1842,19 @@ Please cite this package using:
 citation("ghedata")
 #> To cite package 'ghedata' in publications use:
 #> 
-#>   Schöbitz L (2024). _ghedata: Data on the Work of the Global Health
-#>   Engineering Group_. R package version 0.0.0.9000,
-#>   <https://github.com/Global-Health-Engineering/ghedata>.
+#>   Schöbitz L, Walder C, Clavijo Daza A, Tilley E (2026). "ghedata: Data
+#>   on the Work of the Global Health Engineering Group."
+#>   <https://global-health-engineering.github.io/ghedata/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
+#>   @Misc{schobitz_etall:2026,
 #>     title = {ghedata: Data on the Work of the Global Health Engineering Group},
-#>     author = {Lars Schöbitz},
-#>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
-#>     url = {https://github.com/Global-Health-Engineering/ghedata},
+#>     author = {Lars Schöbitz and Colin Walder and Adriana {Clavijo Daza} and Elizabeth Tilley},
+#>     year = {2026},
+#>     url = {https://global-health-engineering.github.io/ghedata/},
+#>     abstract = {Data that documents the work of the Global Health Engineering group at ETH Zurich since 2021: theses, projects and staff, computational competencies of the group, repositories and commits on GitHub, funding proposals, and records on Zenodo with their views and downloads.},
+#>     keywords = {open data,global health,research group,research data management,data stewardship,GitHub,funding proposals,Switzerland},
+#>     version = {0.0.0.9000},
 #>   }
 ```

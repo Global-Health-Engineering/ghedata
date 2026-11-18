@@ -1,0 +1,47 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "ghedata" in publications use:'
+type: dataset
+license: CC-BY-4.0
+title: 'ghedata: Data on the Work of the Global Health Engineering Group'
+version: 0.0.0.9000
+abstract: 'Data that documents the work of the Global Health Engineering group at
+  ETH Zurich since 2021: theses, projects and staff, computational competencies of
+  the group, repositories and commits on GitHub, funding proposals, and records on
+  Zenodo with their views and downloads.'
+authors:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+- family-names: Walder
+  given-names: Colin
+  orcid: https://orcid.org/0009-0006-0969-1954
+- family-names: Clavijo Daza
+  given-names: Adriana
+  orcid: https://orcid.org/0000-0002-6352-9839
+- family-names: Tilley
+  given-names: Elizabeth
+  orcid: https://orcid.org/0000-0002-2095-9724
+repository-code: https://github.com/Global-Health-Engineering/ghedata
+url: https://global-health-engineering.github.io/ghedata/
+date-released: '2026-11-18'
+contact:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+keywords:
+- open data
+- global health
+- research group
+- research data management
+- data stewardship
+- GitHub
+- funding proposals
+- Switzerland
+

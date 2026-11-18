@@ -1,14 +1,21 @@
 Package: ghedata
 Title: Data on the Work of the Global Health Engineering Group
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R: c(
     person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-2196-5015"))
+           comment = c(ORCID = "0000-0003-2196-5015")),
+    person("Colin", "Walder", role = "aut",
+           comment = c(ORCID = "0009-0006-0969-1954")),
+    person("Adriana", "Clavijo Daza", role = "aut",
+           comment = c(ORCID = "0000-0002-6352-9839")),
+    person("Elizabeth", "Tilley", role = c("aut", "fnd"),
+           comment = c(ORCID = "0000-0002-2095-9724")),
+    person("Global Health Engineering, ETH Zurich", role = "fnd")
+  )
 Description: Data that documents the work of the Global Health Engineering
     group at ETH Zurich since 2021: theses, projects and staff, computational
     competencies of the group, repositories and commits on GitHub, funding
-    proposals, and records on Zenodo with their views and downloads. The
-    tables hold counts and descriptions and no name of a person.
+    proposals, and records on Zenodo with their views and downloads.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -24,8 +31,23 @@ Suggests:
 Config/testthat/edition: 3
 LazyData: true
 Language: en-GB
-Config/Needs/website: rmarkdown
-Date: 2024-11-16
-URL: https://github.com/Global-Health-Engineering/ghedata, https://global-health-engineering.github.io/ghedata/
+Config/Needs/website: rmarkdown, knitr, kableExtra, readr, gt, ggplot2, ggthemes, forcats, scales, here, quanteda, quanteda.textplots, tidyverse
+Date: 2026-11-18
+URL: https://github.com/Global-Health-Engineering/ghedata,
+    https://global-health-engineering.github.io/ghedata/
 BugReports: https://github.com/Global-Health-Engineering/ghedata/issues
 Config/roxygen2/version: 8.0.0
+X-schema.org-keywords: open data, global health, research group, research data management, data stewardship, GitHub, funding proposals, Switzerland
+X-schema.org-spatialCoverage: Zurich, Switzerland
+X-schema.org-temporalCoverage: 2021-02-01/2026-11-18
+Config/washr/funding: This project was funded by the [Global Health Engineering group at ETH Zurich](https://ghe.ethz.ch/).
+Config/washr/analytics-domain: none
+Config/washr/doi-provider: zenodo
+Config/washr/zenodo-community: none
+Config/washr/brand-source: none
+Config/washr/publisher: none
+Config/washr/home: none
+Config/washr/catalog: none
+Config/washr/community: none
+Config/washr/parent-organizations: none
+Config/washr/version: 1.3.0
