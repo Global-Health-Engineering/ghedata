@@ -350,13 +350,13 @@ citation("ghedata")
 #> To cite package 'ghedata' in publications use:
 #> 
 #>   Schöbitz L (2024). _ghedata: Data on the Work of the Global Health
-#>   Engineering Group at ETH Zurich_. R package version 0.0.0.9000,
+#>   Engineering Group_. R package version 0.0.0.9000,
 #>   <https://github.com/Global-Health-Engineering/ghedata>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {ghedata: Data on the Work of the Global Health Engineering Group at ETH Zurich},
+#>     title = {ghedata: Data on the Work of the Global Health Engineering Group},
 #>     author = {Lars Schöbitz},
 #>     year = {2024},
 #>     note = {R package version 0.0.0.9000},

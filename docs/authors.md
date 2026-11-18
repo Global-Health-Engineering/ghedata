@@ -11,11 +11,11 @@ Source:
 [`DESCRIPTION`](https://github.com/Global-Health-Engineering/ghedata/blob/HEAD/DESCRIPTION)
 
 Schöbitz L (2026). *ghedata: Data on the Work of the Global Health
-Engineering Group at ETH Zurich*. R package version 0.0.0.9000,
+Engineering Group*. R package version 0.0.0.9000,
 <https://github.com/Global-Health-Engineering/ghedata>.
 
     @Manual{,
-      title = {ghedata: Data on the Work of the Global Health Engineering Group at ETH Zurich},
+      title = {ghedata: Data on the Work of the Global Health Engineering Group},
       author = {Lars Schöbitz},
       year = {2026},
       note = {R package version 0.0.0.9000},

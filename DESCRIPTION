@@ -1,5 +1,5 @@
 Package: ghedata
-Title: Data on the Work of the Global Health Engineering Group at ETH Zurich
+Title: Data on the Work of the Global Health Engineering Group
 Version: 0.0.0.9000
 Authors@R: 
     person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = c("aut", "cre"),
