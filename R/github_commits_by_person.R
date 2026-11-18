@@ -10,7 +10,7 @@
 #' a rank; no login, name or email address is part of the data. In a small
 #' group a rank can still point to a person for someone who knows the group.
 #'
-#' @format A tibble with 7 variables
+#' @format A tibble with 35 rows and 7 variables
 #' \describe{
 #'   \item{person_rank}{ Rank of the person by number of commits, 1 for the most commits. Stands in for the person; no login or name is kept.}
 #'   \item{commits}{ Commits by the person in the twelve months from first_month to last_month, counted as in github_commits (no bots, no automated pushes, no merge commits) and without commits in the training organisations.}
@@ -22,4 +22,6 @@
 #' }
 #' @source GitHub REST API, read with
 #'   `data-raw/data_processing_github_people.R`.
+#' @examples
+#' head(github_commits_by_person)
 "github_commits_by_person"

@@ -30,4 +30,7 @@ two questions cannot be combined. Three questions allowed several picks
 (\code{other_languages}, \code{ides_used}, \code{llm_tools_used}); their rows count the
 respondents per pick and do not add up to the number of respondents.
 }
+\examples{
+head(computational)
+}
 \keyword{datasets}

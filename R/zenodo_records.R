@@ -12,7 +12,7 @@
 #' published outside the work of the group is included, unless it is named in
 #' `data-raw/zenodo_records_excluded.csv`.
 #'
-#' @format A tibble with 11 variables
+#' @format A tibble with 66 rows and 11 variables
 #' \describe{
 #'   \item{record_id}{ Identifier of the record on Zenodo (latest version).}
 #'   \item{doi}{ DOI of the latest version.}
@@ -27,4 +27,6 @@
 #'   \item{snapshot_date}{ Date on which the counts were read.}
 #' }
 #' @source Zenodo REST API, read with `data-raw/data_processing_reach.R`.
+#' @examples
+#' head(zenodo_records)
 "zenodo_records"

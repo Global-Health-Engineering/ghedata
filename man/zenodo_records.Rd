@@ -5,7 +5,7 @@
 \alias{zenodo_records}
 \title{zenodo_records: Records on Zenodo with views and downloads}
 \format{
-A tibble with 11 variables
+A tibble with 66 rows and 11 variables
 \describe{
 \item{record_id}{ Identifier of the record on Zenodo (latest version).}
 \item{doi}{ DOI of the latest version.}
@@ -39,5 +39,8 @@ group members, which is not part of the package. A record of a group member
 who is not on that list is missing, and a record that a listed person
 published outside the work of the group is included, unless it is named in
 \code{data-raw/zenodo_records_excluded.csv}.
+}
+\examples{
+head(zenodo_records)
 }
 \keyword{datasets}

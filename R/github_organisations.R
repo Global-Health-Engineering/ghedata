@@ -6,7 +6,7 @@
 #' Teaching organisations, which hold one repository per student, appear with
 #' their repository counts only.
 #'
-#' @format A tibble with 9 variables
+#' @format A tibble with 12 rows and 9 variables
 #' \describe{
 #'   \item{organisation}{ Login of the GitHub organisation. An organisation account, not a person.}
 #'   \item{purpose}{ What the organisation is used for. Levels: research, data publishing, development, events, training, teaching.}
@@ -21,4 +21,6 @@
 #' @source GitHub REST API, read with `data-raw/data_processing_github.R`. The
 #'   list of organisations is kept by hand in
 #'   `data-raw/github_organisations.csv`.
+#' @examples
+#' head(github_organisations)
 "github_organisations"
