@@ -88,6 +88,32 @@ The package provides access to 12 tables, described below by topic.
 library(ghedata)
 ```
 
+```{r data-overview, echo=FALSE}
+overview <- tibble::tribble(
+  ~table, ~holds,
+  "people", "Engagements in the group: theses, semester projects and staff positions",
+  "outputs", "Theses and projects of students with their titles",
+  "computational", "Answers to a survey on computational competencies, as counts",
+  "github_organisations", "GitHub organisations of the group",
+  "github_repositories", "Public repositories",
+  "github_repository_types", "Number of repositories by type and year",
+  "github_commits", "Commits per organisation and month",
+  "github_commits_by_type", "Commits per repository type and month",
+  "github_commits_by_person", "Commits per group member over twelve months, by rank",
+  "github_commits_by_members", "Commits of all group members per month",
+  "proposals", "Funding proposals with status, funder and budget",
+  "zenodo_records", "Records on Zenodo with views and downloads"
+)
+overview |>
+  dplyr::mutate(
+    rows = vapply(table, function(x) nrow(get(x)), integer(1)),
+    columns = vapply(table, function(x) ncol(get(x)), integer(1)),
+    table = paste0("`", table, "`")
+  ) |>
+  dplyr::select(table, rows, columns, holds) |>
+  knitr::kable()
+```
+
 ### people
 
 The dataset `people` has one row per engagement of a person in the group since 2021: theses and semester projects of students, and the positions of staff. It holds no name, no title of a work and no identifier.
